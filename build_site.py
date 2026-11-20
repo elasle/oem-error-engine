@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 """
-AveríasOEM Static Site & SEO Engine
-Genera páginas técnicas hiper-específicas [Marca + Modelo + Código de Error -> Pieza OEM]
-con datos estructurados Schema.org (FAQPage + HowTo), enlaces de afiliado automáticos,
-sitemap.xml y feed JSON.
+OEMPartDecoder / AveríasOEM — Bilingual (en-US Primary + es-US) Static Site & SEO Engine
+Generates:
+- /index.html (US English primary directory — targets Amazon.com DIY appliance repair market)
+- /es/index.html (Spanish directory — targets US Hispanics & LatAm/Spain)
+- /error/<slug>/index.html (All English & Spanish OEM error-to-part pages, preserving all existing URLs)
+- /sitemap.xml (Complete XML sitemap for Google Search Console & Bing Webmaster Tools)
+- /llms.txt (Structured index for AI search engines: ChatGPT Search, Perplexity, Google AI)
+- /8f4b2e9c1a7d4f6e8b3c5a9d2e1f4b7c.txt (IndexNow instant indexing verification key)
+- /api/errors.json (Combined public JSON data feed)
 """
 
 import html
@@ -14,18 +19,21 @@ from datetime import datetime
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_PATH = os.path.join(BASE_DIR, "config.json")
-DB_PATH = os.path.join(BASE_DIR, "data", "errors_db.json")
+EN_DB_PATH = os.path.join(BASE_DIR, "data", "errors_en_db.json")
+ES_DB_PATH = os.path.join(BASE_DIR, "data", "errors_db.json")
 DIST_DIR = os.path.join(BASE_DIR, "dist")
+INDEXNOW_KEY = "8f4b2e9c1a7d4f6e8b3c5a9d2e1f4b7c"
 
 
-def load_json(path):
+def load_json(path, default=None):
+    if not os.path.exists(path):
+        return default if default is not None else []
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 def build_affiliate_links(item, config):
     mon = config.get("monetization", {})
-    # Para Amazon.com (-20), la referencia OEM + marca devuelve el repuesto exacto en todo el mundo
     oem_brand_query = f"{item['oem_part_number']} {item['brands'][0]}"
     full_query = item.get("affiliate_search_query") or f"{item['oem_part_number']} {item['oem_part_name']}"
 
@@ -34,7 +42,11 @@ def build_affiliate_links(item, config):
 
     amz_domain = mon.get("amazon_domain", "amazon.com")
     amz_tag = mon.get("amazon_tag", "onamzasleyarb-20")
-    amazon_main_url = f"https://www.{amz_domain}/s?k={encoded_oem_brand}&tag={amz_tag}"
+    lang = item.get("lang", "es")
+
+    # For English items, full_query is already in English and super targeted for Amazon.com
+    primary_query = encoded_full if lang == "en" else encoded_oem_brand
+    amazon_main_url = f"https://www.{amz_domain}/s?k={primary_query}&tag={amz_tag}"
 
     amz_es_domain = mon.get("amazon_es_domain", "amazon.es")
     amz_es_tag = mon.get("amazon_es_tag", amz_tag)
@@ -42,17 +54,14 @@ def build_affiliate_links(item, config):
 
     ebay_domain = mon.get("ebay_domain", "ebay.com")
     ebay_campid = mon.get("ebay_campid", "")
-    ebay_url = f"https://www.{ebay_domain}/sch/i.html?_nkw={encoded_oem_brand}"
+    ebay_url = f"https://www.{ebay_domain}/sch/i.html?_nkw={primary_query}"
     if ebay_campid:
         ebay_url += f"&mkcid=1&mkrid=711-53200-19255-0&campid={ebay_campid}&toolid=10001"
-
-    ali_url = f"https://www.aliexpress.com/w/wholesale-{urllib.parse.quote(item['oem_part_number'])}.html"
 
     return {
         "amazon_main": amazon_main_url,
         "amazon_es": amazon_es_url,
         "ebay": ebay_url,
-        "aliexpress": ali_url,
     }
 
 
@@ -81,19 +90,30 @@ body {
 }
 a { color: var(--blue); text-decoration: none; }
 a:hover { text-decoration: underline; }
-.container { max-width: 960px; margin: 0 auto; padding: 0 1.25rem; }
+.container { max-width: 980px; margin: 0 auto; padding: 0 1.25rem; }
 header {
-  background: rgba(30, 41, 59, 0.9);
+  background: rgba(30, 41, 59, 0.92);
   border-bottom: 1px solid var(--border);
-  padding: 1rem 0;
+  padding: 0.95rem 0;
   position: sticky;
   top: 0;
   z-index: 20;
   backdrop-filter: blur(8px);
 }
 .nav-inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-.logo { font-weight: 800; font-size: 1.25rem; color: var(--text); display: flex; align-items: center; gap: 0.5rem; }
-.logo span { background: var(--accent); color: #000; padding: 0.1rem 0.45rem; border-radius: 4px; font-size: 0.85rem; font-family: monospace; }
+.logo { font-weight: 800; font-size: 1.22rem; color: var(--text); display: flex; align-items: center; gap: 0.5rem; text-decoration: none !important; }
+.logo span { background: var(--accent); color: #000; padding: 0.1rem 0.45rem; border-radius: 4px; font-size: 0.8rem; font-family: monospace; }
+.lang-switch { display: flex; gap: 0.5rem; align-items: center; font-size: 0.85rem; }
+.lang-pill {
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none !important;
+  font-weight: 600;
+}
+.lang-pill.active { border-color: var(--accent); color: var(--accent); }
 .badge-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1.5rem 0 0.75rem; }
 .badge {
   background: var(--surface);
@@ -147,7 +167,7 @@ h1 { font-size: 1.9rem; line-height: 1.25; margin-bottom: 1rem; color: #fff; }
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.85rem 1.35rem;
+  padding: 0.9rem 1.35rem;
   border-radius: 8px;
   font-weight: 700;
   font-size: 0.95rem;
@@ -155,10 +175,9 @@ h1 { font-size: 1.9rem; line-height: 1.25; margin-bottom: 1rem; color: #fff; }
   transition: transform 0.12s ease, opacity 0.12s ease;
 }
 .btn:hover { transform: translateY(-1px); }
-.btn-amz { background: var(--accent); color: #000; flex: 1 1 260px; }
+.btn-amz { background: var(--accent); color: #000; flex: 2 1 280px; }
 .btn-amz:hover { background: var(--accent-hover); }
 .btn-ebay { background: var(--surface-2); color: #fff; border: 1px solid #475569; flex: 1 1 180px; }
-.btn-ali { background: #1e293b; color: var(--muted); border: 1px solid var(--border); flex: 1 1 180px; }
 
 .section-card {
   background: var(--surface);
@@ -209,7 +228,7 @@ h1 { font-size: 1.9rem; line-height: 1.25; margin-bottom: 1rem; color: #fff; }
 .search-box:focus { outline: none; border-color: var(--accent); }
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
   gap: 1rem;
 }
 .item-card {
@@ -221,9 +240,10 @@ h1 { font-size: 1.9rem; line-height: 1.25; margin-bottom: 1rem; color: #fff; }
   flex-direction: column;
   justify-content: space-between;
   transition: border-color 0.15s ease;
+  text-decoration: none !important;
 }
 .item-card:hover { border-color: var(--accent); }
-.item-card h3 { font-size: 1.1rem; color: #fff; margin: 0.4rem 0 0.5rem; }
+.item-card h3 { font-size: 1.08rem; color: #fff; margin: 0.45rem 0 0.5rem; }
 .item-meta { font-size: 0.8rem; color: var(--muted); font-family: monospace; }
 footer {
   margin-top: 3rem;
@@ -236,73 +256,55 @@ footer {
 """
 
 
-def build_schema_json_ld(item, page_url):
-    faq_entities = [
-        {
-            "@type": "Question",
-            "name": f"¿Qué significa el {item['error_code']} en {item['category'].lower()} {' / '.join(item['brands'])}?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": f"{item['technical_cause']} La pieza de recambio oficial tiene la referencia OEM {item['oem_part_number']} ({item['oem_part_name']}).",
-            },
-        }
-    ]
+def build_schema_json_ld(item):
+    lang = item.get("lang", "es")
+    brands_str = " / ".join(item["brands"])
+    if lang == "en":
+        q1 = f"What causes {item['error_code']} on a {brands_str} {item['category'].lower()}?"
+        a1 = f"{item['technical_cause']} The exact OEM replacement part number is {item['oem_part_number']} ({item['oem_part_name']})."
+        howto_name = f"How to fix {brands_str} {item['error_code']} (OEM Part #{item['oem_part_number']})"
+        step_label = "Step"
+    else:
+        q1 = f"¿Qué significa el {item['error_code']} en {item['category'].lower()} {brands_str}?"
+        a1 = f"{item['technical_cause']} La pieza de recambio oficial tiene la referencia OEM {item['oem_part_number']} ({item['oem_part_name']})."
+        howto_name = f"Cómo solucionar el {item['error_code']} en {brands_str} (Ref. OEM {item['oem_part_number']})"
+        step_label = "Paso"
+
+    faq_entities = [{"@type": "Question", "name": q1, "acceptedAnswer": {"@type": "Answer", "text": a1}}]
     for f in item.get("faq", []):
         faq_entities.append(
-            {
-                "@type": "Question",
-                "name": f["q"],
-                "acceptedAnswer": {"@type": "Answer", "text": f["a"]},
-            }
+            {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}}
         )
 
     howto_steps = [
-        {
-            "@type": "HowToStep",
-            "position": idx + 1,
-            "name": f"Paso {idx + 1}",
-            "text": step,
-        }
+        {"@type": "HowToStep", "position": idx + 1, "name": f"{step_label} {idx + 1}", "text": step}
         for idx, step in enumerate(item.get("diagnostic_steps", []))
     ]
 
     schema = [
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faq_entities,
-        },
+        {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faq_entities},
         {
             "@context": "https://schema.org",
             "@type": "HowTo",
-            "name": f"Cómo solucionar el {item['error_code']} en {' / '.join(item['brands'])} (Ref. OEM {item['oem_part_number']})",
+            "name": howto_name,
             "description": item["symptom"],
             "totalTime": f"PT{item.get('repair_time_minutes', 20)}M",
-            "supply": [
-                {
-                    "@type": "HowToSupply",
-                    "name": f"{item['oem_part_name']} (OEM {item['oem_part_number']})",
-                }
-            ],
+            "supply": [{"@type": "HowToSupply", "name": f"{item['oem_part_name']} (OEM {item['oem_part_number']})"}],
             "step": howto_steps,
         },
     ]
     return json.dumps(schema, ensure_ascii=False)
 
 
-def render_error_page(item, all_items, config):
+def render_error_page(item, same_lang_items, config):
+    lang = item.get("lang", "es")
     brands_str = " / ".join(item["brands"])
-    title = f"{item['error_code']} {item['category']} {brands_str}: Causa y Pieza Exacta OEM ({item['oem_part_number']})"
-    meta_desc = (
-        f"Solución rápida al {item['error_code']} en {item['category'].lower()} {brands_str}. "
-        f"Síntoma: {item['symptom'][:110]}... Pieza OEM exacta: {item['oem_part_number']} ({item['part_price_range']})."
-    )
     page_url = f"{config['site_url'].rstrip('/')}/error/{item['slug']}/"
     links = build_affiliate_links(item, config)
-    schema_json = build_schema_json_ld(item, page_url)
+    schema_json = build_schema_json_ld(item)
 
     related = [
-        x for x in all_items
+        x for x in same_lang_items
         if x["id"] != item["id"] and (x["category"] == item["category"] or set(x["brands"]) & set(item["brands"]))
     ][:4]
 
@@ -311,19 +313,77 @@ def render_error_page(item, all_items, config):
         f'<div class="faq-item"><div class="faq-q">{html.escape(f["q"])}</div><div class="faq-a">{html.escape(f["a"])}</div></div>'
         for f in item.get("faq", [])
     )
+
+    if lang == "en":
+        title = f"{brands_str} {item['error_code']} Fix: Exact Cause & OEM Part #{item['oem_part_number']}"
+        meta_desc = (
+            f"How to fix {brands_str} {item['category'].lower()} {item['error_code']}. "
+            f"Symptom: {item['symptom'][:105]}... Exact OEM replacement part: {item['oem_part_number']} ({item['part_price_range']})."
+        )
+        home_href = "../../index.html"
+        back_label = "← Search all US OEM Error Codes"
+        h1_text = f"{brands_str} {item['error_code']} — Diagnostic & Exact OEM Replacement Part"
+        kpi_oem = "Official OEM Part Number"
+        kpi_price = "Average Part Price"
+        kpi_tech = "Service Call Cost (Saved)"
+        kpi_time = "DIY Install Time"
+        cta_eyebrow = "Verified OEM Replacement Part That Fixes This Code"
+        cta_sub = f"Primary OEM Ref: <strong>{html.escape(item['oem_part_number'])}</strong> · Cross-Ref / Alternate: {html.escape(item.get('secondary_part_number', 'N/A'))}"
+        btn_amz_text = f"🛒 Check OEM Part #{html.escape(item['oem_part_number'])} on Amazon.com →"
+        btn_sec_href = links["ebay"]
+        btn_sec_text = "🔎 Find OEM Part on eBay"
+        cta_note = f"* Always match OEM Part <strong>{html.escape(item['oem_part_number'])}</strong> with your appliance model sticker before ordering."
+        sec1_title = "⚠️ Failure Symptom & Factory Service Manual Root Cause"
+        sec1_sym = "Symptom on machine:"
+        sec1_cause = "Verified technical root cause:"
+        sec2_title = "🔧 Step-by-Step DIY Inspection & Replacement Checklist"
+        sec3_title = f"❓ Frequently Asked Questions ({item['error_code']})"
+        rel_title = "Related Appliance Error Codes & OEM Parts"
+        rel_cta = "View OEM Fix →"
+        footer_p1 = "OEMPartDecoder / AveríasOEM — Automated Technical Error Code & OEM Part Number Lookup."
+        footer_p2 = "As an Amazon Associate we earn from qualifying purchases. All OEM part numbers are used strictly for technical identification."
+    else:
+        title = f"{item['error_code']} {item['category']} {brands_str}: Causa y Pieza Exacta OEM ({item['oem_part_number']})"
+        meta_desc = (
+            f"Solución rápida al {item['error_code']} en {item['category'].lower()} {brands_str}. "
+            f"Síntoma: {item['symptom'][:105]}... Pieza OEM exacta: {item['oem_part_number']} ({item['part_price_range']})."
+        )
+        home_href = "../../es/index.html"
+        back_label = "← Buscar otro código en Español"
+        h1_text = f"{item['error_code']} en {item['category']} {brands_str}: Diagnóstico y Pieza OEM"
+        kpi_oem = "Referencia OEM Oficial"
+        kpi_price = "Precio medio del repuesto"
+        kpi_tech = "Coste Servicio Técnico"
+        kpi_time = "Tiempo de sustitución"
+        cta_eyebrow = "Pieza Exacta que Resuelve el Fallo"
+        cta_sub = f"Ref. Principal: <strong>{html.escape(item['oem_part_number'])}</strong> · Equivalente: {html.escape(item.get('secondary_part_number', 'N/A'))}"
+        btn_amz_text = f"🛒 Ver Repuesto {html.escape(item['oem_part_number'])} en Amazon.com →"
+        btn_sec_href = links["amazon_es"]
+        btn_sec_text = "🇪🇸 Ver en Amazon.es"
+        cta_note = f"* Comprueba siempre que el código OEM <strong>{html.escape(item['oem_part_number'])}</strong> coincida con tu modelo antes de pedir."
+        sec1_title = "⚠️ Síntoma y Causa Técnica Según Manual de Servicio"
+        sec1_sym = "Síntoma en la máquina:"
+        sec1_cause = "Causa raíz verificada:"
+        sec2_title = "🔧 Comprobación Paso a Paso Antes de Cambiar la Pieza"
+        sec3_title = f"❓ Preguntas Frecuentes sobre el {item['error_code']}"
+        rel_title = "Otros Códigos de Error Relacionados"
+        rel_cta = "Ver ficha OEM →"
+        footer_p1 = "AveríasOEM — Base de datos automatizada de códigos de avería y referencias OEM."
+        footer_p2 = "Como Afiliados de Amazon obtenemos ingresos por las compras adscritas que cumplen los requisitos aplicables."
+
     related_html = "\n".join(
         f'<a class="item-card" href="../../error/{r["slug"]}/">'
         f'<div><span class="item-meta">{html.escape(r["category"])} · OEM {html.escape(r["oem_part_number"])}</span>'
         f'<h3>{html.escape(r["error_code"])} — {html.escape(" / ".join(r["brands"]))}</h3>'
         f'<p style="color:var(--muted);font-size:0.85rem;">{html.escape(r["oem_part_name"])}</p></div>'
-        f'<span style="color:var(--accent);font-size:0.85rem;font-weight:700;margin-top:0.75rem;">Ver ficha OEM →</span></a>'
+        f'<span style="color:var(--accent);font-size:0.85rem;font-weight:700;margin-top:0.75rem;">{rel_cta}</span></a>'
         for r in related
     )
 
     models_badges = "".join(f'<span class="badge">{html.escape(m)}</span>' for m in item.get("popular_models", []))
 
     return f"""<!DOCTYPE html>
-<html lang="es">
+<html lang="{ 'en-US' if lang == 'en' else 'es' }">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -339,85 +399,89 @@ def render_error_page(item, all_items, config):
 <body>
   <header>
     <div class="container nav-inner">
-      <a href="../../index.html" class="logo">⚡ {html.escape(config['site_name'])} <span>OEM DB</span></a>
-      <a href="../../index.html" style="font-size:0.9rem;color:var(--muted);">← Buscar otro código de error</a>
+      <a href="{home_href}" class="logo">⚡ OEMPartDecoder <span>OEM DB</span></a>
+      <div class="lang-switch">
+        <a href="../../index.html" class="lang-pill {'active' if lang == 'en' else ''}">🇺🇸 English (US)</a>
+        <a href="../../es/index.html" class="lang-pill {'active' if lang == 'es' else ''}">🇪🇸 Español</a>
+      </div>
     </div>
   </header>
 
   <main class="container">
+    <div style="margin-top:1rem;">
+      <a href="{home_href}" style="font-size:0.88rem;color:var(--muted);">{back_label}</a>
+    </div>
+
     <div class="badge-bar">
       <span class="badge cat">{html.escape(item['category'])}</span>
-      <span class="badge">Marcas: {html.escape(brands_str)}</span>
+      <span class="badge">{html.escape(brands_str)}</span>
       {models_badges}
     </div>
 
-    <h1>{html.escape(item['error_code'])} en {html.escape(item['category'])} {html.escape(brands_str)}: Diagnóstico y Pieza OEM</h1>
+    <h1>{html.escape(h1_text)}</h1>
 
     <div class="kpi-grid">
       <div class="kpi-card">
-        <div class="kpi-label">Referencia OEM Oficial</div>
+        <div class="kpi-label">{kpi_oem}</div>
         <div class="kpi-val oem">{html.escape(item['oem_part_number'])}</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-label">Precio medio del repuesto</div>
+        <div class="kpi-label">{kpi_price}</div>
         <div class="kpi-val price">{html.escape(item['part_price_range'])}</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-label">Coste Servicio Técnico</div>
-        <div class="kpi-val" style="color:var(--red);text-decoration:line-through;">{html.escape(item.get('technician_cost_estimate', '120€ - 180€'))}</div>
+        <div class="kpi-label">{kpi_tech}</div>
+        <div class="kpi-val" style="color:var(--red);text-decoration:line-through;">{html.escape(item.get('technician_cost_estimate', '$210 - $320'))}</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-label">Tiempo de sustitución</div>
-        <div class="kpi-val">{item.get('repair_time_minutes', 20)} min · {html.escape(item.get('difficulty', 'Fácil'))}</div>
+        <div class="kpi-label">{kpi_time}</div>
+        <div class="kpi-val">{item.get('repair_time_minutes', 20)} min · {html.escape(item.get('difficulty', 'Easy'))}</div>
       </div>
     </div>
 
     <div class="oem-cta-box">
       <div class="oem-header">
         <div>
-          <div style="font-size:0.8rem;text-transform:uppercase;color:var(--accent);font-weight:700;letter-spacing:0.05em;">Pieza Exacta que Resuelve el Fallo</div>
+          <div style="font-size:0.8rem;text-transform:uppercase;color:var(--accent);font-weight:700;letter-spacing:0.05em;">{cta_eyebrow}</div>
           <h2 style="font-size:1.35rem;color:#fff;margin-top:0.2rem;">{html.escape(item['oem_part_name'])}</h2>
-          <p style="color:var(--muted);font-size:0.9rem;margin-top:0.25rem;">Ref. Principal: <strong>{html.escape(item['oem_part_number'])}</strong> · Equivalente: {html.escape(item.get('secondary_part_number', 'N/A'))}</p>
+          <p style="color:var(--muted);font-size:0.9rem;margin-top:0.25rem;">{cta_sub}</p>
         </div>
         <div class="oem-code-pill">OEM #{html.escape(item['oem_part_number'])}</div>
       </div>
 
       <div class="btn-group">
         <a class="btn btn-amz" href="{html.escape(links['amazon_main'])}" target="_blank" rel="sponsored nofollow noopener">
-          🛒 Ver Repuesto {html.escape(item['oem_part_number'])} en Amazon →
+          {btn_amz_text}
         </a>
-        <a class="btn btn-ebay" href="{html.escape(links['amazon_es'])}" target="_blank" rel="sponsored nofollow noopener">
-          🇪🇸 Ver en Amazon España
-        </a>
-        <a class="btn btn-ali" href="{html.escape(links['ebay'])}" target="_blank" rel="sponsored nofollow noopener">
-          🔎 Buscar OEM en eBay
+        <a class="btn btn-ebay" href="{html.escape(btn_sec_href)}" target="_blank" rel="sponsored nofollow noopener">
+          {btn_sec_text}
         </a>
       </div>
       <p style="font-size:0.75rem;color:var(--muted);margin-top:0.75rem;">
-        * Comprueba siempre que el código OEM <strong>{html.escape(item['oem_part_number'])}</strong> coincida con la etiqueta de tu máquina antes de pedir.
+        {cta_note}
       </p>
     </div>
 
     <section class="section-card">
-      <h2>⚠️ Síntoma y Causa Técnica Según Manual de Servicio</h2>
-      <p style="margin-bottom:0.85rem;"><strong>Síntoma en la máquina:</strong> {html.escape(item['symptom'])}</p>
-      <p style="color:var(--muted);"><strong>Causa raíz verificada:</strong> {html.escape(item['technical_cause'])}</p>
+      <h2>{sec1_title}</h2>
+      <p style="margin-bottom:0.85rem;"><strong>{sec1_sym}</strong> {html.escape(item['symptom'])}</p>
+      <p style="color:var(--muted);"><strong>{sec1_cause}</strong> {html.escape(item['technical_cause'])}</p>
     </section>
 
     <section class="section-card">
-      <h2>🔧 Comprobación Paso a Paso Antes de Cambiar la Pieza</h2>
+      <h2>{sec2_title}</h2>
       <ol class="step-list">
         {steps_html}
       </ol>
     </section>
 
     <section class="section-card">
-      <h2>❓ Preguntas Frecuentes sobre el {html.escape(item['error_code'])}</h2>
+      <h2>{html.escape(sec3_title)}</h2>
       {faq_html}
     </section>
 
     <section style="margin-top:2rem;">
-      <h2 style="font-size:1.2rem;margin-bottom:1rem;">Otros Códigos de Error Relacionados</h2>
+      <h2 style="font-size:1.2rem;margin-bottom:1rem;">{rel_title}</h2>
       <div class="cards-grid">
         {related_html}
       </div>
@@ -425,27 +489,30 @@ def render_error_page(item, all_items, config):
   </main>
 
   <footer class="container">
-    <p>{html.escape(config['site_name'])} — Base de datos automatizada de códigos de avería y referencias OEM.</p>
-    <p style="margin-top:0.35rem;">Participamos en el Programa de Afiliados de Amazon UE y eBay Partner Network. Las referencias OEM son propiedad de sus respectivos fabricantes y se muestran únicamente con fines de identificación técnica.</p>
+    <p>{footer_p1}</p>
+    <p style="margin-top:0.35rem;">{footer_p2}</p>
   </footer>
 </body>
 </html>
 """
 
 
-def render_index_page(items, config):
+def render_index_page(items, config, lang="en", prefix=""):
     categories = sorted(list({x["category"] for x in items}))
-    cat_buttons = '<button class="badge cat" onclick="filterCat(\'\')" style="cursor:pointer;">Todos (' + str(len(items)) + ')</button>'
+    all_label = "All Categories" if lang == "en" else "Todos"
+    cat_buttons = f'<button class="badge cat" onclick="filterCat(\'\')" style="cursor:pointer;">{all_label} ({len(items)})</button>'
     for c in categories:
         count = sum(1 for x in items if x["category"] == c)
         cat_buttons += f' <button class="badge" onclick="filterCat(\'{html.escape(c)}\')" style="cursor:pointer;">{html.escape(c)} ({count})</button>'
 
     cards_html = []
+    part_label = "OEM Part:" if lang == "en" else "Pieza:"
+    cta_label = "View OEM Fix →" if lang == "en" else "Ver solución →"
     for item in items:
         brands_str = " / ".join(item["brands"])
         search_blob = f"{item['error_code']} {brands_str} {item['category']} {item['oem_part_number']} {item['oem_part_name']} {' '.join(item.get('popular_models', []))}".lower()
         cards_html.append(
-            f'<a class="item-card" href="error/{item["slug"]}/" data-cat="{html.escape(item["category"])}" data-search="{html.escape(search_blob)}">'
+            f'<a class="item-card" href="{prefix}error/{item["slug"]}/" data-cat="{html.escape(item["category"])}" data-search="{html.escape(search_blob)}">'
             f'<div>'
             f'<div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;">'
             f'<span class="badge cat">{html.escape(item["category"])}</span>'
@@ -455,38 +522,65 @@ def render_index_page(items, config):
             f'<p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">{html.escape(item["symptom"][:115])}...</p>'
             f'</div>'
             f'<div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;">'
-            f'<span style="color:var(--green);font-weight:700;">Pieza: {html.escape(item["part_price_range"])}</span>'
-            f'<span style="color:var(--accent);font-weight:700;">Ver solución →</span>'
+            f'<span style="color:var(--green);font-weight:700;">{part_label} {html.escape(item["part_price_range"])}</span>'
+            f'<span style="color:var(--accent);font-weight:700;">{cta_label}</span>'
             f'</div>'
             f'</a>'
         )
 
     cards_joined = "\n".join(cards_html)
+    base_url = config["site_url"].rstrip("/")
+
+    if lang == "en":
+        page_title = "OEMPartDecoder — Appliance Error Code to Exact OEM Replacement Part Lookup"
+        meta_desc = "Instant appliance & hardware error code lookup for Whirlpool, Maytag, Samsung, LG, GE, Frigidaire, Bosch, Dyson & Roomba. Find the exact OEM replacement part number and save $200+ on service calls."
+        h1_text = "Appliance Error Code → Exact OEM Replacement Part Decoder"
+        sub_text = "Type the blinking error code on your machine (e.g. <strong>F5 E2</strong>, <strong>F8 E1</strong>, <strong>OE</strong>, <strong>4C</strong>, <strong>E15</strong>, <strong>Error 26</strong>), brand, or OEM part number to see the exact factory root cause and replacement part."
+        placeholder = "🔍 Search error code, brand, or OEM part # (e.g. Whirlpool F8 E1, Samsung DC47-00019A, LG OE, Bosch E15, Roomba Error 26...)"
+        en_href = "index.html"
+        es_href = "es/index.html"
+        canonical = f"{base_url}/"
+    else:
+        page_title = "AveríasOEM — Buscador de Códigos de Error y Referencias de Repuestos OEM"
+        meta_desc = "Buscador técnico de códigos de error de lavadoras, secadoras, lavavajillas, calderas, cafeteras, impresoras 3D y patinetes con la referencia exacta del repuesto OEM."
+        h1_text = "Buscador de Códigos de Error y Piezas de Repuesto OEM"
+        sub_text = "Introduce el código que parpadea en tu máquina (ej. <strong>E15</strong>, <strong>F28</strong>, <strong>Error 14</strong>, <strong>OE</strong>, <strong>4C</strong>), la marca o el código de pieza para ver la causa técnica exacta y la referencia OEM del repuesto."
+        placeholder = "🔍 Buscar código (ej. E15 Bosch, F28 Vaillant, Ulka EP5, Error 14 Xiaomi, 00631200...)"
+        en_href = "../index.html"
+        es_href = "index.html"
+        canonical = f"{base_url}/es/"
 
     return f"""<!DOCTYPE html>
-<html lang="es">
+<html lang="{'en-US' if lang == 'en' else 'es'}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{html.escape(config['site_name'])} — {html.escape(config['site_tagline'])}</title>
-  <meta name="description" content="Buscador técnico de códigos de error de calderas, lavavajillas, lavadoras, cafeteras, impresoras 3D y patinetes con la referencia exacta del repuesto OEM.">
+  <title>{html.escape(page_title)}</title>
+  <meta name="description" content="{html.escape(meta_desc)}">
+  <link rel="canonical" href="{html.escape(canonical)}">
+  <link rel="alternate" hreflang="en-US" href="{base_url}/">
+  <link rel="alternate" hreflang="es" href="{base_url}/es/">
+  <link rel="alternate" hreflang="x-default" href="{base_url}/">
   <style>{get_css()}</style>
 </head>
 <body>
   <header>
     <div class="container nav-inner">
-      <a href="index.html" class="logo">⚡ {html.escape(config['site_name'])} <span>OEM DB</span></a>
-      <span style="font-size:0.85rem;color:var(--muted);">{len(items)} fichas técnicas OEM verificadas</span>
+      <a href="{en_href if lang == 'en' else es_href}" class="logo">⚡ OEMPartDecoder <span>OEM DB</span></a>
+      <div class="lang-switch">
+        <a href="{en_href}" class="lang-pill {'active' if lang == 'en' else ''}">🇺🇸 English (US)</a>
+        <a href="{es_href}" class="lang-pill {'active' if lang == 'es' else ''}">🇪🇸 Español</a>
+      </div>
     </div>
   </header>
 
   <main class="container" style="padding-top:2rem;">
-    <h1>Buscador de Códigos de Error y Piezas OEM</h1>
-    <p style="color:var(--muted);max-width:720px;">
-      Introduce el código que parpadea en tu máquina (ej. <strong>E15</strong>, <strong>F28</strong>, <strong>Error 14</strong>, <strong>OE</strong>), la marca o el código de pieza para ver la causa técnica exacta y la referencia OEM del repuesto sin pagar servicio técnico.
+    <h1>{h1_text}</h1>
+    <p style="color:var(--muted);max-width:760px;">
+      {sub_text}
     </p>
 
-    <input type="search" id="searchInput" class="search-box" placeholder="🔍 Buscar código (ej. E15 Bosch, F28 Vaillant, Ulka EP5, Error 14 Xiaomi, 00631200...)" oninput="filterCards()">
+    <input type="search" id="searchInput" class="search-box" placeholder="{placeholder}" oninput="filterCards()">
 
     <div class="badge-bar" style="margin-top:0;margin-bottom:1.5rem;">
       {cat_buttons}
@@ -498,8 +592,8 @@ def render_index_page(items, config):
   </main>
 
   <footer class="container">
-    <p>{html.escape(config['site_name'])} — Actualizado automáticamente cada madrugada.</p>
-    <p style="margin-top:0.35rem;">Participamos en programas de afiliación (Amazon EU / eBay Partner Network). Las referencias OEM se facilitan para identificación técnica de recambios.</p>
+    <p>OEMPartDecoder / AveríasOEM — Updated automatically every night at 03:00 AM UTC.</p>
+    <p style="margin-top:0.35rem;">As an Amazon Associate we earn from qualifying purchases (Tag: onamzasleyarb-20). OEM numbers are listed for technical identification.</p>
   </footer>
 
   <script>
@@ -523,13 +617,14 @@ def render_index_page(items, config):
 """
 
 
-def build_sitemap(items, config):
+def build_sitemap(all_items, config):
     base_url = config["site_url"].rstrip("/")
     today = datetime.now().strftime("%Y-%m-%d")
     urls = [
-        f"  <url>\n    <loc>{base_url}/</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>"
+        f"  <url>\n    <loc>{base_url}/</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>",
+        f"  <url>\n    <loc>{base_url}/es/</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>",
     ]
-    for item in items:
+    for item in all_items:
         lastmod = item.get("created_at", today)
         loc = f"{base_url}/error/{item['slug']}/"
         urls.append(
@@ -538,28 +633,76 @@ def build_sitemap(items, config):
     return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>\n"
 
 
+def build_llms_txt(en_items, es_items, config):
+    base_url = config["site_url"].rstrip("/")
+    lines = [
+        "# OEMPartDecoder / AveríasOEM — Appliance Error Code to Exact OEM Part Number Database",
+        "",
+        "> Structured technical directory mapping appliance, HVAC, 3D printer, and hardware error codes to their exact factory OEM replacement part numbers and diagnostic steps.",
+        "",
+        "## Primary Portals",
+        f"- [US English Portal]({base_url}/): {len(en_items)} verified US appliance & hardware OEM error guides",
+        f"- [Spanish Portal]({base_url}/es/): {len(es_items)} verified Spanish OEM error guides",
+        f"- [Full JSON API Feed]({base_url}/api/errors.json)",
+        "",
+        "## US English Error Code -> OEM Part Directory",
+    ]
+    for item in en_items:
+        brands_str = "/".join(item["brands"])
+        lines.append(
+            f"- [{brands_str} {item['error_code']} -> OEM #{item['oem_part_number']} ({item['oem_part_name']})]({base_url}/error/{item['slug']}/): {item['symptom']}"
+        )
+    lines.append("")
+    lines.append("## Español: Directorio Código de Error -> Pieza OEM")
+    for item in es_items:
+        brands_str = "/".join(item["brands"])
+        lines.append(
+            f"- [{brands_str} {item['error_code']} -> OEM #{item['oem_part_number']} ({item['oem_part_name']})]({base_url}/error/{item['slug']}/): {item['symptom']}"
+        )
+    return "\n".join(lines) + "\n"
+
+
 def main():
-    config = load_json(CONFIG_PATH)
-    items = load_json(DB_PATH)
+    config = load_json(CONFIG_PATH, {})
+    en_items = load_json(EN_DB_PATH, [])
+    es_items = load_json(ES_DB_PATH, [])
+
+    for x in en_items:
+        x["lang"] = "en"
+    for x in es_items:
+        x["lang"] = x.get("lang", "es")
+
+    all_items = en_items + es_items
 
     os.makedirs(DIST_DIR, exist_ok=True)
+    os.makedirs(os.path.join(DIST_DIR, "es"), exist_ok=True)
     os.makedirs(os.path.join(DIST_DIR, "api"), exist_ok=True)
 
-    # 1. Render index page
-    index_html = render_index_page(items, config)
+    # 1. Render US English Homepage (/)
+    en_index_html = render_index_page(en_items, config, lang="en", prefix="")
     with open(os.path.join(DIST_DIR, "index.html"), "w", encoding="utf-8") as f:
-        f.write(index_html)
+        f.write(en_index_html)
 
-    # 2. Render each error page
-    for item in items:
+    # 2. Render Spanish Homepage (/es/)
+    es_index_html = render_index_page(es_items, config, lang="es", prefix="../")
+    with open(os.path.join(DIST_DIR, "es", "index.html"), "w", encoding="utf-8") as f:
+        f.write(es_index_html)
+
+    # 3. Render every individual English and Spanish error page
+    for item in en_items:
         page_dir = os.path.join(DIST_DIR, "error", item["slug"])
         os.makedirs(page_dir, exist_ok=True)
-        page_html = render_error_page(item, items, config)
         with open(os.path.join(page_dir, "index.html"), "w", encoding="utf-8") as f:
-            f.write(page_html)
+            f.write(render_error_page(item, en_items, config))
 
-    # 3. Render sitemap.xml and robots.txt
-    sitemap_xml = build_sitemap(items, config)
+    for item in es_items:
+        page_dir = os.path.join(DIST_DIR, "error", item["slug"])
+        os.makedirs(page_dir, exist_ok=True)
+        with open(os.path.join(page_dir, "index.html"), "w", encoding="utf-8") as f:
+            f.write(render_error_page(item, es_items, config))
+
+    # 4. Sitemap.xml, robots.txt, llms.txt & IndexNow key file
+    sitemap_xml = build_sitemap(all_items, config)
     with open(os.path.join(DIST_DIR, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write(sitemap_xml)
 
@@ -567,11 +710,21 @@ def main():
     with open(os.path.join(DIST_DIR, "robots.txt"), "w", encoding="utf-8") as f:
         f.write(robots_txt)
 
-    # 4. Export public JSON API endpoint (usable for RapidAPI / Apify / programmatic consumers)
-    with open(os.path.join(DIST_DIR, "api", "errors.json"), "w", encoding="utf-8") as f:
-        json.dump(items, f, ensure_ascii=False, indent=2)
+    llms_txt = build_llms_txt(en_items, es_items, config)
+    with open(os.path.join(DIST_DIR, "llms.txt"), "w", encoding="utf-8") as f:
+        f.write(llms_txt)
 
-    print(f"[OK] Sitio generado en {DIST_DIR}: {len(items)} páginas OEM + index.html + sitemap.xml + api/errors.json")
+    with open(os.path.join(DIST_DIR, f"{INDEXNOW_KEY}.txt"), "w", encoding="utf-8") as f:
+        f.write(INDEXNOW_KEY)
+
+    # 5. Public JSON API endpoint
+    with open(os.path.join(DIST_DIR, "api", "errors.json"), "w", encoding="utf-8") as f:
+        json.dump(all_items, f, ensure_ascii=False, indent=2)
+
+    print(
+        f"[OK] Built {DIST_DIR}: {len(en_items)} US-English pages + {len(es_items)} Spanish pages "
+        f"= {len(all_items)} total OEM pages + sitemap.xml + llms.txt + IndexNow key"
+    )
 
 
 if __name__ == "__main__":

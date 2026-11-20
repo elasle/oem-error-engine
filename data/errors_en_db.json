@@ -1,0 +1,1614 @@
+[
+  {
+    "id": "whirlpool-maytag-washer-f5-e2-door-lock",
+    "slug": "whirlpool-maytag-washer-error-f5-e2-f5e1-door-latch-lock",
+    "lang": "en",
+    "category": "Washing Machines",
+    "brands": [
+      "Whirlpool",
+      "Maytag",
+      "KitchenAid",
+      "Amana"
+    ],
+    "error_code": "Error F5 E2 / F5 E1 / F5 E3",
+    "popular_models": [
+      "WFW5620HW",
+      "WFW75HEFW",
+      "MHW5630HW",
+      "MHW6630HC",
+      "Duet & Maxima Series"
+    ],
+    "symptom": "The washer door clicks 3 times, refuses to lock or unlock, flashes F5 E2 (or F5 E1 / F5 E3) on the LED display, and will not start the cycle.",
+    "technical_cause": "The wax motor or micro-switch inside the electronic door lock latch assembly has failed, preventing the main control board from receiving the closed-circuit lock confirmation signal.",
+    "oem_part_name": "Whirlpool / Maytag OEM Electronic Door Lock Latch Assembly",
+    "oem_part_number": "W10837240",
+    "secondary_part_number": "W10443885 / WPW10443885 (Replaces W10619844)",
+    "affiliate_search_query": "W10837240 Whirlpool Maytag washer door lock latch",
+    "part_price_range": "$24 - $38",
+    "technician_cost_estimate": "$210 - $295",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy (T20 Torx screwdriver)",
+    "diagnostic_steps": [
+      "Unplug the washing machine for 60 seconds and check that no clothing is caught between the glass door and the rubber bellow seal.",
+      "Inspect the plastic door strike hook on the door frame to ensure it is not cracked or misaligned.",
+      "Remove the outer wire clamp on the rubber boot seal, unscrew the two T20 Torx screws holding the latch, and swap in the new OEM W10837240 lock assembly."
+    ],
+    "faq": [
+      {
+        "q": "How do I manually unlock a Whirlpool washer stuck on F5 E2?",
+        "a": "Unplug the washer, remove the top panel (three 1/4-inch hex screws in the back), reach your hand down along the front right wall to the bottom of the W10837240 door latch, and pull the small plastic emergency release tab downward until it clicks."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "whirlpool-maytag-washer-f8-e1-inlet-valve",
+    "slug": "whirlpool-maytag-washer-error-f8-e1-lf-lo-fl-water-inlet-valve",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "Maytag",
+      "Kenmore"
+    ],
+    "error_code": "Error F8 E1 / LF / LO FL",
+    "popular_models": [
+      "WTW5000DW",
+      "MVWC465HW",
+      "WFW5620HW",
+      "Cabrio & Bravos XL"
+    ],
+    "symptom": "Washer takes longer than 8 minutes to fill, trickles water very slowly, and stops mid-cycle flashing F8 E1, LF (Long Fill), or LO FL.",
+    "technical_cause": "One of the 120V solenoid coils on the hot/cold water inlet valve assembly has burned out or the internal diaphragm is stuck closed by sediment.",
+    "oem_part_name": "Whirlpool / Maytag OEM Water Inlet Valve Assembly",
+    "oem_part_number": "W11210459",
+    "secondary_part_number": "W10869803 / W11038689",
+    "affiliate_search_query": "W11210459 Whirlpool Maytag washer water inlet valve",
+    "part_price_range": "$22 - $35",
+    "technician_cost_estimate": "$195 - $275",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Verify that both hot and cold wall faucets are turned fully on and that the inlet mesh screens inside the hose connections are not clogged with rust.",
+      "If water pressure at the hose is strong but water only trickles into the tub on Cold or Warm cycles, a solenoid on the W11210459 inlet valve has failed.",
+      "Unplug the washer, remove the rear access panel, disconnect the wire harness, and thread on the new W11210459 valve."
+    ],
+    "faq": [
+      {
+        "q": "Why does F8 E1 happen even when only the cold water hose is connected?",
+        "a": "Modern Whirlpool and Maytag washers open both hot and cold solenoids briefly during the sensing phase. If the hot water faucet is shut off or capped, the board detects zero flow through the hot thermistor and triggers F8 E1. Use a Y-splitter hose if you only have a cold tap."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "whirlpool-maytag-washer-f9-e1-drain-pump",
+    "slug": "whirlpool-maytag-washer-error-f9-e1-f21-sd-drain-pump",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "Maytag",
+      "Kenmore"
+    ],
+    "error_code": "Error F9 E1 / F21 / drn",
+    "popular_models": [
+      "WTW5000DW",
+      "WFW5605MW",
+      "MVW6230HW",
+      "WTW4816FW"
+    ],
+    "symptom": "The tub stays full of soapy water, fails to enter the high-speed spin cycle, hums loudly, and displays F9 E1 or F21 (Long Drain).",
+    "technical_cause": "The drain time exceeded 8 minutes because the electric drain pump motor impeller has seized or lost magnetic torque under load.",
+    "oem_part_name": "Whirlpool / Maytag Direct-Fit Electric Washer Drain Pump",
+    "oem_part_number": "W10876600",
+    "secondary_part_number": "W10727777 / WPW10391443 (Front-load variant)",
+    "affiliate_search_query": "W10876600 Whirlpool Maytag washer drain pump",
+    "part_price_range": "$25 - $39",
+    "technician_cost_estimate": "$220 - $310",
+    "repair_time_minutes": 25,
+    "difficulty": "Easy (3 hex screws under tub)",
+    "diagnostic_steps": [
+      "Check the drain hose behind the washer to make sure it is not kinked or pushed deeper than 6 inches into the standpipe.",
+      "Start a 'Drain & Spin' cycle: if you hear a low electrical hum from the bottom of the washer but no water gushes out of the drain hose, the pump motor impeller is jammed or worn out.",
+      "Drain the tub, tilt the washer back safely, unbolt the three 5/16-inch hex screws holding the W10876600 drain pump to the bottom of the tub, and install the replacement."
+    ],
+    "faq": [
+      {
+        "q": "Can a bad shift actuator also cause a Whirlpool washer not to spin?",
+        "a": "A bad shift actuator (W10913953) causes F7 E1 or F7 E5 after the water drains. If the tub still has standing water in it and shows F9 E1, the failure is strictly in the drain pump W10876600."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "whirlpool-maytag-washer-f7-e1-shift-actuator",
+    "slug": "whirlpool-maytag-washer-error-f7-e1-f7-e5-shift-actuator",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "Maytag",
+      "Amana",
+      "Kenmore"
+    ],
+    "error_code": "Error F7 E1 / F7 E5",
+    "popular_models": [
+      "WTW4816FW",
+      "WTW4955HW",
+      "MVWC416FW",
+      "NTW4516FW",
+      "Kenmore Series 110"
+    ],
+    "symptom": "The washer drains the water completely, clicks underneath, leaves the clothes soaking wet without spinning, or flashes the Sensing / Lid Locked light with code F7 E1 or F7 E5.",
+    "technical_cause": "The optical tachometer sensor or synchronous motor inside the under-tub Shift Actuator has failed, so the control board cannot detect basket speed or shift the splutch from Agitate to Spin.",
+    "oem_part_name": "Whirlpool / Maytag OEM Washer Shift Actuator (6-Pin Synchronous)",
+    "oem_part_number": "W10913953",
+    "secondary_part_number": "W10597177 / WPW10597177 / W10815026",
+    "affiliate_search_query": "W10913953 Whirlpool Maytag washer shift actuator",
+    "part_price_range": "$21 - $34",
+    "technician_cost_estimate": "$215 - $290",
+    "repair_time_minutes": 20,
+    "difficulty": "Easy (2 Phillips screws under tub)",
+    "diagnostic_steps": [
+      "Unplug the washer, tape the lid shut, and lean the machine backward against a wall to access the bottom gearcase.",
+      "Check that the plastic pulley nut has not come loose and that the drive belt is intact.",
+      "Unplug the 6-pin wire harness from the silver/black shift actuator W10913953, remove its two mounting screws, and install the new unit ensuring the pin engages the white cam ring."
+    ],
+    "faq": [
+      {
+        "q": "Should I run calibration mode after installing the W10913953 shift actuator?",
+        "a": "Yes! Turn the dial one full rotation counter-clockwise, then quickly turn right-right-right-left-right. Turn the dial until 'Rinse' lights up and press Start to run automatic 3-minute calibration."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "samsung-dryer-not-heating-dc47-00019a",
+    "slug": "samsung-dryer-not-heating-error-he-te-heating-element-kit",
+    "category": "Dryers",
+    "lang": "en",
+    "brands": [
+      "Samsung"
+    ],
+    "error_code": "No Heat / Error HE / tE / tS",
+    "popular_models": [
+      "DV42H5000EW",
+      "DVE45R6100W",
+      "DV45H7000EW",
+      "DVE50R5200W",
+      "DV40J3000EW"
+    ],
+    "symptom": "The Samsung electric dryer drum tumbles normally and the timer counts down, but the clothes come out completely cold and damp (or the screen flashes HE / tE).",
+    "technical_cause": "The nichrome coil inside the 5300W heating element has snapped due to restricted lint airflow, or the high-limit thermal fuse mounted on the heater housing has blown open.",
+    "oem_part_name": "Samsung Dryer Heating Element & Thermal Fuse Complete Kit",
+    "oem_part_number": "DC47-00019A",
+    "secondary_part_number": "DC96-00887A (Thermal Cut-Off Fuse) + DC47-00018A (Thermostat) + DC32-00007A (Thermistor)",
+    "affiliate_search_query": "DC47-00019A Samsung dryer heating element thermal fuse kit",
+    "part_price_range": "$24 - $39",
+    "technician_cost_estimate": "$240 - $340",
+    "repair_time_minutes": 35,
+    "difficulty": "Medium (Phillips screwdriver)",
+    "diagnostic_steps": [
+      "Unplug the 240V dryer cord and check your house breaker panel first (an electric dryer uses a double-pole breaker; if one half trips, the drum spins on 120V but the 240V heater gets zero power).",
+      "Test continuity with a multimeter across the two terminals of the DC47-00019A heating element (~10 Ohms) and the DC96-00887A thermal fuse (0 Ohms).",
+      "Replace the complete DC47-00019A heating element kit along with the thermostats and clean out the exterior dryer exhaust duct."
+    ],
+    "faq": [
+      {
+        "q": "Why should I replace the thermostats at the same time as the DC47-00019A coil?",
+        "a": "When a dryer overheats before the coil snaps, the bimetallic disc inside the DC47-00018A thermostat weakens. Complete kits on Amazon include the coil, both thermostats, and the thermistor for around $28."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "whirlpool-maytag-dryer-no-heat-279838",
+    "slug": "whirlpool-maytag-kenmore-dryer-no-heat-heating-element-279838",
+    "category": "Dryers",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "Maytag",
+      "Kenmore",
+      "Amana",
+      "Roper"
+    ],
+    "error_code": "Dryer Runs But No Heat / Blown Thermal Fuse",
+    "popular_models": [
+      "WED4815EW",
+      "MEDC465HW",
+      "NED4655EW",
+      "Kenmore 70 / 80 / 110 Series"
+    ],
+    "symptom": "The electric dryer spins fine but produces zero heat, or refuses to start at all when you press the Push-to-Start button.",
+    "technical_cause": "Open heating coil inside the 5400W can-style heater element (causes 'runs with no heat') or blown white plastic thermal fuse on the blower housing (causes 'will not start').",
+    "oem_part_name": "Whirlpool / Kenmore 279838 Dryer Heating Element + 3392519 Thermal Fuse Kit",
+    "oem_part_number": "279838",
+    "secondary_part_number": "WP3392519 (Thermal Fuse) + 279816 (High-Limit Thermostat Kit)",
+    "affiliate_search_query": "279838 Whirlpool dryer heating element 3392519 thermal fuse kit",
+    "part_price_range": "$22 - $34",
+    "technician_cost_estimate": "$210 - $290",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy (1/4-inch nut driver from back panel)",
+    "diagnostic_steps": [
+      "Unplug the dryer and remove the sheet-metal back panel using a 1/4-inch nut driver (no need to disassemble the drum!).",
+      "If the dryer won't start at all, test the white plastic fuse WP3392519 on the blower chute for continuity.",
+      "If the dryer spins cold, unhook the red wires from the lower right vertical heater canister 279838, remove the two 1/4-inch screws, slide out the broken coil canister, and slide in the new 279838 element."
+    ],
+    "faq": [
+      {
+        "q": "How long does it take to replace part 279838 on a Whirlpool or Amana dryer?",
+        "a": "Because part 279838 is mounted right behind the rear metal service panel, you don't even have to open the front of the dryer—it takes under 15 minutes with a single 1/4-inch nut driver."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "samsung-dryer-squeaking-roller-kit-dc97-16782a",
+    "slug": "samsung-dryer-squeaking-thumping-drum-roller-idler-pulley-dc97-16782a",
+    "category": "Dryers",
+    "lang": "en",
+    "brands": [
+      "Samsung"
+    ],
+    "error_code": "Loud Squeaking / Thumping / Drum Won't Spin",
+    "popular_models": [
+      "DV42H5000EW",
+      "DVE45R6100C",
+      "DV48J7770EW",
+      "DV45K6500EV"
+    ],
+    "symptom": "The dryer makes a loud rhythmic thumping, screeching, or grinding noise while tumbling, or the motor hums and the drum stops turning because the belt snapped.",
+    "technical_cause": "Seized bearings inside the rubber drum support rollers or worn-out idler tension pulley sleeve causing belt friction and failure.",
+    "oem_part_name": "Samsung Dryer Drum Roller, Idler Pulley & Drive Belt Repair Kit",
+    "oem_part_number": "DC97-16782A",
+    "secondary_part_number": "DC93-00634A (Ball-Bearing Idler Pulley) + 6602-001655 (Drive Belt)",
+    "affiliate_search_query": "DC97-16782A DC93-00634A 6602-001655 Samsung dryer repair kit",
+    "part_price_range": "$25 - $39",
+    "technician_cost_estimate": "$230 - $320",
+    "repair_time_minutes": 40,
+    "difficulty": "Medium",
+    "diagnostic_steps": [
+      "Unplug the dryer, remove the top and front bulkhead panels, and lift out the drum.",
+      "Spin each of the four black rubber support rollers (DC97-16782A) and the white idler pulley wheel (DC93-00634A) by hand—any roller that wobbles, squeaks, or feels stiff is the culprit.",
+      "Replace all 4 rollers, the idler pulley arm, and the 6602-001655 ribbed belt in one pass so you don't have to open the dryer again."
+    ],
+    "faq": [
+      {
+        "q": "Should I oil or grease the new DC97-16782A drum roller shafts?",
+        "a": "No—never use WD-40 or grease on dryer roller shafts because grease attracts lint dust and turns into abrasive paste. Install the sealed-bearing rollers dry."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "lg-washer-error-oe-drain-pump",
+    "slug": "lg-washer-error-oe-not-draining-pump-motor-4681ea2001t",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "LG",
+      "Kenmore Elite"
+    ],
+    "error_code": "Error OE (Water Not Draining)",
+    "popular_models": [
+      "WM3400CW",
+      "WM3600HWA",
+      "WM3700HWA",
+      "WM4000HWA",
+      "WM3900HWA"
+    ],
+    "symptom": "The LG front-load or top-load washer stops mid-cycle with water sitting in the drum, hums from the bottom left corner, and displays OE on the screen.",
+    "technical_cause": "The tub failed to empty within 10 minutes. Even when the coin trap filter is clean, the synchronous magnetic drain pump motor fails after 3–5 years when its internal rotor bushing wears out.",
+    "oem_part_name": "LG OEM Washer Drain Pump Motor (120V 85W)",
+    "oem_part_number": "4681EA2001T",
+    "secondary_part_number": "4681EA1007G / AHA75693425",
+    "affiliate_search_query": "4681EA2001T LG washer drain pump motor",
+    "part_price_range": "$18 - $29",
+    "technician_cost_estimate": "$210 - $295",
+    "repair_time_minutes": 25,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Open the small lower-left access door on the front of the washer, drain the water using the black rubber pull-tube into a shallow pan, and unscrew the debris filter cap.",
+      "Run a 'Spin Only' cycle with the filter cap off and shine a flashlight inside: if the white impeller blades jerk back and forth or hum without spinning smoothly, the 4681EA2001T motor is dead.",
+      "Unscrew the 3 Phillips screws mounting the 4681EA2001T pump motor to the white filter housing and plug in the two spade wires."
+    ],
+    "faq": [
+      {
+        "q": "Why does my LG drain pump spin when empty but throw OE with a full load?",
+        "a": "A worn magnetic rotor inside the 4681EA2001T pump can spin with zero resistance, but as soon as the weight of warm wash water pushes against the impeller, the rotor binds against the stator wall and stalls."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "lg-washer-error-ie-water-inlet-valve",
+    "slug": "lg-washer-error-ie-not-filling-water-inlet-valve-5221er1003a",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "LG",
+      "Kenmore"
+    ],
+    "error_code": "Error IE (Water Inlet Error)",
+    "popular_models": [
+      "WM3400CW",
+      "WM3500CW",
+      "WM3770HVA",
+      "WT7300CW",
+      "WT7150CW"
+    ],
+    "symptom": "The washer starts sensing, hums quietly at the top rear, fails to reach the target water level within 8 minutes, and beeps with code IE.",
+    "technical_cause": "Failed solenoid coil or clogged diaphragm on the multi-solenoid cold water inlet valve assembly.",
+    "oem_part_name": "LG Washer Cold Water Inlet Valve Assembly (4-Coil 120V)",
+    "oem_part_number": "5221ER1003A",
+    "secondary_part_number": "AJU75152601 / 5220FR2075L",
+    "affiliate_search_query": "5221ER1003A LG washer water inlet valve",
+    "part_price_range": "$19 - $32",
+    "technician_cost_estimate": "$190 - $265",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy (2 screws on top lid)",
+    "diagnostic_steps": [
+      "Turn off the wall water taps, unscrew the cold and hot hoses from the back of the washer, and clean the fine mesh sediment screens inside the valve ports.",
+      "If water flow into the detergent drawer is still weak or stops during the rinse cycle with code IE, replace the 5221ER1003A inlet valve right under the top lid."
+    ],
+    "faq": [
+      {
+        "q": "Why does Error IE pop up right at the Rinse cycle after the wash cycle worked fine?",
+        "a": "The 5221ER1003A valve has 4 separate solenoid coils (Main Wash, Pre-wash, Bleach, and Fabric Softener/Rinse). When the Rinse coil burns out, the washer fills fine at the start but throws IE as soon as it tries to flush the fabric softener compartment."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "lg-washer-error-de-de1-de2-door-lock",
+    "slug": "lg-washer-error-de-de1-de2-door-lock-switch-ebf61315801",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "LG"
+    ],
+    "error_code": "Error dE / dE1 / dE2",
+    "popular_models": [
+      "WM3400CW",
+      "WM3700HWA",
+      "WM3900HWA",
+      "WM3670HWA"
+    ],
+    "symptom": "When you press Start, the door does not make the locking click and after a few seconds the washer chimes with dE, dE1, or dE2.",
+    "technical_cause": "Burned-out PTC thermal actuator inside the door lock switch assembly or broken magnetic door plunger.",
+    "oem_part_name": "LG OEM Washer Door Lock Switch Assembly",
+    "oem_part_number": "EBF61315801",
+    "secondary_part_number": "EBF61315802 / AGM73610701 (Magnetic Door Plunger)",
+    "affiliate_search_query": "EBF61315801 LG washer door lock switch",
+    "part_price_range": "$18 - $28",
+    "technician_cost_estimate": "$185 - $260",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Push firmly on the right edge of the door while pressing Start: if the door latch hook aligns properly and still won't click locked, the EBF61315801 switch has failed electrically.",
+      "Pop off the outer spring clamp on the rubber door gasket, remove the two Phillips screws holding the lock on the right side of the opening, and swap in the new EBF61315801."
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between dE1 and dE2 on an LG washer?",
+        "a": "dE1 means the door switch contacts never closed when the door was shut; dE2 means the switch sensed the door closed, but the internal locking bolt inside EBF61315801 failed to engage."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "lg-washer-error-le-hall-sensor",
+    "slug": "lg-washer-error-le-motor-rotor-position-sensor-6501kw2001a",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "LG",
+      "Kenmore"
+    ],
+    "error_code": "Error LE (Locked Motor Error)",
+    "popular_models": [
+      "WM2016CW",
+      "WM2250CW",
+      "WM3250HWA",
+      "WT5001CW",
+      "Direct Drive Series"
+    ],
+    "symptom": "The drum twitches back and forth a quarter inch, makes a humming sound without spinning, and stops with error code LE.",
+    "technical_cause": "The Hall Effect Rotor Position Sensor (RPS) mounted on the direct-drive stator on the back of the tub has failed and stops sending tach pulses to the PCB.",
+    "oem_part_name": "LG Direct Drive Motor Rotor Position Hall Sensor (RPS)",
+    "oem_part_number": "6501KW2001A",
+    "secondary_part_number": "6501KW2001B / 6501KW2002A",
+    "affiliate_search_query": "6501KW2001A LG washer rotor position hall sensor",
+    "part_price_range": "$14 - $23",
+    "technician_cost_estimate": "$220 - $310",
+    "repair_time_minutes": 25,
+    "difficulty": "Easy (17mm socket on rear rotor bolt)",
+    "diagnostic_steps": [
+      "Spin the empty drum by hand with the washer off: if it spins smoothly without metal grinding, the motor stator and bearings are fine—only the $16 Hall sensor 6501KW2001A is dead.",
+      "Unplug the washer, remove the rear service panel, unbolt the 17mm center rotor bolt to pull off the magnetic rotor drum, and unclip the white plastic 6501KW2001A sensor from the stator coil."
+    ],
+    "faq": [
+      {
+        "q": "Do I need to replace the entire Direct Drive motor for an LE error?",
+        "a": "Almost never! Over 90% of LG LE errors are fixed by replacing just the $16 clip-on Hall sensor (6501KW2001A) rather than the stator."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "samsung-washer-error-4c-4e-water-valve",
+    "slug": "samsung-washer-error-4c-4e-nf-water-inlet-valve-dc62-30312j",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "Samsung"
+    ],
+    "error_code": "Error 4C / 4E / nF",
+    "popular_models": [
+      "WF45R6100AC",
+      "WF42H5000AW",
+      "WA50R5400AV",
+      "WA45T3200AW"
+    ],
+    "symptom": "The Samsung washer stops during the initial fill or rinse cycle and flashes 4C, 4E, or nF (No Fill).",
+    "technical_cause": "Open solenoid coil or stuck diaphragm inside the cold/hot water inlet valve at the upper rear of the machine.",
+    "oem_part_name": "Samsung Washer Cold Water Inlet Valve Assembly",
+    "oem_part_number": "DC62-30312J",
+    "secondary_part_number": "DC97-15459G / DC62-00233B",
+    "affiliate_search_query": "DC62-30312J DC97-15459G Samsung washer water inlet valve",
+    "part_price_range": "$18 - $29",
+    "technician_cost_estimate": "$195 - $270",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Verify that both hot and cold supply faucets behind the washer are open and clean the mesh screens inside the valve ports.",
+      "If water pressure is good at the hose but fails to enter the dispenser drawer, remove the two screws at the back of the top cover and replace the water inlet valve."
+    ],
+    "faq": [
+      {
+        "q": "What if Error 4C happens only during the Fabric Softener / Rinse stage?",
+        "a": "That proves the main wash solenoid on the inlet valve works, while the secondary rinse solenoid coil on the same valve block has burned out."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "samsung-washer-error-5c-5e-nd-drain-pump",
+    "slug": "samsung-washer-error-5c-5e-nd-drain-pump-dc31-00054a",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "Samsung"
+    ],
+    "error_code": "Error 5C / 5E / nd / SE",
+    "popular_models": [
+      "WF45R6100AW",
+      "WF42H5000AW",
+      "WA50R5200AW",
+      "WF45K6500AV"
+    ],
+    "symptom": "Washer will not drain water out of the drum before the spin cycle, hums or clicks underneath, and shows 5C, 5E, or nd (No Drain).",
+    "technical_cause": "Impeller shaft wear or burned motor winding inside the 120V synchronous drain pump motor.",
+    "oem_part_name": "Samsung OEM Washer Drain Pump Motor (120V 80W)",
+    "oem_part_number": "DC31-00054A",
+    "secondary_part_number": "DC97-19289F / DC31-00187A",
+    "affiliate_search_query": "DC31-00054A Samsung washer drain pump",
+    "part_price_range": "$19 - $31",
+    "technician_cost_estimate": "$215 - $295",
+    "repair_time_minutes": 25,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Open the bottom-right service door, drain the water via the small black emergency tube, and unscrew the coin trap filter to remove lint or coins.",
+      "If the filter is clean and the pump hums or chatters without draining rapidly, replace the DC31-00054A drain pump motor."
+    ],
+    "faq": [
+      {
+        "q": "Is Samsung error SE the same as 5E?",
+        "a": "Yes! On 7-segment LED displays, the number '5' looks identical to the letter 'S', so 'SE' is actually '5E' (Drain Pump Error)."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "samsung-washer-error-ub-ul-dc-suspension-rods",
+    "slug": "samsung-top-load-washer-error-ub-ul-dc-ue-suspension-rods-dc97-16350u",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "Samsung"
+    ],
+    "error_code": "Error Ub / uL / dC / UE (Unbalanced Load)",
+    "popular_models": [
+      "WA50R5400AV",
+      "WA45T3200AW",
+      "WA50M7450AW",
+      "WA45H7000AW",
+      "WA48J7700AW"
+    ],
+    "symptom": "The top-load washer bangs violently against the cabinet during spin, stops with 9 minutes remaining, refills with water repeatedly, and flashes Ub, uL, UE, or dC.",
+    "technical_cause": "The four spring-loaded damper suspension rods supporting the outer wash tub have lost their damping grease and spring tension, letting the tub bounce out of balance even with small loads.",
+    "oem_part_name": "Samsung Top-Load Washer Damper Suspension Rod Kit (Set of 4)",
+    "oem_part_number": "DC97-16350U",
+    "secondary_part_number": "DC97-16350E / DC97-16350C / DC97-05280W",
+    "affiliate_search_query": "DC97-16350U Samsung washer suspension rods kit set of 4",
+    "part_price_range": "$32 - $48",
+    "technician_cost_estimate": "$250 - $340",
+    "repair_time_minutes": 25,
+    "difficulty": "Easy (No special tools required)",
+    "diagnostic_steps": [
+      "Open the lid and push straight down firmly on the center of the wash basket with your hands, then release: if the tub bounces up and down more than once like a pogo stick, the suspension rods are shot.",
+      "Unplug the washer, remove the two rear screws on the top deck, hinge the top up, and swap out the 4 corner suspension rods (DC97-16350U) one at a time."
+    ],
+    "faq": [
+      {
+        "q": "Why does my Samsung washer refill with water at 9 minutes left and reset to 24 minutes?",
+        "a": "When worn DC97-16350U suspension rods allow the tub to hit the frame during spin ramp-up, the washer triggers an auto-redistribute cycle by filling the tub back up with water up to 3 times before throwing code Ub or dC."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "bosch-dishwasher-error-e15-us",
+    "slug": "bosch-dishwasher-error-e15-water-tap-light-sump-seal-12005744",
+    "category": "Dishwashers",
+    "lang": "en",
+    "brands": [
+      "Bosch",
+      "Thermador",
+      "Gaggenau"
+    ],
+    "error_code": "Error E15 / E:15",
+    "popular_models": [
+      "SHXM4AY55N",
+      "SHPM65Z55N",
+      "SHEM63W55N",
+      "100 / 300 / 500 / 800 Series"
+    ],
+    "symptom": "The dishwasher displays E:15, the water tap icon flashes, and the drain pump runs continuously even when you press the power button.",
+    "technical_cause": "Water has leaked into the bottom safety base pan and lifted the styrofoam AquaStop float switch. In 90% of Bosch dishwashers, the rubber gasket between the stainless steel tub and the plastic sump bowl has shrunk from heat cycles and weeps water underneath.",
+    "oem_part_name": "Bosch OEM Sump Bowl Repair Silicone Gasket Ring Kit",
+    "oem_part_number": "12005744",
+    "secondary_part_number": "00611316 (AquaStop Float Micro-Switch)",
+    "affiliate_search_query": "12005744 Bosch dishwasher sump gasket repair kit",
+    "part_price_range": "$16 - $24",
+    "technician_cost_estimate": "$230 - $320",
+    "repair_time_minutes": 20,
+    "difficulty": "Easy (Installed from inside the tub)",
+    "diagnostic_steps": [
+      "Unplug the dishwasher or flip its circuit breaker.",
+      "Remove the lower front kickplate and shine a flashlight into the base pan: you will see a small puddle of water lifting the round styrofoam float disc.",
+      "Sponge out the water to clear E15 temporarily, then install the official Bosch 12005744 silicone seal ring directly inside the sump well in 15 minutes without pulling the dishwasher out from under the counter."
+    ],
+    "faq": [
+      {
+        "q": "Will tilting the Bosch dishwasher forward fix Error E15 permanently?",
+        "a": "Tilting drains the base pan so the float switch drops, which clears E15 for 2 or 3 washes—but water will leak right back through the worn sump gasket until you press in the 12005744 repair ring."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "bosch-dishwasher-error-e24-e25-us",
+    "slug": "bosch-dishwasher-error-e24-e25-not-draining-pump-00631200",
+    "category": "Dishwashers",
+    "lang": "en",
+    "brands": [
+      "Bosch",
+      "Thermador",
+      "Kenmore"
+    ],
+    "error_code": "Error E24 / E25",
+    "popular_models": [
+      "SHE3AR75UC",
+      "SHX3AR75UC",
+      "SHPM78Z55N",
+      "Ascenta / 300 / 500 / 800 Series"
+    ],
+    "symptom": "Cycle stops a few minutes after starting or at the end with standing water in the bottom and flashes E:24 or E:25.",
+    "technical_cause": "Drainage failure or worn impeller bushing on the BLDC magnetic drain pump (or missing white plastic impeller cover clip inside the sump).",
+    "oem_part_name": "Bosch OEM Dishwasher Drain Pump (BLP3 00/004)",
+    "oem_part_number": "00631200",
+    "secondary_part_number": "00611332 (White Plastic Drain Pump Impeller Cover)",
+    "affiliate_search_query": "00631200 Bosch dishwasher drain pump",
+    "part_price_range": "$24 - $36",
+    "technician_cost_estimate": "$210 - $290",
+    "repair_time_minutes": 20,
+    "difficulty": "Easy (Quarter-turn twist lock)",
+    "diagnostic_steps": [
+      "Pull out the bottom mesh filter and check that the small white plastic pump cover (00611332) is snapped down firmly—if that cover is missing or loose, the pump cavitates and triggers E24 even when new!",
+      "Clear any broken glass or lemon seeds from the impeller blades.",
+      "If the impeller shaft has side-to-side play or E24 persists with a clear hose, twist off the front-mounted 00631200 drain pump a quarter turn and snap in the replacement."
+    ],
+    "faq": [
+      {
+        "q": "Why does my Bosch dishwasher show E24 right at the beginning of a cycle when the tub is already empty?",
+        "a": "Bosch dishwashers measure the electrical current (amperage draw) of the 00631200 drain pump during the first 30 seconds to verify if water resistance is present. A worn pump rotor draws abnormal current and triggers E24 immediately."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "ge-refrigerator-not-cooling-wr55x10942-wr51x10055",
+    "slug": "ge-refrigerator-warm-freezer-frost-defrost-heater-wr51x10055",
+    "category": "Refrigerators",
+    "lang": "en",
+    "brands": [
+      "GE",
+      "GE Profile",
+      "Hotpoint",
+      "RCA"
+    ],
+    "error_code": "Fridge Warm + Frost on Freezer Back Wall",
+    "popular_models": [
+      "GSS25GSHSS",
+      "GTS18GTHWW",
+      "GFE28GYNFS",
+      "Side-by-Side & Top-Freezer"
+    ],
+    "symptom": "The fresh food refrigerator section is warm (50°F+), while the lower back panel inside the freezer is coated in heavy white frost or ice and airflow from the top vents is weak.",
+    "technical_cause": "The 12-inch glass tube defrost heater at the bottom of the freezer evaporator coil has burned out, causing ice to completely block the airflow ducts to the refrigerator side.",
+    "oem_part_name": "GE Refrigerator Defrost Heater & Thermostat Assembly + WR55X10025 Sensor",
+    "oem_part_number": "WR51X10055",
+    "secondary_part_number": "WR50X10068 (High-Limit Defrost Thermostat) + WR55X10025 (Temperature Thermistor)",
+    "affiliate_search_query": "WR51X10055 WR50X10068 WR55X10025 GE refrigerator defrost heater kit",
+    "part_price_range": "$18 - $29",
+    "technician_cost_estimate": "$230 - $340",
+    "repair_time_minutes": 30,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Unplug the refrigerator, remove the shelves from the freezer, and unscrew the rear interior freezer wall panel to expose the frosted aluminum evaporator coils.",
+      "Look at the glass quartz tube heater (WR51X10055) clipped across the bottom of the coils: if the glass is blackened inside or shows open continuity on a multimeter, the heater is burned out.",
+      "Melt the ice off the coils with a hair dryer on low, clip in the new WR51X10055 defrost heater and WR55X10025 thermistor kit, and reassemble."
+    ],
+    "faq": [
+      {
+        "q": "Why is my freezer still freezing food while the fridge side gets warm?",
+        "a": "All cold air in a refrigerator is made in the freezer and blown into the fridge compartment through a top damper. When the WR51X10055 defrost heater fails, frost packs the evaporator fins solid so the fan can no longer push cold air over to the fridge side."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "ge-refrigerator-evaporator-fan-wr60x26866",
+    "slug": "ge-refrigerator-error-f0-e2-warm-fridge-evaporator-fan-wr60x26866",
+    "category": "Refrigerators",
+    "lang": "en",
+    "brands": [
+      "GE",
+      "GE Profile",
+      "Café"
+    ],
+    "error_code": "Warm Fridge Compartment / Howling Fan Noise",
+    "popular_models": [
+      "GFE28GYNFS",
+      "GNE27JYMFS",
+      "CFE28TP2MS1",
+      "PFE28KYNFS",
+      "French Door Series"
+    ],
+    "symptom": "The bottom freezer works normally, but the upper French-door refrigerator section rises above 50°F (or you hear a high-pitched whirring noise that stops when you open the door).",
+    "technical_cause": "Failure of the 13.6V DC Fresh Food Evaporator Fan Motor hidden behind the interior deli drawer tower.",
+    "oem_part_name": "GE Updated Fresh Food Evaporator Fan Motor (13.6V DC)",
+    "oem_part_number": "WR60X26866",
+    "secondary_part_number": "WR60X29099 / WR60X26033 / WR60X10341",
+    "affiliate_search_query": "WR60X26866 GE refrigerator evaporator fan motor",
+    "part_price_range": "$25 - $42",
+    "technician_cost_estimate": "$260 - $360",
+    "repair_time_minutes": 25,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Hold down the door light switch with your finger inside the upper fridge compartment: if you do not feel cold air blowing from the center tower vents, the WR60X26866 fan has failed.",
+      "Unplug the fridge, pull out the bottom crisper and deli drawers, remove the 4 screws holding the center climate tower cover, and plug in the updated sealed-bearing WR60X26866 fan motor."
+    ],
+    "faq": [
+      {
+        "q": "Does WR60X26866 replace the older WR60X26033 and WR60X10341 fans?",
+        "a": "Yes! GE redesigned this fan under part number WR60X26866 with improved moisture sealing so condensation doesn't corrode the internal circuit board."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "frigidaire-oven-error-f10-not-heating-316075103",
+    "slug": "frigidaire-kenmore-oven-error-f10-f30-bake-element-316075103-sensor",
+    "category": "Ovens & Ranges",
+    "lang": "en",
+    "brands": [
+      "Frigidaire",
+      "Kenmore",
+      "Electrolux",
+      "Crosley"
+    ],
+    "error_code": "Error F10 / F30 / Oven Not Heating",
+    "popular_models": [
+      "FFEF3054TS",
+      "FGEF3036TF",
+      "LFEF3054TF",
+      "Kenmore 790 Series"
+    ],
+    "symptom": "The electric oven fails to reach temperature (broil works on top, but the bottom stays lukewarm) or beeps loudly showing F10 or F30 on the clock display.",
+    "technical_cause": "For 'no heat on Bake', the lower 2600W 316075103 bake heating element has blistered and burned open; for F10 / F30 codes, the 316233902 stainless temperature sensor probe has drifted out of resistance (~1080 Ohms at room temp).",
+    "oem_part_name": "Frigidaire 316075103 Lower Bake Element + 316233902 Oven Temperature Sensor",
+    "oem_part_number": "316075103",
+    "secondary_part_number": "316233902 (Oven Temperature Sensor Probe for F10 / F30)",
+    "affiliate_search_query": "316075103 Frigidaire oven bake element 316233902 temperature sensor",
+    "part_price_range": "$18 - $28",
+    "technician_cost_estimate": "$195 - $280",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy (2 screws inside the oven)",
+    "diagnostic_steps": [
+      "Flip the 240V range circuit breaker off.",
+      "Look inside the bottom of the oven cavity at the black tubular heating loop (316075103): if you see a blister, crack, or white powder spot, or if it fails continuity, remove the two 1/4-inch mounting screws at the back wall, pull the terminals forward, and swap in the new element.",
+      "If the display beeps F10 or F30, unscrew the two screws holding the thin metal sensor pencil (316233902) in the upper left corner of the oven cavity and plug in the new sensor."
+    ],
+    "faq": [
+      {
+        "q": "Can I replace the 316075103 bake element from inside the oven without pulling the stove out from the wall?",
+        "a": "Yes! As long as you turn off the breaker first and gently pull the two wire spade connectors through the back slots without letting them slip back into the insulation, the entire swap is done from inside the open oven door in 10 minutes."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "gas-oven-not-heating-igniter-5303935066",
+    "slug": "frigidaire-ge-samsung-gas-oven-not-heating-glow-bar-igniter-5303935066",
+    "category": "Ovens & Ranges",
+    "lang": "en",
+    "brands": [
+      "Frigidaire",
+      "GE",
+      "Samsung",
+      "Whirlpool",
+      "Kenmore"
+    ],
+    "error_code": "Gas Oven Glows Orange But Won't Light / Takes 30+ Mins to Preheat",
+    "popular_models": [
+      "FFGF3054TS",
+      "JGBS66REKSS",
+      "NX58H5600SS",
+      "NX60T8511SS"
+    ],
+    "symptom": "The gas range top burners light fine, but the bake oven won't heat up (or takes 45 minutes to preheat). Looking under the bottom oven floor, you see an orange glow, yet the gas burner never ignites.",
+    "technical_cause": "The silicon-carbide flat glow bar igniter has aged and increased its electrical resistance, so even though it still glows orange, it no longer draws the 3.2 to 3.6 Amps required to open the bi-metal gas safety valve.",
+    "oem_part_name": "Universal Flat Oven Glow Bar Igniter (3.3–3.6 Amp Norton / OEM Spec)",
+    "oem_part_number": "5303935066",
+    "secondary_part_number": "WB13K21 (GE) / DG94-00520A (Samsung) / W10918546 (Whirlpool)",
+    "affiliate_search_query": "5303935066 WB13K21 DG94-00520A gas oven igniter glow bar",
+    "part_price_range": "$17 - $29",
+    "technician_cost_estimate": "$210 - $310",
+    "repair_time_minutes": 20,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Turn on Bake to 350°F and look through the floor vents inside the oven: if the igniter glows orange for more than 90 seconds without the gas 'whoosh' igniting, the igniter is weak (<3.0 Amps) and must be replaced.",
+      "Unplug the range, lift out the bottom oven floor panel and flame spreader plate, unbolt the two screws holding the 5303935066 / WB13K21 / DG94-00520A igniter bracket, and plug in the new one."
+    ],
+    "faq": [
+      {
+        "q": "Why doesn't the gas light if the igniter is still glowing bright orange?",
+        "a": "Gas oven safety valves are wired in series with the igniter and only open when the igniter draws at least 3.2 Amps of current. A worn igniter still glows orange at 2.5 Amps, which is too weak to open the gas valve."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "goodman-carrier-furnace-3-flashes-pressure-switch-igniter",
+    "slug": "goodman-amana-furnace-no-heat-igniter-0130f00008s-flame-sensor",
+    "category": "HVAC & Furnaces",
+    "lang": "en",
+    "brands": [
+      "Goodman",
+      "Amana",
+      "Janitrol"
+    ],
+    "error_code": "1 / 3 / 4 Red LED Flashes (Ignition Lockout / Flame Sense)",
+    "popular_models": [
+      "GMP",
+      "GMS8",
+      "GDS8",
+      "GMSS96",
+      "GMVC96"
+    ],
+    "symptom": "The furnace inducer draft fan spins up, either no orange glow appears (cracked igniter) OR the burners light for 4 seconds and immediately shut back off (dirty/bad flame sensor), followed by flashing red LED codes through the sight glass.",
+    "technical_cause": "A cracked silicon nitride hot surface igniter (0130F00008S) prevents ignition, while an oxidized flame sensor rod (0130F00010) stops microamp flame rectification current.",
+    "oem_part_name": "Goodman / Amana Hot Surface Igniter + Flame Sensor Rod Kit",
+    "oem_part_number": "0130F00008S",
+    "secondary_part_number": "0130F00010 (Goodman Flame Sensor Rod)",
+    "affiliate_search_query": "0130F00008S 0130F00010 Goodman furnace igniter flame sensor",
+    "part_price_range": "$18 - $29",
+    "technician_cost_estimate": "$250 - $380",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy (1/4-inch hex screw)",
+    "diagnostic_steps": [
+      "Turn off the furnace power switch and remove the upper burner access door.",
+      "If the burners ignite for 3–4 seconds and shut off, pull the single 1/4-inch screw holding the 0130F00010 flame sensor rod and replace or lightly buff it.",
+      "If the inducer fan runs for 30 seconds and you never see an orange glow before the gas clicks, inspect the 0130F00008S igniter tip for a white hairline crack and swap it out."
+    ],
+    "faq": [
+      {
+        "q": "Should I touch the black tip of the new 0130F00008S igniter with my bare fingers?",
+        "a": "Avoid touching the silicon nitride heating tip with bare skin—finger oils can create a hot spot when the element reaches 2,500°F."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "ac-outside-unit-not-turning-on-capacitor-45-5-mfd",
+    "slug": "ac-outside-condenser-humming-not-cooling-dual-run-capacitor-45-5-mfd",
+    "category": "HVAC & Furnaces",
+    "lang": "en",
+    "brands": [
+      "Carrier",
+      "Goodman",
+      "Trane",
+      "Lennox",
+      "Rheem",
+      "York"
+    ],
+    "error_code": "AC Blowing Warm Air / Outside Condenser Fan Hums & Won't Spin",
+    "popular_models": [
+      "2.5 Ton / 3 Ton / 3.5 Ton Central AC Units"
+    ],
+    "symptom": "Inside air handler blows room-temperature air while the outside AC condenser unit makes a loud buzzing/humming sound every few minutes, or the top fan blade doesn't spin unless pushed with a stick.",
+    "technical_cause": "The cylindrical aluminum dual run capacitor (most commonly 45/5 uF MFD 370V/440V) inside the outdoor service panel has swollen on top and lost capacitance, so neither the compressor nor the condenser fan motor can start.",
+    "oem_part_name": "45+5 uF MFD 370V / 440V Dual Run Round HVAC Capacitor (CBB65B)",
+    "oem_part_number": "CAP-45-5-440V",
+    "secondary_part_number": "35/5 MFD (2-Ton AC) / 40/5 MFD (2.5-Ton AC) / 45/5 MFD (3-Ton AC)",
+    "affiliate_search_query": "45/5 uF 440V 370V dual run capacitor AC condenser",
+    "part_price_range": "$14 - $22",
+    "technician_cost_estimate": "$275 - $450",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy (3 spade terminals: C, HERM, FAN)",
+    "diagnostic_steps": [
+      "Pull the exterior 240V AC disconnect plug next to the outside unit to kill all power.",
+      "Unscrew the corner service cover on the outdoor condenser and look at the silver cylinder capacitor: if the top metal disc is bulged upward like an expired soda can or leaking oil, it has failed.",
+      "Discharge the old capacitor safely across its terminals with an insulated screwdriver, check the exact uF rating printed on the label (e.g., 45/5 uF or 35/5 uF), and move the FAN, HERM, and C wires one by one to the new 440V capacitor."
+    ],
+    "faq": [
+      {
+        "q": "Can I use a 440V capacitor to replace a 370V capacitor?",
+        "a": "Yes! A 440V-rated capacitor can always replace a 370V capacitor of the same microfarad (uF/MFD) rating and runs cooler and lasts longer."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "dyson-v8-v10-v11-red-light-blinking-battery-trigger",
+    "slug": "dyson-v8-v10-v11-red-light-flashing-trigger-broken-battery-969352-02",
+    "category": "Small Appliances",
+    "lang": "en",
+    "brands": [
+      "Dyson"
+    ],
+    "error_code": "Red LED Flashing (4–32 Blinks) / Loose Red Trigger",
+    "popular_models": [
+      "Dyson V7",
+      "Dyson V8 Animal / Absolute",
+      "Dyson V10 Cyclone",
+      "Dyson V11 Torque Drive"
+    ],
+    "symptom": "Vacuum won't turn on when you pull the trigger and the battery indicator flashes red repeatedly, OR the red finger trigger feels floppy and doesn't click the power switch.",
+    "technical_cause": "Flashing red LED indicates lithium cell imbalance lockout inside the battery pack BMS; a floppy trigger with no LED lights on V10/V11 indicates the internal plastic trigger rib snapped.",
+    "oem_part_name": "Dyson V8 / V10 Replacement Battery Pack + Heavy-Duty Reinforced Trigger Switch",
+    "oem_part_number": "969352-02",
+    "secondary_part_number": "968670-06 (Dyson V8 Battery) + V10/V11 Reinforced Trigger Assembly",
+    "affiliate_search_query": "Dyson V8 V10 replacement battery trigger switch 969352-02",
+    "part_price_range": "$11 (Trigger) / $34 - $52 (Battery)",
+    "technician_cost_estimate": "$140 - $195",
+    "repair_time_minutes": 10,
+    "difficulty": "Easy (3 Phillips screws)",
+    "diagnostic_steps": [
+      "Plug the charger in: if the battery LED blinks red instead of solid blue, remove the 3 Phillips screws (one behind the upper handle, two under the bottom base) and slide in a new battery pack.",
+      "If the battery charges solid blue on the dock but pressing the red trigger on your V10 or V11 does nothing and feels loose, install the reinforced heavy-duty trigger switch."
+    ],
+    "faq": [
+      {
+        "q": "Have you Heard of the Dyson V8 'Dewalt/Milwaukee 20V Battery Adapter' upgrade?",
+        "a": "Yes—many Dyson V7 and V8 owners replace the stock battery with a $18 slide-on power tool battery adapter on Amazon so they can swap DeWalt, Milwaukee, or Makita 20V batteries in 2 seconds."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "irobot-roomba-error-26-vacuum-motor",
+    "slug": "irobot-roomba-error-26-error-2-cleaning-head-fan-motor-20n636p010",
+    "category": "Small Appliances",
+    "lang": "en",
+    "brands": [
+      "iRobot Roomba"
+    ],
+    "error_code": "Error 26 (Low Airflow) / Error 2 (Clear Brushes)",
+    "popular_models": [
+      "Roomba i7 / i7+",
+      "Roomba i3 / i4 / e5",
+      "Roomba j7",
+      "Roomba 960 / 980"
+    ],
+    "symptom": "Roomba runs for 1–2 minutes, stops with a red ring light, and says 'Error 26: Please inspect and clean Roomba's vacuum path' even after you put in a brand-new HEPA filter.",
+    "technical_cause": "Fine dust or moisture has seized the bearings inside the 20N636P010 vacuum impeller fan motor inside the dustbin (900 series) or cleaning head module (e/i/j series).",
+    "oem_part_name": "Roomba Vacuum Impeller Fan Motor 20N636P010 / Cleaning Head Module 4624872",
+    "oem_part_number": "20N636P010",
+    "secondary_part_number": "4624872 (Complete Drop-In Cleaning Head Module for Roomba e5 / i3 / i7 / j7)",
+    "affiliate_search_query": "20N636P010 Roomba Error 26 fan motor 4624872",
+    "part_price_range": "$16 - $26 (Motor) / $55 (Complete Module)",
+    "technician_cost_estimate": "$145 - $210",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Remove the dustbin and filter, then try spinning the small black plastic fan impeller blade inside the vacuum motor port with a cotton swab: if it feels gritty or won't spin freely, the 20N636P010 fan motor is seized.",
+      "Unscrew the top cover of the cleaning head (or dustbin on 960/980) and plug in the 2-pin 20N636P010 replacement blower motor."
+    ],
+    "faq": [
+      {
+        "q": "What causes Roomba Error 26 right after washing the dustbin?",
+        "a": "On Roomba 800 and 900 models, the 20N636P010 fan motor is built directly into the dustbin—rinsing that bin under a faucet corrodes the motor bearing overnight."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "breville-delonghi-espresso-no-pressure-ulka-ep5",
+    "slug": "breville-barista-express-delonghi-magnifica-no-water-pressure-ulka-pump",
+    "category": "Coffee & Espresso",
+    "lang": "en",
+    "brands": [
+      "Breville",
+      "DeLonghi",
+      "Gaggia",
+      "Saeco",
+      "Philips"
+    ],
+    "error_code": "No Water Flow / Low Pressure Gauge / Loud Buzzing",
+    "popular_models": [
+      "Breville Barista Express BES870XL",
+      "BES840XL Infuser",
+      "DeLonghi Magnifica ECAM",
+      "Gaggia Classic Pro"
+    ],
+    "symptom": "The espresso machine heats up and the vibratory pump buzzes (either very quietly or with a hollow metallic clatter), but the pressure gauge stays flat and little or no water comes through the group head.",
+    "technical_cause": "The internal check-valve ball and spring inside the 15-bar Ulka electromagnetic vibratory water pump have worn out or air-locked from scale.",
+    "oem_part_name": "Ulka EX5 / EP5 120V 60Hz 41W 15-Bar Espresso Vibratory Water Pump",
+    "oem_part_number": "ULKA-EX5-120V",
+    "secondary_part_number": "SP0020448 (Breville OEM Pump) / 5113211291 (DeLonghi 120V US Pump)",
+    "affiliate_search_query": "Ulka EX5 EP5 120V 41W water pump Breville DeLonghi espresso",
+    "part_price_range": "$19 - $29",
+    "technician_cost_estimate": "$135 - $195",
+    "repair_time_minutes": 20,
+    "difficulty": "Easy (2 spade wires + push-fit tubing)",
+    "diagnostic_steps": [
+      "Open the steam/hot water wand valve with no portafilter attached: if hot water still refuses to pump out in a steady stream, the Ulka vibratory pump has lost prime or failed.",
+      "Unplug the machine, remove the rear cabinet panel, move the two push-on electrical terminals and silicone hoses onto the new 120V Ulka EX5/EP5 pump, and run hot water for 15 seconds to prime it."
+    ],
+    "faq": [
+      {
+        "q": "Should I buy the 120V or 230V Ulka EP5/EX5 pump in the United States?",
+        "a": "For US and Canadian 110–120V wall outlets, always select the 120V 60Hz 41W version of the Ulka EP5 or EX5 (brass outlet)."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "whirlpool-kitchenaid-dishwasher-f9-e1-drain-pump",
+    "slug": "whirlpool-kitchenaid-maytag-dishwasher-f9-e1-not-draining-pump-w10879262",
+    "category": "Dishwashers",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "KitchenAid",
+      "Maytag",
+      "Kenmore"
+    ],
+    "error_code": "Error F9 E1 / Not Draining",
+    "popular_models": [
+      "WDT750SAKZ",
+      "WDT730PAHZ",
+      "KDTE204KPS",
+      "MDB4949SKZ"
+    ],
+    "symptom": "Water remains pooled in the bottom of the dishwasher tub after the cycle ends and the Clean light or display flashes F9 E1.",
+    "technical_cause": "Burned-out windings or jammed magnetic impeller inside the front twist-off synchronous drain pump motor.",
+    "oem_part_name": "Whirlpool / KitchenAid Dishwasher Drain Pump Motor",
+    "oem_part_number": "W10879262",
+    "secondary_part_number": "WPW10348269 / W10751529",
+    "affiliate_search_query": "W10879262 WPW10348269 Whirlpool KitchenAid dishwasher drain pump",
+    "part_price_range": "$21 - $34",
+    "technician_cost_estimate": "$195 - $275",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy (Quarter-turn twist under kickplate)",
+    "diagnostic_steps": [
+      "Check the garbage disposal inlet knockout plug first if a new disposal was recently installed.",
+      "Press Cancel/Drain: if the pump underneath hums or chatters without pumping water into the sink drain hose, twist off the W10879262 / WPW10348269 drain pump right behind the lower toe panel."
+    ],
+    "faq": [
+      {
+        "q": "Do I need to pull the Whirlpool dishwasher out from the cabinet to change part W10879262?",
+        "a": "No! The drain pump sits right at the front center behind the bottom toe kickplate and twists out counter-clockwise in 30 seconds."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "whirlpool-kitchenaid-dishwasher-f6-e4-float-switch",
+    "slug": "whirlpool-kitchenaid-dishwasher-f6-e4-f8-e4-inlet-valve-w11175771",
+    "category": "Dishwashers",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "KitchenAid",
+      "Maytag"
+    ],
+    "error_code": "Error F6 E4 / F8 E4 (Overfill / Float Switch)",
+    "popular_models": [
+      "WDT750SAKZ",
+      "WDTA50SAKZ",
+      "KDTM404KPS",
+      "MDB8959SKZ"
+    ],
+    "symptom": "Dishwasher flashes F6 E4 or F8 E4, fails to fill with water, or slowly leaks water into the bottom drip tray even when turned off.",
+    "technical_cause": "Seeping water inlet solenoid valve (W11175771) allowing water into the tub or overflow tray when off, or stuck float switch.",
+    "oem_part_name": "Whirlpool / KitchenAid Dishwasher Water Inlet Valve Assembly",
+    "oem_part_number": "W11175771",
+    "secondary_part_number": "W10872255 / W11434044",
+    "affiliate_search_query": "W11175771 Whirlpool KitchenAid dishwasher water inlet valve",
+    "part_price_range": "$22 - $36",
+    "technician_cost_estimate": "$210 - $285",
+    "repair_time_minutes": 20,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Pull the lower front overflow drip tray out from under the door and dry any water triggers causing F8 E4.",
+      "If the tub accumulates clean water overnight while the dishwasher is off, the W11175771 inlet valve diaphragm is not sealing and must be replaced."
+    ],
+    "faq": [
+      {
+        "q": "Where is the W11175771 water inlet valve located?",
+        "a": "Behind the bottom front kickplate on the front-left corner where your 3/8-inch braided water supply line connects."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "whirlpool-kitchenaid-dishwasher-not-washing-circulation-pump-w11084656",
+    "slug": "whirlpool-kitchenaid-dishwasher-not-spraying-water-wash-pump-w11084656",
+    "category": "Dishwashers",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "KitchenAid",
+      "Maytag",
+      "Kenmore"
+    ],
+    "error_code": "Error F4 E3 / Dishes Dirty & Soap Pod Undissolved",
+    "popular_models": [
+      "WDT750SAHZ",
+      "WDT730PAHZ",
+      "KDTE334GPS",
+      "WDF520PADM"
+    ],
+    "symptom": "The dishwasher fills with water and drains at the end, but during the middle of the cycle it is dead silent, the spray arms never spin, and the detergent pod sits undissolved on the floor of the tub.",
+    "technical_cause": "Known graphite bushing failure inside the main wash circulation pump motor (W11084656 / W11612326), causing the wash impeller to bind after filling.",
+    "oem_part_name": "Whirlpool / KitchenAid Dishwasher Circulation Wash Pump & Motor",
+    "oem_part_number": "W11084656",
+    "secondary_part_number": "W11612326 / W10805387 / W10854710",
+    "affiliate_search_query": "W11084656 W11612326 Whirlpool dishwasher circulation pump motor",
+    "part_price_range": "$45 - $72",
+    "technician_cost_estimate": "$280 - $390",
+    "repair_time_minutes": 30,
+    "difficulty": "Medium",
+    "diagnostic_steps": [
+      "Start a cycle and listen right after the water stops filling (around minute 2): if you hear a faint click or hum for 3 seconds followed by silence instead of rushing water, the W11084656 circulation motor is seized.",
+      "Replace the W11084656 motor or the complete W11612326 sump & motor assembly (the complete sump assembly drops in from inside the tub in 20 minutes without clamping hoses!)."
+    ],
+    "faq": [
+      {
+        "q": "Is it easier to buy just the W11084656 pump motor or the full W11612326 sump assembly?",
+        "a": "Most DIYers prefer the complete W11612326 sump-and-motor assembly (~$75) because it includes the diverter motor and twists into the tub floor from the inside without needing a ear-clamp crimper."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "samsung-refrigerator-ice-maker-frozen-da97-15217d",
+    "slug": "samsung-french-door-refrigerator-ice-maker-freezing-up-da97-15217d",
+    "category": "Refrigerators",
+    "lang": "en",
+    "brands": [
+      "Samsung"
+    ],
+    "error_code": "Ice Maker Frozen Solid / Error 39C / 39E",
+    "popular_models": [
+      "RF28R7351SR",
+      "RF263BEAESR",
+      "RF28HMEDBSR",
+      "RF23M8070SR"
+    ],
+    "symptom": "The upper-left Ice Master compartment freezes over with massive chunks of frost, stops dropping ice cubes, or flashes error 39C / 39E on the dispenser panel.",
+    "technical_cause": "Moisture intrusion into the upper ice room combined with failure of the internal ice mold heater or Auger Drain Tube clip on the Ice Master assembly.",
+    "oem_part_name": "Samsung Updated Ice Master Ice Maker Assembly + Y-Clips Service Kit",
+    "oem_part_number": "DA97-15217D",
+    "secondary_part_number": "DA82-02697A (Samsung Official Ice Maker Service Upgrade Kit)",
+    "affiliate_search_query": "DA97-15217D DA82-02697A Samsung refrigerator ice maker assembly",
+    "part_price_range": "$68 - $98",
+    "technician_cost_estimate": "$320 - $450",
+    "repair_time_minutes": 25,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Press and hold the Ice Off button, thaw out the ice compartment gently with a steamer or hair dryer on low (never overheat the plastic liner), and remove the bucket.",
+      "Unscrew the two Phillips screws on the DA97-15217D ice maker tray, unplug the wiring harness, install the revised DA97-15217D unit, and seal the outer perimeter seam of the ice box with food-grade silicone."
+    ],
+    "faq": [
+      {
+        "q": "Where is the Reset button on a Samsung DA97-15217D ice maker?",
+        "a": "Pull the ice bucket out and look on the left or front side of the black/white ice maker module inside the top of the box—hold the small square blue 'Test' button for 5 seconds until it chimes."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "whirlpool-refrigerator-not-cooling-start-relay-wpw10189190",
+    "slug": "whirlpool-kenmore-refrigerator-clicking-not-cooling-compressor-start-relay-wpw10189190",
+    "category": "Refrigerators",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "Maytag",
+      "Kenmore",
+      "KitchenAid",
+      "Amana"
+    ],
+    "error_code": "Fridge Clicking Every 2 Minutes & Not Cooling",
+    "popular_models": [
+      "WRF535SWHZ",
+      "WRS325SDHZ",
+      "WRT318FZDW",
+      "Kenmore 106 Series"
+    ],
+    "symptom": "Both the refrigerator and freezer suddenly warm up, the interior lights still work, and you hear a distinct 'click... buzz... click' coming from the bottom back of the fridge every 2 to 5 minutes.",
+    "technical_cause": "The PTC ceramic wafer inside the compressor start relay device has shattered from heat, preventing the compressor from starting and tripping the thermal overload clicker.",
+    "oem_part_name": "Whirlpool OEM Compressor Start Relay & Overload Capacitor Kit",
+    "oem_part_number": "WPW10189190",
+    "secondary_part_number": "W10613606 / WPW10662129 (Start Device + Run Capacitor)",
+    "affiliate_search_query": "WPW10189190 W10613606 Whirlpool refrigerator compressor start relay",
+    "part_price_range": "$15 - $26",
+    "technician_cost_estimate": "$220 - $340",
+    "repair_time_minutes": 10,
+    "difficulty": "Very Easy (Plug-on module behind lower rear cardboard cover)",
+    "diagnostic_steps": [
+      "Unplug the fridge, pull it out from the wall, and remove the cardboard access panel at the bottom rear.",
+      "Unclip the plastic start relay box (WPW10189190 / W10613606) plugged onto the side of the black round compressor and shake it next to your ear: if it rattles like a maraca, the internal PTC disc is shattered.",
+      "Push the new WPW10189190 relay and overload onto the 3 compressor pins and plug the fridge back in."
+    ],
+    "faq": [
+      {
+        "q": "Does a clicking compressor mean my refrigerator is ruined?",
+        "a": "85% of the time, the compressor itself is completely fine—it's just the $18 plug-on WPW10189190 start relay that burned out and takes 10 minutes to snap on."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "lg-dryer-error-d80-d90-d95-thermal-fuse",
+    "slug": "lg-dryer-not-heating-error-d80-d90-te1-thermal-fuse-6931el3003d",
+    "category": "Dryers",
+    "lang": "en",
+    "brands": [
+      "LG",
+      "Kenmore"
+    ],
+    "error_code": "No Heat / Error d80 / d90 / d95 / tE1",
+    "popular_models": [
+      "DLEX3700W",
+      "DLE3400W",
+      "DLEX4000W",
+      "DLE7300WE"
+    ],
+    "symptom": "The LG electric dryer runs a full cycle with cold air, or flashes d80, d90, d95, or tE1 on the display.",
+    "technical_cause": "Restricted exhaust vent backpressure tripped the non-resettable 6931EL3003D high-limit thermal fuse on the heater housing or burned out the 5301EL1001J heating element.",
+    "oem_part_name": "LG Dryer High-Limit Thermostat & Thermal Fuse Kit + Heating Element",
+    "oem_part_number": "6931EL3003D",
+    "secondary_part_number": "5301EL1001J (Complete LG Heating Element Housing) + 6323EL2001B (Thermistor for tE1)",
+    "affiliate_search_query": "6931EL3003D 5301EL1001J LG dryer thermal fuse heating element kit",
+    "part_price_range": "$14 - $36",
+    "technician_cost_estimate": "$230 - $325",
+    "repair_time_minutes": 35,
+    "difficulty": "Medium",
+    "diagnostic_steps": [
+      "Disconnect the dryer vent hose from the back of the dryer and clean out all lint buildup in your wall duct (d80/d90 means 80–90% exhaust blockage, which blows the 6931EL3003D thermal fuse).",
+      "Test the 6931EL3003D thermal fuse mounted on the silver heater canister for continuity—if open, replace the fuse and thermostat kit."
+    ],
+    "faq": [
+      {
+        "q": "Can you reset the 6931EL3003D thermal fuse on an LG dryer?",
+        "a": "No, 6931EL3003D is a one-time safety cut-off fuse and must be replaced once it trips."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "ge-dishwasher-not-starting-beeping-door-latch-wd21x10490",
+    "slug": "ge-dishwasher-beeping-815-flashing-lights-door-latch-wd21x10490",
+    "category": "Dishwashers",
+    "lang": "en",
+    "brands": [
+      "GE",
+      "GE Profile",
+      "Café",
+      "Hotpoint"
+    ],
+    "error_code": "Beeping 3 Times / Start Light Flashing / Error 815",
+    "popular_models": [
+      "GDT655SSJSS",
+      "GDF520PGJBB",
+      "GDT695SSJSS",
+      "PDT845SMJES"
+    ],
+    "symptom": "You close the GE dishwasher door and press Start, the amber light blinks, and it beeps 3 times every minute without starting (as if the door is still open).",
+    "technical_cause": "Worn micro-switches inside the top-mounted door latch assembly (WD21X10490) failing to signal both door closure poles to the main UI board.",
+    "oem_part_name": "GE OEM Dishwasher Door Latch Switch Assembly",
+    "oem_part_number": "WD21X10490",
+    "secondary_part_number": "2997693 / AP5668411 / PS6447681",
+    "affiliate_search_query": "WD21X10490 GE dishwasher door latch switch",
+    "part_price_range": "$18 - $28",
+    "technician_cost_estimate": "$185 - $260",
+    "repair_time_minutes": 10,
+    "difficulty": "Very Easy (2 screws on top cabinet frame)",
+    "diagnostic_steps": [
+      "Press and hold 'Select Cycle' and 'Start' simultaneously for 5 seconds: if all LEDs blink, the dishwasher thinks the door is open.",
+      "Open the dishwasher door, unscrew the 2 mounting screws holding the plastic WD21X10490 latch to the top center of the cabinet frame, unplug the 3-wire harness, and snap in the new latch."
+    ],
+    "faq": [
+      {
+        "q": "Why does my GE dishwasher randomly beep in the middle of the night?",
+        "a": "When the micro-switch inside the WD21X10490 latch degrades, slight temperature shifts cause the contact to open and close by itself, making the dishwasher wake up and chime."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "ge-washer-not-draining-spinning-wh23x28418",
+    "slug": "ge-top-load-washer-not-draining-spinning-drain-pump-wh23x28418",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "GE",
+      "Hotpoint"
+    ],
+    "error_code": "Lid Locked Flashing / Not Draining or Spinning",
+    "popular_models": [
+      "GTW465ASNWW",
+      "GTW335ASNWW",
+      "GTW460ASJWW",
+      "HTW240ASKWS"
+    ],
+    "symptom": "The GE top-load washer finishes washing but leaves the basket full of water, flashes the red Lid Locked light, and makes a buzzing sound underneath without draining.",
+    "technical_cause": "Burned-out stator or cracked impeller inside the 120V AC electric drain pump assembly mounted under the right rear of the tub.",
+    "oem_part_name": "GE OEM Top-Load Washer Electric Drain Pump Assembly",
+    "oem_part_number": "WH23X28418",
+    "secondary_part_number": "WH23X24178 / WH23X27574 / B40-3A01",
+    "affiliate_search_query": "WH23X28418 GE washer drain pump",
+    "part_price_range": "$21 - $34",
+    "technician_cost_estimate": "$210 - $285",
+    "repair_time_minutes": 20,
+    "difficulty": "Easy (3 bolts on bottom of tub)",
+    "diagnostic_steps": [
+      "Hold the Start button for 3 seconds to force a cancel-and-drain: if the pump hums loudly underneath and no water discharges into the standpipe, the WH23X28418 pump motor has failed.",
+      "Unplug the washer, tilt it forward/back to access the base, unbolt the three 3/8-inch bolts securing the WH23X28418 pump, and transfer the rubber grommets to the new pump."
+    ],
+    "faq": [
+      {
+        "q": "How do I unlock the lid on a GE GTW465 washer when it is stuck full of water?",
+        "a": "Unplug the washer for 2 minutes, plug it back in without pressing Start, and once the water is bailed or drained out via the WH23X28418 hose, the lid lock releases automatically."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "ge-washer-lid-lock-wh01x27954",
+    "slug": "ge-washer-clicking-not-starting-lid-lock-switch-wh01x27954",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "GE",
+      "Hotpoint"
+    ],
+    "error_code": "Lid Lock Clicking 3 Times / Won't Spin or Start",
+    "popular_models": [
+      "GTW465ASNWW",
+      "GTW335ASNWW",
+      "GTW220ACKWW",
+      "GTW460ASJWW"
+    ],
+    "symptom": "You press Start, the top lid lock clicks 3 times, the red Lid Locked LED flashes continuously, and the washer refuses to agitate or enter the spin cycle.",
+    "technical_cause": "Broken solenoid coil or corroded contact inside the top-deck lid lock latch assembly (WH01X27954).",
+    "oem_part_name": "GE Updated Quick-Release Washer Lid Lock Switch & Bezel",
+    "oem_part_number": "WH01X27954",
+    "secondary_part_number": "WH01X26114 / WH01X24114 / WH08X32697",
+    "affiliate_search_query": "WH01X27954 WH08X32697 GE washer lid lock switch",
+    "part_price_range": "$18 - $29",
+    "technician_cost_estimate": "$190 - $265",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Check the plastic lid strike tab on the underside of the lid first to make sure it isn't snapped off.",
+      "If the plastic strike is intact and the lock clicks 3 times and gives up, remove the two 1/4-inch screws on the back of the control console, lift the top deck slightly, and snap in the new WH01X27954 lid lock switch."
+    ],
+    "faq": [
+      {
+        "q": "Is WH08X32697 compatible with WH01X27954?",
+        "a": "Yes! WH08X32697 is GE's latest kit that includes the WH01X27954 switch plus the updated bezel and strike."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "rheem-water-heater-flashing-red-light-sp20172",
+    "slug": "rheem-richmond-ruud-gas-water-heater-pilot-out-fvs-sensor-sp20172",
+    "category": "Water Heaters & Plumbing",
+    "lang": "en",
+    "brands": [
+      "Rheem",
+      "Ruud",
+      "Richmond",
+      "GE SmartWater"
+    ],
+    "error_code": "Pilot Won't Stay Lit / 2 or 7 Flashes on Honeywell Gas Valve",
+    "popular_models": [
+      "Rheem Performance",
+      "Gladiator",
+      "Fury",
+      "40 Gal / 50 Gal Natural Gas & LP"
+    ],
+    "symptom": "The gas water heater pilot goes out and refuses to relight, or the Honeywell status LED blinks a fault code because the Flammable Vapor Sensor (FVS) mounted near the floor has triggered.",
+    "technical_cause": "The white plastic Flammable Vapor Sensor (SP20172) clipped to the lower left side of the tank has absorbed moisture, paint fumes, or cat litter dust, permanently shifting its resistance above 45,000 Ohms and locking out the Honeywell gas control valve.",
+    "oem_part_name": "Rheem / Ruud OEM Flammable Vapor Sensor (FVS) Kit",
+    "oem_part_number": "SP20172",
+    "secondary_part_number": "AP13447-3 / SP20286 (Thermopile Pilot Assembly)",
+    "affiliate_search_query": "SP20172 Rheem water heater flammable vapor sensor",
+    "part_price_range": "$24 - $36",
+    "technician_cost_estimate": "$230 - $340",
+    "repair_time_minutes": 5,
+    "difficulty": "Very Easy (Unplugs and clips on the outside of the tank!)",
+    "diagnostic_steps": [
+      "Count the LED flashes on the front Honeywell gas valve: 7 flashes (or 6-1 flashes) means Flammable Vapor Sensor lockout.",
+      "Test resistance across the two pins of the white SP20172 sensor clip at the bottom exterior of the tank: a healthy sensor reads 9,000 to 45,000 Ohms. If it reads over 50k Ohms, plug in the new SP20172 sensor and reset the gas valve."
+    ],
+    "faq": [
+      {
+        "q": "How do I clear the 7-flash lockout on the Honeywell gas valve after plugging in the new SP20172 sensor?",
+        "a": "Turn the control knob to OFF, wait 30 seconds, turn it to PILOT, and as soon as the status LED starts blinking rapidly, immediately rotate the temperature dial all the way from LOW to HOT and back to LOW 6 times within 30 seconds."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "bambu-lab-ams-error-hms-0700-2000-0002-0001-en",
+    "slug": "bambu-lab-x1c-p1s-hms-0700-2000-0002-0001-ams-failed-to-feed-ptfe",
+    "category": "3D Printers",
+    "lang": "en",
+    "brands": [
+      "Bambu Lab"
+    ],
+    "error_code": "HMS_0700_2000_0002_0001 / AMS Failed to Feed Filament",
+    "popular_models": [
+      "Bambu Lab X1 Carbon",
+      "P1S",
+      "P1P",
+      "X1E with AMS"
+    ],
+    "symptom": "The AMS feeds filament toward the toolhead, retracts it 3 times in a row, and pauses the print with 'HMS_0700_2000_0002_0001: Failed to feed filament into the toolhead'.",
+    "technical_cause": "Abrasive wear inside the internal AMS PTFE tubes or sticky spring/magnet inside the rear Filament Buffer causing the Hall sensor to miss the tension signal.",
+    "oem_part_name": "Bambu Lab AMS 2.5mm ID PTFE Tube Replacement Kit + Pneumatic Coupler",
+    "oem_part_number": "BBL-PTFE-2540",
+    "secondary_part_number": "FAZ007 (Bambu Lab OEM Filament Buffer)",
+    "affiliate_search_query": "Bambu Lab AMS PTFE tube 2.5mm ID 4mm OD connector kit",
+    "part_price_range": "$11 - $22",
+    "technician_cost_estimate": "$95 - $140",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Disconnect the PTFE tube from the top of the toolhead and inspect the bend right above the extruder—carbon fiber, matte, and glow filaments saw grooves through the inner wall that snag the filament tip.",
+      "Check that the sliding spring inside the rear Filament Buffer moves smoothly without binding.",
+      "Replace the worn PTFE sections using 2.5mm inner diameter / 4.0mm outer diameter PTFE tubing (standard 2.0mm ID Ender 3 tubing causes excess friction in the Bambu AMS!)."
+    ],
+    "faq": [
+      {
+        "q": "Why must I use 2.5mm ID PTFE tube instead of standard 2.0mm ID Capricorn tubing on Bambu Lab AMS?",
+        "a": "The Bambu AMS pushes filament through multiple tight bends at high speed; 2.0mm ID tubing creates too much drag and triggers HMS_0700_2000_0002_0001 overload errors."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "creality-ender-3-e1-thermal-runaway-thermistor-en",
+    "slug": "creality-ender-3-pro-v2-e1-thermal-runaway-heating-failed-thermistor",
+    "category": "3D Printers",
+    "lang": "en",
+    "brands": [
+      "Creality",
+      "Anycubic",
+      "Elegoo"
+    ],
+    "error_code": "E1: Thermal Runaway / Heating Failed Printer Halted",
+    "popular_models": [
+      "Ender 3",
+      "Ender 3 Pro",
+      "Ender 3 V2",
+      "Ender 3 S1",
+      "CR-10"
+    ],
+    "symptom": "The 3D printer emits a loud continuous alarm beep mid-print or during preheat and freezes with 'Thermal Runaway E1: Printer Halted Please Reset'.",
+    "technical_cause": "Crushed glass bead or broken lead wire on the 100K NTC hotend thermistor (or missing silicone heater block sock allowing the part cooling fan to chill the nozzle).",
+    "oem_part_name": "Creality 100K NTC 3950 Glass Bead / Screw-In Brass Thermistor + 24V 40W Heater Kit",
+    "oem_part_number": "NTC-100K-3950-E3",
+    "secondary_part_number": "4004020008 (Complete Creality MK8 24V Hotend Kit)",
+    "affiliate_search_query": "Ender 3 Pro V2 thermistor 100K NTC 24V 40W hotend kit",
+    "part_price_range": "$9 - $16",
+    "technician_cost_estimate": "$75 - $120",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Check the idle nozzle temperature on the screen at room temperature: if it reads -14°C, 0°C, or jumps wildly when you wiggle the printhead wire loom, the thermistor wire is broken.",
+      "Make sure the silicone sock is covering the aluminum heater block.",
+      "Install a new 100K NTC thermistor (or upgraded M3 screw-in brass hex thermistor) without over-tightening the retention screw."
+    ],
+    "faq": [
+      {
+        "q": "Why are M3 screw-in brass thermistors better than the stock glass bead on an Ender 3?",
+        "a": "The stock glass bead is held by a Phillips screw that easily crushes the fragile PTFE insulation and shorts out. An M3 brass stud thermistor threads directly into the screw hole and never crushes."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "frigidaire-refrigerator-error-sy-ef-evaporator-fan",
+    "slug": "frigidaire-electrolux-refrigerator-error-sy-ef-evaporator-fan-242077702",
+    "category": "Refrigerators",
+    "lang": "en",
+    "brands": [
+      "Frigidaire",
+      "Electrolux",
+      "Kenmore"
+    ],
+    "error_code": "Error SY EF (Evaporator Fan Circuit Failure)",
+    "popular_models": [
+      "FFHB2750TS",
+      "FGHD2368TF",
+      "FGHB2868TF",
+      "Gallery & Professional Series"
+    ],
+    "symptom": "The refrigerator display beeps and flashes 'SY EF' (or '5Y EF'), the upper fridge compartment warms up, and ice production stops.",
+    "technical_cause": "The freezer evaporator fan motor behind the rear freezer panel has seized from frost or failed internally, stopping cold air circulation and tachometer feedback to the main board.",
+    "oem_part_name": "Frigidaire OEM Freezer Evaporator Fan Motor",
+    "oem_part_number": "242077702",
+    "secondary_part_number": "242077705 / 5304514392 / A03788604",
+    "affiliate_search_query": "242077702 5304514392 Frigidaire evaporator fan motor SY EF",
+    "part_price_range": "$24 - $38",
+    "technician_cost_estimate": "$240 - $340",
+    "repair_time_minutes": 25,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Unplug the refrigerator, slide out the bottom freezer basket drawer, and remove the rear metal evaporator cover inside the freezer.",
+      "Spin the evaporator fan blade by hand: if it is iced over, thaw the frost and replace the 242077702 / 5304514392 fan motor clipped above the coils."
+    ],
+    "faq": [
+      {
+        "q": "Why do people confuse '5Y EF' with 'SY EF' on Frigidaire fridges?",
+        "a": "On the 7-segment display, the letter 'S' looks identical to the number '5'—both mean System Evaporator Fan (SY EF)."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "lg-refrigerator-error-er-if-fe-ice-fan",
+    "slug": "lg-refrigerator-error-er-if-fe-ice-maker-fan-motor-aba72913413",
+    "category": "Refrigerators",
+    "lang": "en",
+    "brands": [
+      "LG",
+      "Kenmore Elite"
+    ],
+    "error_code": "Error Er IF / Er IFE (Icemaker Fan Error)",
+    "popular_models": [
+      "LFXS26973S",
+      "LFXS28968S",
+      "LMXS30776S",
+      "LFX28968ST"
+    ],
+    "symptom": "The refrigerator screen displays 'Er IF' or 'Er IFE', the door ice maker stops making ice, and the fresh food temperature creeps up.",
+    "technical_cause": "Frost buildup in the ice fan scroll housing has stalled the 12V DC ice maker blower fan motor mounted behind the freezer evaporator cover.",
+    "oem_part_name": "LG OEM Refrigerator Ice Maker Fan Motor Assembly (ABA72913413 / EAU63103201)",
+    "oem_part_number": "ABA72913413",
+    "secondary_part_number": "EAU63103201 / ABA72913421 / EAU64824401",
+    "affiliate_search_query": "ABA72913413 EAU63103201 LG refrigerator Er IF ice fan motor",
+    "part_price_range": "$28 - $44",
+    "technician_cost_estimate": "$260 - $370",
+    "repair_time_minutes": 30,
+    "difficulty": "Medium",
+    "diagnostic_steps": [
+      "Unplug the fridge for 2 hours with the freezer drawer open (or use a hair dryer on low) to clear any ice from the left air duct.",
+      "If 'Er IF' returns within 24–48 hours, remove the back panel inside the bottom freezer and swap out the ABA72913413 / EAU63103201 ice fan assembly."
+    ],
+    "faq": [
+      {
+        "q": "Can I keep using the refrigerator while Er IF is showing?",
+        "a": "The fridge will keep running for a short time, but because the ice fan shares the freezer evaporator housing, ignoring Er IF often leads to full evaporator icing."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "chamberlain-liftmaster-garage-door-4-flashes-safety-sensors-041-0136",
+    "slug": "liftmaster-chamberlain-craftsman-garage-door-4-6-flashes-safety-sensors-041-0136",
+    "category": "Garage & Home Hardware",
+    "lang": "en",
+    "brands": [
+      "LiftMaster",
+      "Chamberlain",
+      "Craftsman"
+    ],
+    "error_code": "Main Light Blinks 10 Times / Up Arrow 4 Flashes & Down Arrow 6 Flashes",
+    "popular_models": [
+      "LiftMaster 8550W / 8365W",
+      "Chamberlain B970 / B550",
+      "Craftsman 1/2 HP & 3/4 HP"
+    ],
+    "symptom": "The garage door opens normally, but when you press the remote to close it, the door reverses back up, the overhead light flashes 10 times, and the green receiving eye sensor LED stays off or flickers.",
+    "technical_cause": "Failed infrared photo-eye safety sensor (041-0136 / 41A5034) at the bottom of the garage door track due to sunlight degradation or water intrusion.",
+    "oem_part_name": "LiftMaster / Chamberlain OEM Safety Reversing Sensor Kit (G801CB-P)",
+    "oem_part_number": "041-0136",
+    "secondary_part_number": "41A5034 / G801CB-P (Universal post-1997 LiftMaster & Chamberlain)",
+    "affiliate_search_query": "041-0136 41A5034 LiftMaster Chamberlain garage door safety sensors",
+    "part_price_range": "$24 - $36",
+    "technician_cost_estimate": "$165 - $240",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy (Wingnut bracket + 2-wire splice)",
+    "diagnostic_steps": [
+      "Look at the two small black sensors near the bottom corners of your garage door track: the Sending sensor must have a solid Amber LED, and the Receiving sensor must have a solid Green LED.",
+      "If both wingnuts are aligned straight across from each other and the lenses are clean, yet the Green LED stays dead even when holding the two sensors face-to-face, splice in the new 041-0136 / 41A5034 sensor pair."
+    ],
+    "faq": [
+      {
+        "q": "How can I force the garage door closed right now if the 041-0136 sensor is broken?",
+        "a": "Press and HOLD the wired wall button continuously until the door touches the floor—holding the wall button overrides the safety eye sensors."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "liftmaster-chamberlain-garage-opener-hums-wont-move-gear-kit-41c4220a",
+    "slug": "liftmaster-chamberlain-craftsman-garage-opener-motor-hums-gear-sprocket-41c4220a",
+    "category": "Garage & Home Hardware",
+    "lang": "en",
+    "brands": [
+      "LiftMaster",
+      "Chamberlain",
+      "Craftsman",
+      "Raynor"
+    ],
+    "error_code": "Opener Motor Runs/Hums But Chain Doesn't Move (White Plastic Shavings)",
+    "popular_models": [
+      "1/3 HP & 1/2 HP Chain Drive Openers (1984–Present)"
+    ],
+    "symptom": "When you press the garage button, the overhead motor runs for a few seconds and shuts off without moving the chain or door, and you find white plastic snow/shavings inside the motor cover.",
+    "technical_cause": "The sacrificial nylon teeth on the main drive gear and worm gear assembly (41C4220A) have stripped out after 8–12 years of lifting.",
+    "oem_part_name": "LiftMaster / Chamberlain Complete Drive Gear & Sprocket Assembly Kit",
+    "oem_part_number": "41C4220A",
+    "secondary_part_number": "41A2817 (Drive & Worm Gear Kit)",
+    "affiliate_search_query": "41C4220A LiftMaster Chamberlain Craftsman gear and sprocket kit",
+    "part_price_range": "$19 - $29",
+    "technician_cost_estimate": "$195 - $285",
+    "repair_time_minutes": 35,
+    "difficulty": "Medium",
+    "diagnostic_steps": [
+      "Check your garage door balance first by pulling the red emergency rope and lifting the door halfway by hand (if the door crashes down heavily, a broken torsion spring caused the plastic gear to strip).",
+      "Unplug the overhead opener, remove the metal housing cover, unbolt the three 3/8-inch bolts on the top 41C4220A gear and sprocket assembly, and install the greased replacement kit."
+    ],
+    "faq": [
+      {
+        "q": "Why did LiftMaster make the 41C4220A gear out of nylon instead of steel?",
+        "a": "It is intentionally designed as a $22 mechanical fuse so that if a garage spring breaks or the door jams, the nylon gear strips instead of burning out the electric motor or bending the steel rail."
+      }
+    ],
+    "created_at": "2026-11-20"
+  }
+]
