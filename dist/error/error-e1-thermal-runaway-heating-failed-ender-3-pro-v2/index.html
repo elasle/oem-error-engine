@@ -9,6 +9,24 @@
   <meta property="og:title" content="E1: Thermal Runaway / Heating Failed Impresoras 3D Creality / Anycubic / Artillery: Causa y Pieza Exacta OEM (NTC-100K-3950-E3)">
   <meta property="og:description" content="Solución rápida al E1: Thermal Runaway / Heating Failed en impresoras 3d Creality / Anycubic / Artillery. Síntoma: La impresora pita de forma continua a mitad de impresión o al calentar el hotend y la pantalla se bloquea... Pieza OEM exacta: NTC-100K-3950-E3 (8€ - 15€).">
   <meta property="og:type" content="article">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D63H5B4WQR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D63H5B4WQR');
+    document.addEventListener('click', function(e) {
+      const btn = e.target.closest('.btn-amz');
+      if (btn && typeof gtag === 'function') {
+        gtag('event', 'affiliate_click', {
+          site_niche: 'oem-error-engine',
+          link_url: btn.href,
+          page_path: window.location.pathname
+        });
+      }
+    });
+  </script>
   <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué significa el E1: Thermal Runaway / Heating Failed en impresoras 3d Creality / Anycubic / Artillery?", "acceptedAnswer": {"@type": "Answer", "text": "El cable de vidrio del termistor NTC 100K del bloque calefactor está pellizcado por el tornillo de sujeción o cortado por fatiga térmica, dando lecturas erráticas de temperatura a la placa Marlin. La pieza de recambio oficial tiene la referencia OEM NTC-100K-3950-E3 (Termistor NTC 100K 3950 con Cable XH2.54 + Cartucho Calefactor 24V 40W)."}}, {"@type": "Question", "name": "¿Por qué sale Error E1 justo cuando arranca el ventilador de capa en la capa 2?", "acceptedAnswer": {"@type": "Answer", "text": "Porque falta el calcetín de silicona térmica del bloque calefactor o el termistor se ha salido ligeramente de su orificio. Pon la funda de silicona y ejecuta un autotune PID (M303 E0 S200 C8)."}}]}, {"@context": "https://schema.org", "@type": "HowTo", "name": "Cómo solucionar el E1: Thermal Runaway / Heating Failed en Creality / Anycubic / Artillery (Ref. OEM NTC-100K-3950-E3)", "description": "La impresora pita de forma continua a mitad de impresión o al calentar el hotend y la pantalla se bloquea con 'Thermal Runaway E1: Printer Halted Please Reset'.", "totalTime": "PT15M", "supply": [{"@type": "HowToSupply", "name": "Termistor NTC 100K 3950 con Cable XH2.54 + Cartucho Calefactor 24V 40W (OEM NTC-100K-3950-E3)"}], "step": [{"@type": "HowToStep", "position": 1, "name": "Paso 1", "text": "Observa en la pantalla la temperatura de la boquilla (Nozzle) en frío: si marca -14°C, 0°C o salta de golpe 15 grados al mover el cabezal con la mano, el termistor NTC 100K está roto."}, {"@type": "HowToStep", "position": 2, "name": "Paso 2", "text": "Verifica también que la funda de silicona negra/azul esté puesta en el bloque de aluminio (si falta, el ventilador de capa enfría el bloque y dispara E1 Thermal Runaway)."}, {"@type": "HowToStep", "position": 3, "name": "Paso 3", "text": "Sustituye el termistor sin apretar en exceso el tornillo Phillips lateral para no aplastar el aislamiento transparente de teflón."}]}]</script>
   <style>
 :root {

@@ -10,6 +10,24 @@
   <link rel="alternate" hreflang="en-US" href="https://elasle.github.io/oem-error-engine/">
   <link rel="alternate" hreflang="es" href="https://elasle.github.io/oem-error-engine/es/">
   <link rel="alternate" hreflang="x-default" href="https://elasle.github.io/oem-error-engine/">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D63H5B4WQR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D63H5B4WQR');
+    document.addEventListener('click', function(e) {
+      const btn = e.target.closest('.btn-amz');
+      if (btn && typeof gtag === 'function') {
+        gtag('event', 'affiliate_click', {
+          site_niche: 'oem-error-engine',
+          link_url: btn.href,
+          page_path: window.location.pathname
+        });
+      }
+    });
+  </script>
   <style>
 :root {
   --bg: #0f172a;

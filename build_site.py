@@ -65,6 +65,30 @@ def build_affiliate_links(item, config):
     }
 
 
+def get_ga4_snippet(config):
+    ga_id = config.get("analytics", {}).get("ga4_measurement_id", "G-D63H5B4WQR").strip()
+    if not ga_id:
+        return ""
+    return f"""<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={ga_id}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+    gtag('config', '{ga_id}');
+    document.addEventListener('click', function(e) {{
+      const btn = e.target.closest('.btn-amz');
+      if (btn && typeof gtag === 'function') {{
+        gtag('event', 'affiliate_click', {{
+          site_niche: 'oem-error-engine',
+          link_url: btn.href,
+          page_path: window.location.pathname
+        }});
+      }}
+    }});
+  </script>"""
+
+
 def get_css():
     return """
 :root {
@@ -401,6 +425,7 @@ def render_error_page(item, same_lang_items, config):
   <meta property="og:title" content="{html.escape(title)}">
   <meta property="og:description" content="{html.escape(meta_desc)}">
   <meta property="og:type" content="article">
+  {get_ga4_snippet(config)}
   <script type="application/ld+json">{schema_json}</script>
   <style>{get_css()}</style>
 </head>
@@ -568,6 +593,7 @@ def render_index_page(items, config, lang="en", prefix=""):
   <link rel="alternate" hreflang="en-US" href="{base_url}/">
   <link rel="alternate" hreflang="es" href="{base_url}/es/">
   <link rel="alternate" hreflang="x-default" href="{base_url}/">
+  {get_ga4_snippet(config)}
   <style>{get_css()}</style>
 </head>
 <body>

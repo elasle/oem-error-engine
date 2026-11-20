@@ -3,6 +3,9 @@
   "site_tagline": "Decodificador Técnico de Códigos de Error y Referencias de Repuestos Originales (OEM)",
   "site_url": "https://elasle.github.io/oem-error-engine",
   "language": "es",
+  "analytics": {
+    "ga4_measurement_id": "G-D63H5B4WQR"
+  },
   "monetization": {
     "amazon_domain": "amazon.com",
     "amazon_tag": "onamzasleyarb-20",

@@ -9,6 +9,24 @@
   <meta property="og:title" content="Bambu Lab HMS_0700_2000_0002_0001 / AMS Failed to Feed Filament Fix: Exact Cause &amp; OEM Part #BBL-PTFE-2540">
   <meta property="og:description" content="How to fix Bambu Lab 3d printers HMS_0700_2000_0002_0001 / AMS Failed to Feed Filament. Symptom: The AMS feeds filament toward the toolhead, retracts it 3 times in a row, and pauses the print with &#x27;HMS_... Exact OEM replacement part: BBL-PTFE-2540 ($11 - $22).">
   <meta property="og:type" content="article">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D63H5B4WQR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D63H5B4WQR');
+    document.addEventListener('click', function(e) {
+      const btn = e.target.closest('.btn-amz');
+      if (btn && typeof gtag === 'function') {
+        gtag('event', 'affiliate_click', {
+          site_niche: 'oem-error-engine',
+          link_url: btn.href,
+          page_path: window.location.pathname
+        });
+      }
+    });
+  </script>
   <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What causes HMS_0700_2000_0002_0001 / AMS Failed to Feed Filament on a Bambu Lab 3d printers?", "acceptedAnswer": {"@type": "Answer", "text": "Abrasive wear inside the internal AMS PTFE tubes or sticky spring/magnet inside the rear Filament Buffer causing the Hall sensor to miss the tension signal. The exact OEM replacement part number is BBL-PTFE-2540 (Bambu Lab AMS 2.5mm ID PTFE Tube Replacement Kit + Pneumatic Coupler)."}}, {"@type": "Question", "name": "Why must I use 2.5mm ID PTFE tube instead of standard 2.0mm ID Capricorn tubing on Bambu Lab AMS?", "acceptedAnswer": {"@type": "Answer", "text": "The Bambu AMS pushes filament through multiple tight bends at high speed; 2.0mm ID tubing creates too much drag and triggers HMS_0700_2000_0002_0001 overload errors."}}]}, {"@context": "https://schema.org", "@type": "HowTo", "name": "How to fix Bambu Lab HMS_0700_2000_0002_0001 / AMS Failed to Feed Filament (OEM Part #BBL-PTFE-2540)", "description": "The AMS feeds filament toward the toolhead, retracts it 3 times in a row, and pauses the print with 'HMS_0700_2000_0002_0001: Failed to feed filament into the toolhead'.", "totalTime": "PT15M", "supply": [{"@type": "HowToSupply", "name": "Bambu Lab AMS 2.5mm ID PTFE Tube Replacement Kit + Pneumatic Coupler (OEM BBL-PTFE-2540)"}], "step": [{"@type": "HowToStep", "position": 1, "name": "Step 1", "text": "Disconnect the PTFE tube from the top of the toolhead and inspect the bend right above the extruder—carbon fiber, matte, and glow filaments saw grooves through the inner wall that snag the filament tip."}, {"@type": "HowToStep", "position": 2, "name": "Step 2", "text": "Check that the sliding spring inside the rear Filament Buffer moves smoothly without binding."}, {"@type": "HowToStep", "position": 3, "name": "Step 3", "text": "Replace the worn PTFE sections using 2.5mm inner diameter / 4.0mm outer diameter PTFE tubing (standard 2.0mm ID Ender 3 tubing causes excess friction in the Bambu AMS!)."}]}]</script>
   <style>
 :root {
