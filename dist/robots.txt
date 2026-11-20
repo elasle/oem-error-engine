@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://tu-usuario.github.io/oem-error-engine/sitemap.xml
+Sitemap: https://averiasoem.github.io/oem-error-engine/sitemap.xml

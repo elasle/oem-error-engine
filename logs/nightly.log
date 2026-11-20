@@ -1,0 +1,3 @@
+[2026-11-20 01:54:24] Ejecución nocturna completada. Añadidas 3 fichas nuevas: ['baxi-caldera-error-e10', 'philips-cafetera-error-2-molinillo', 'xiaomi-patinete-error-18']. Total en DB: 19. Cola restante: 3.
+[2026-11-20 01:54:24] Git commit creado: chore(nightly): +3 nuevas fichas OEM autogeneradas (2026-11-20)
+[2026-11-20 01:54:24] Git commit local guardado (añade 'git remote add origin <URL>' para auto-despliegue en la nube).

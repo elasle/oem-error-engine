@@ -25,29 +25,32 @@ def load_json(path):
 
 def build_affiliate_links(item, config):
     mon = config.get("monetization", {})
-    query = item.get("affiliate_search_query") or f"{item['oem_part_number']} {item['oem_part_name']}"
-    encoded_q = urllib.parse.quote_plus(query)
-    encoded_oem = urllib.parse.quote_plus(f"{item['oem_part_number']} {item['brands'][0]}")
+    # Para Amazon.com (-20), la referencia OEM + marca devuelve el repuesto exacto en todo el mundo
+    oem_brand_query = f"{item['oem_part_number']} {item['brands'][0]}"
+    full_query = item.get("affiliate_search_query") or f"{item['oem_part_number']} {item['oem_part_name']}"
 
-    amz_domain = mon.get("amazon_domain", "amazon.es")
-    amz_tag = mon.get("amazon_tag", "averiasoem-21")
-    amazon_url = f"https://www.{amz_domain}/s?k={encoded_q}&tag={amz_tag}"
+    encoded_oem_brand = urllib.parse.quote_plus(oem_brand_query)
+    encoded_full = urllib.parse.quote_plus(full_query)
 
-    amz_us_domain = mon.get("amazon_us_domain", "amazon.com")
-    amz_us_tag = mon.get("amazon_us_tag", "averiasoem-20")
-    amazon_us_url = f"https://www.{amz_us_domain}/s?k={encoded_oem}&tag={amz_us_tag}"
+    amz_domain = mon.get("amazon_domain", "amazon.com")
+    amz_tag = mon.get("amazon_tag", "onamzasleyarb-20")
+    amazon_main_url = f"https://www.{amz_domain}/s?k={encoded_oem_brand}&tag={amz_tag}"
 
-    ebay_domain = mon.get("ebay_domain", "ebay.es")
+    amz_es_domain = mon.get("amazon_es_domain", "amazon.es")
+    amz_es_tag = mon.get("amazon_es_tag", amz_tag)
+    amazon_es_url = f"https://www.{amz_es_domain}/s?k={encoded_full}&tag={amz_es_tag}"
+
+    ebay_domain = mon.get("ebay_domain", "ebay.com")
     ebay_campid = mon.get("ebay_campid", "")
-    ebay_url = f"https://www.{ebay_domain}/sch/i.html?_nkw={encoded_q}"
+    ebay_url = f"https://www.{ebay_domain}/sch/i.html?_nkw={encoded_oem_brand}"
     if ebay_campid:
-        ebay_url += f"&mkcid=1&mkrid=1185-53479-19255-0&campid={ebay_campid}&toolid=10001"
+        ebay_url += f"&mkcid=1&mkrid=711-53200-19255-0&campid={ebay_campid}&toolid=10001"
 
-    ali_url = f"https://es.aliexpress.com/w/wholesale-{urllib.parse.quote(item['oem_part_number'])}.html"
+    ali_url = f"https://www.aliexpress.com/w/wholesale-{urllib.parse.quote(item['oem_part_number'])}.html"
 
     return {
-        "amazon_es": amazon_url,
-        "amazon_us": amazon_us_url,
+        "amazon_main": amazon_main_url,
+        "amazon_es": amazon_es_url,
         "ebay": ebay_url,
         "aliexpress": ali_url,
     }
@@ -380,14 +383,14 @@ def render_error_page(item, all_items, config):
       </div>
 
       <div class="btn-group">
-        <a class="btn btn-amz" href="{html.escape(links['amazon_es'])}" target="_blank" rel="sponsored nofollow noopener">
+        <a class="btn btn-amz" href="{html.escape(links['amazon_main'])}" target="_blank" rel="sponsored nofollow noopener">
           🛒 Ver Repuesto {html.escape(item['oem_part_number'])} en Amazon →
         </a>
-        <a class="btn btn-ebay" href="{html.escape(links['ebay'])}" target="_blank" rel="sponsored nofollow noopener">
-          🔎 Buscar OEM en eBay
+        <a class="btn btn-ebay" href="{html.escape(links['amazon_es'])}" target="_blank" rel="sponsored nofollow noopener">
+          🇪🇸 Ver en Amazon España
         </a>
-        <a class="btn btn-ali" href="{html.escape(links['aliexpress'])}" target="_blank" rel="sponsored nofollow noopener">
-          📦 Comparar en AliExpress
+        <a class="btn btn-ali" href="{html.escape(links['ebay'])}" target="_blank" rel="sponsored nofollow noopener">
+          🔎 Buscar OEM en eBay
         </a>
       </div>
       <p style="font-size:0.75rem;color:var(--muted);margin-top:0.75rem;">

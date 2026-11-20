@@ -1,15 +1,15 @@
 {
   "site_name": "AveríasOEM",
-  "site_tagline": "Decodificador Técnico de Códigos de Error y Referencias de Repuestos Originales",
-  "site_url": "https://tu-usuario.github.io/oem-error-engine",
+  "site_tagline": "Decodificador Técnico de Códigos de Error y Referencias de Repuestos Originales (OEM)",
+  "site_url": "https://averiasoem.github.io/oem-error-engine",
   "language": "es",
   "monetization": {
-    "amazon_domain": "amazon.es",
-    "amazon_tag": "averiasoem-21",
-    "amazon_us_domain": "amazon.com",
-    "amazon_us_tag": "averiasoem-20",
-    "ebay_domain": "ebay.es",
-    "ebay_campid": "5338900000",
+    "amazon_domain": "amazon.com",
+    "amazon_tag": "onamzasleyarb-20",
+    "amazon_es_domain": "amazon.es",
+    "amazon_es_tag": "onamzasleyarb-20",
+    "ebay_domain": "ebay.com",
+    "ebay_campid": "",
     "aliexpress_aff_url_prefix": ""
   },
   "nightly_settings": {
