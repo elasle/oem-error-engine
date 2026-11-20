@@ -561,6 +561,7 @@ def render_index_page(items, config, lang="en", prefix=""):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="l8YiL02sMegt8aAx7SnKsaNGEK49ZA6JStGemJbxRys" />
   <title>{html.escape(page_title)}</title>
   <meta name="description" content="{html.escape(meta_desc)}">
   <link rel="canonical" href="{html.escape(canonical)}">
@@ -722,6 +723,11 @@ def main():
 
     with open(os.path.join(DIST_DIR, f"{INDEXNOW_KEY}.txt"), "w", encoding="utf-8") as f:
         f.write(INDEXNOW_KEY)
+
+    # Google Search Console verification file
+    gsc_file = "googlefe6444fd8fb355ba.html"
+    with open(os.path.join(DIST_DIR, gsc_file), "w", encoding="utf-8") as f:
+        f.write(f"google-site-verification: {gsc_file}")
 
     # 5. Public JSON API endpoint
     with open(os.path.join(DIST_DIR, "api", "errors.json"), "w", encoding="utf-8") as f:
