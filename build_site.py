@@ -628,16 +628,22 @@ def build_sitemap(all_items, config):
     base_url = config["site_url"].rstrip("/")
     today = datetime.now().strftime("%Y-%m-%d")
     urls = [
-        f"  <url>\n    <loc>{base_url}/</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>",
-        f"  <url>\n    <loc>{base_url}/es/</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>",
+        f"  <url>\n    <loc>{base_url}/</loc>\n    <lastmod>{today}</lastmod>\n  </url>",
+        f"  <url>\n    <loc>{base_url}/es/</loc>\n    <lastmod>{today}</lastmod>\n  </url>",
     ]
     for item in all_items:
         lastmod = item.get("created_at", today)
         loc = f"{base_url}/error/{item['slug']}/"
-        urls.append(
-            f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>"
-        )
+        urls.append(f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{lastmod}</lastmod>\n  </url>")
     return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>\n"
+
+
+def build_sitemap_txt(all_items, config):
+    base_url = config["site_url"].rstrip("/")
+    lines = [f"{base_url}/", f"{base_url}/es/"]
+    for item in all_items:
+        lines.append(f"{base_url}/error/{item['slug']}/")
+    return "\n".join(lines) + "\n"
 
 
 def build_llms_txt(en_items, es_items, config):
@@ -708,10 +714,14 @@ def main():
         with open(os.path.join(page_dir, "index.html"), "w", encoding="utf-8") as f:
             f.write(render_error_page(item, es_items, config))
 
-    # 4. Sitemap.xml, robots.txt, llms.txt & IndexNow key file
+    # 4. Sitemap.xml, sitemap.txt, robots.txt, llms.txt & IndexNow key file
     sitemap_xml = build_sitemap(all_items, config)
     with open(os.path.join(DIST_DIR, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write(sitemap_xml)
+
+    sitemap_txt = build_sitemap_txt(all_items, config)
+    with open(os.path.join(DIST_DIR, "sitemap.txt"), "w", encoding="utf-8") as f:
+        f.write(sitemap_txt)
 
     robots_txt = f"User-agent: *\nAllow: /\nSitemap: {config['site_url'].rstrip('/')}/sitemap.xml\n"
     with open(os.path.join(DIST_DIR, "robots.txt"), "w", encoding="utf-8") as f:

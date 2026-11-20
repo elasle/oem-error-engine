@@ -2,3 +2,7 @@
 [2026-11-20 01:54:24] Git commit creado: chore(nightly): +3 nuevas fichas OEM autogeneradas (2026-11-20)
 [2026-11-20 01:54:24] Git commit local guardado (añade 'git remote add origin <URL>' para auto-despliegue en la nube).
 [2026-11-20 02:24:01] IndexNow ping sent for 70 URLs -> HTTP 202
+[2026-11-20 03:01:27] Nightly run complete: +3 EN (total 44, queue 4), +3 ES (total 28, queue 3).
+[2026-11-20 03:01:27] Git commit created: chore(nightly): +6 new bilingual OEM pages (2026-11-20)
+[2026-11-20 03:01:28] Git push completed to origin.
+[2026-11-20 03:01:29] IndexNow ping notice: HTTP Error 403: Forbidden
