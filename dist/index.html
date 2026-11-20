@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AveríasOEM — Decodificador Técnico de Códigos de Error y Referencias de Repuestos Originales</title>
+  <meta name="description" content="Buscador técnico de códigos de error de calderas, lavavajillas, lavadoras, cafeteras, impresoras 3D y patinetes con la referencia exacta del repuesto OEM.">
+  <style>
+:root {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --surface-2: #334155;
+  --border: #334155;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --accent: #f59e0b;
+  --accent-hover: #d97706;
+  --green: #10b981;
+  --red: #ef4444;
+  --blue: #38bdf8;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding-bottom: 4rem;
+}
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 960px; margin: 0 auto; padding: 0 1.25rem; }
+header {
+  background: rgba(30, 41, 59, 0.9);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(8px);
+}
+.nav-inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.logo { font-weight: 800; font-size: 1.25rem; color: var(--text); display: flex; align-items: center; gap: 0.5rem; }
+.logo span { background: var(--accent); color: #000; padding: 0.1rem 0.45rem; border-radius: 4px; font-size: 0.85rem; font-family: monospace; }
+.badge-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1.5rem 0 0.75rem; }
+.badge {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.badge.cat { color: var(--accent); border-color: rgba(245, 158, 11, 0.4); font-weight: 600; }
+h1 { font-size: 1.9rem; line-height: 1.25; margin-bottom: 1rem; color: #fff; }
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.85rem;
+  margin: 1.5rem 0;
+}
+.kpi-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.kpi-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.kpi-val { font-size: 1.15rem; font-weight: 700; margin-top: 0.25rem; }
+.kpi-val.price { color: var(--green); }
+.kpi-val.oem { color: var(--accent); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+.oem-cta-box {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.98), rgba(15, 23, 42, 0.98));
+  border: 2px solid var(--accent);
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin: 1.75rem 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+.oem-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.oem-code-pill {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+}
+.btn-group { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.35rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none !important;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-amz { background: var(--accent); color: #000; flex: 1 1 260px; }
+.btn-amz:hover { background: var(--accent-hover); }
+.btn-ebay { background: var(--surface-2); color: #fff; border: 1px solid #475569; flex: 1 1 180px; }
+.btn-ali { background: #1e293b; color: var(--muted); border: 1px solid var(--border); flex: 1 1 180px; }
+
+.section-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.section-card h2 { font-size: 1.25rem; margin-bottom: 0.85rem; color: #fff; display: flex; align-items: center; gap: 0.5rem; }
+.step-list { list-style: none; counter-reset: steps; }
+.step-list li {
+  counter-increment: steps;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 0.9rem;
+}
+.step-list li::before {
+  content: counter(steps);
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: var(--surface-2);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faq-item { border-top: 1px solid var(--border); padding-top: 1rem; margin-top: 1rem; }
+.faq-item:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+.faq-q { font-weight: 700; color: #fff; margin-bottom: 0.35rem; }
+.faq-a { color: var(--muted); font-size: 0.95rem; }
+
+.search-box {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  color: #fff;
+  margin: 1rem 0 1.5rem;
+}
+.search-box:focus { outline: none; border-color: var(--accent); }
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1rem;
+}
+.item-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.15s ease;
+}
+.item-card:hover { border-color: var(--accent); }
+.item-card h3 { font-size: 1.1rem; color: #fff; margin: 0.4rem 0 0.5rem; }
+.item-meta { font-size: 0.8rem; color: var(--muted); font-family: monospace; }
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">⚡ AveríasOEM <span>OEM DB</span></a>
+      <span style="font-size:0.85rem;color:var(--muted);">19 fichas técnicas OEM verificadas</span>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:2rem;">
+    <h1>Buscador de Códigos de Error y Piezas OEM</h1>
+    <p style="color:var(--muted);max-width:720px;">
+      Introduce el código que parpadea en tu máquina (ej. <strong>E15</strong>, <strong>F28</strong>, <strong>Error 14</strong>, <strong>OE</strong>), la marca o el código de pieza para ver la causa técnica exacta y la referencia OEM del repuesto sin pagar servicio técnico.
+    </p>
+
+    <input type="search" id="searchInput" class="search-box" placeholder="🔍 Buscar código (ej. E15 Bosch, F28 Vaillant, Ulka EP5, Error 14 Xiaomi, 00631200...)" oninput="filterCards()">
+
+    <div class="badge-bar" style="margin-top:0;margin-bottom:1.5rem;">
+      <button class="badge cat" onclick="filterCat('')" style="cursor:pointer;">Todos (19)</button> <button class="badge" onclick="filterCat('Cafeteras')" style="cursor:pointer;">Cafeteras (3)</button> <button class="badge" onclick="filterCat('Calderas')" style="cursor:pointer;">Calderas (5)</button> <button class="badge" onclick="filterCat('Impresoras 3D')" style="cursor:pointer;">Impresoras 3D (1)</button> <button class="badge" onclick="filterCat('Lavadoras')" style="cursor:pointer;">Lavadoras (3)</button> <button class="badge" onclick="filterCat('Lavavajillas')" style="cursor:pointer;">Lavavajillas (4)</button> <button class="badge" onclick="filterCat('Movilidad Eléctrica')" style="cursor:pointer;">Movilidad Eléctrica (3)</button>
+    </div>
+
+    <div class="cards-grid" id="cardsGrid">
+      <a class="item-card" href="error/error-e15-lavavajillas-bosch-balay-siemens/" data-cat="Lavavajillas" data-search="error e15 bosch / siemens / balay / neff lavavajillas 12005744 kit junta de reparación sumidero / cuba + silicona térmica sms50e02eu sms46ki01e 3vs506bp sn25m287eu serie 2 / 4 / 6"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Lavavajillas</span><span class="item-meta">OEM #12005744</span></div><h3>Error E15 — Bosch / Siemens / Balay / Neff</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">El icono del grifo parpadea, la bomba de desagüe funciona sin parar aunque se apague el aparato y aparece E15 o E:1...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 14€ - 22€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-e24-e25-lavavajillas-bosch-balay-siemens/" data-cat="Lavavajillas" data-search="error e24 / e25 bosch / siemens / balay lavavajillas 00631200 bomba de desagüe magnética copreci blp3 00/004 sms40e32eu sms25ai05e 3vs570bp sn26m884ff"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Lavavajillas</span><span class="item-meta">OEM #00631200</span></div><h3>Error E24 / E25 — Bosch / Siemens / Balay</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">El programa se detiene al inicio o al final con agua estancada en el fondo y muestra E24 o E25 junto al símbolo del...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 18€ - 28€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-e09-lavavajillas-bosch-siemens-balay-no-calienta/" data-cat="Lavavajillas" data-search="error e09 bosch / siemens / balay lavavajillas 00651956 bomba de calor y circulación completa bsh sms58n62eu smv46kx01e 3vs503ba sn25m883eu"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Lavavajillas</span><span class="item-meta">OEM #00651956</span></div><h3>Error E09 — Bosch / Siemens / Balay</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">El lavavajillas termina el ciclo con la vajilla fría y mojada, y al finalizar muestra el código E09 o E:09....</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 65€ - 95€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-e19-lavavajillas-bosch-balay-siemens/" data-cat="Lavavajillas" data-search="error e19 bosch / siemens / balay lavavajillas 00631199 válvula de drenaje del intercambiador de calor bsh sms68ti02e smv68mx04e 3vs708ba sn236i01ke"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Lavavajillas</span><span class="item-meta">OEM #00631199</span></div><h3>Error E19 — Bosch / Siemens / Balay</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">El lavavajillas se bloquea con E19 al inicio o mitad del ciclo y no vacía el intercambiador de calor del lateral iz...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 22€ - 34€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-f28-caldera-vaillant-ecotec-plus/" data-cat="Calderas" data-search="error f.28 / f28 vaillant calderas 0020039057 electrodo de encendido e ionización con junta vaillant ecotec plus vmw 236/5-5 ecotec pro vmw 246 turbotec pro vmw es 242"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Calderas</span><span class="item-meta">OEM #0020039057</span></div><h3>Error F.28 / F28 — Vaillant</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">La caldera hace los 3 intentos de encendido con chispas, no detecta llama, se enciende el LED rojo fijo y muestra F...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 19€ - 29€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-f75-caldera-vaillant-sensor-presion/" data-cat="Calderas" data-search="error f.75 / f75 vaillant calderas 0020059717 sensor transductor de presión de agua vaillant ecotec plus ecotec exclusiv turbotec plus vmw"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Calderas</span><span class="item-meta">OEM #0020059717</span></div><h3>Error F.75 / F75 — Vaillant</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">Al abrir el grifo de agua caliente o activar la calefacción, la bomba arranca 5 veces seguidas, se detiene y aparec...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 24€ - 36€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-f22-caldera-saunier-duval-themaclassic-themafast/" data-cat="Calderas" data-search="error f22 / f.22 saunier duval calderas 0020018065 llave de llenado / grifo de carga saunier duval themaclassic f25 themafast f25 / f30 isofast themacondens"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Calderas</span><span class="item-meta">OEM #0020018065</span></div><h3>Error F22 / F.22 — Saunier Duval</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">Luz roja parpadeando, código F22 en el display y presión por debajo de 0.5 bar (o la llave de llenado azul gira loc...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 15€ - 26€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-ea-caldera-junkers-cerapur-euroline/" data-cat="Calderas" data-search="error ea junkers / bosch termotecnia calderas 87181070890 juego de electrodos de encendido e ionización con junta junkers cerapur zwbc 22-24 cerastar eurosmart zwa 24 cerapur comfort"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Calderas</span><span class="item-meta">OEM #87181070890</span></div><h3>Error EA — Junkers / Bosch Termotecnia</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">La caldera intenta encender, salta la chispa, pero a los pocos segundos se bloquea mostrando las letras EA parpadea...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 21€ - 32€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-triangulo-rojo-cafetera-delonghi-magnifica-bomba-ulka/" data-cat="Cafeteras" data-search="triángulo rojo / sin salida de café delonghi / philips / saeco / krups cafeteras 5113211281 bomba de agua vibratoria ulka ep5 48w 230v 15 bar delonghi magnifica s ecam 22.110 esam 3000 / 4000 dedica ec685 dinamica"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Cafeteras</span><span class="item-meta">OEM #5113211281</span></div><h3>Triángulo Rojo / Sin salida de café — DeLonghi / Philips / Saeco / Krups</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">La cafetera muele el café, luego la bomba suena muy floja o muy ronca, no sale agua ni café por las boquillas y se ...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 13€ - 19€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/luces-parpadeando-triangulo-rojo-delonghi-magnifica-infusor/" data-cat="Cafeteras" data-search="triángulo rojo fijo + 1/2 tazas parpadeando delonghi cafeteras 7313251451 grupo infusor / difusor completo delonghi ecam original magnifica s ecam 21.117 / 22.110 autentica eletta cappuccino"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Cafeteras</span><span class="item-meta">OEM #7313251451</span></div><h3>Triángulo Rojo Fijo + 1/2 Tazas Parpadeando — DeLonghi</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">Al encender o apagar hace un ruido seco (&#x27;clac-clac&#x27;), el grupo infusor se queda atascado arriba o no encaja en su ...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 28€ - 38€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-e1-thermal-runaway-heating-failed-ender-3-pro-v2/" data-cat="Impresoras 3D" data-search="e1: thermal runaway / heating failed creality / anycubic / artillery impresoras 3d ntc-100k-3950-e3 termistor ntc 100k 3950 con cable xh2.54 + cartucho calefactor 24v 40w ender 3 ender 3 pro ender 3 v2 cr-10"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Impresoras 3D</span><span class="item-meta">OEM #NTC-100K-3950-E3</span></div><h3>E1: Thermal Runaway / Heating Failed — Creality / Anycubic / Artillery</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">La impresora pita de forma continua a mitad de impresión o al calentar el hotend y la pantalla se bloquea con &#x27;Ther...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 8€ - 15€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-14-patinete-xiaomi-m365-pro-2-acelerador/" data-cat="Movilidad Eléctrica" data-search="error 14 (1 pitido largo y 4 cortos) xiaomi / ninebot segway movilidad eléctrica xm-acc-hall-pro2 acelerador original con sensor hall para xiaomi m365 / pro 2 / 1s xiaomi m365 mi electric scooter pro 2 1s essential mi scooter 3"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Movilidad Eléctrica</span><span class="item-meta">OEM #XM-ACC-HALL-PRO2</span></div><h3>Error 14 (1 pitido largo y 4 cortos) — Xiaomi / Ninebot Segway</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">El patinete pita (1 largo, 4 cortos), muestra el número 14 en rojo con la llave inglesa y no acelera al pulsar el g...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 9€ - 14€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-15-patinete-xiaomi-m365-pro-2-maneta-freno/" data-cat="Movilidad Eléctrica" data-search="error 15 (1 pitido largo y 5 cortos) xiaomi movilidad eléctrica xm-brk-hall-15 maneta de freno completa con sensor hall y cable para xiaomi scooter xiaomi m365 pro 2 1s essential scooter 4"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Movilidad Eléctrica</span><span class="item-meta">OEM #XM-BRK-HALL-15</span></div><h3>Error 15 (1 pitido largo y 5 cortos) — Xiaomi</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">Aparece el número 15 en rojo en la pantalla, emite 1 pitido largo + 5 cortos, la luz trasera parpadea y el motor no...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 11€ - 17€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-oe-lavadora-lg-direct-drive-bomba-desague/" data-cat="Lavadoras" data-search="error oe / 0e lg lavadoras 4681ea2001t motor bomba de desagüe lavadora lg askoll m231 / m224 xp 40w f4wv3008s6w fh4u2vcn2 f12b8nd1 f1496adp3 inverter direct drive"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Lavadoras</span><span class="item-meta">OEM #4681EA2001T</span></div><h3>Error OE / 0E — LG</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">La lavadora se detiene antes del centrifugado con el tambor lleno de agua y muestra las letras OE en el display....</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 14€ - 23€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-de-de1-de2-lavadora-lg-blocapuertas/" data-cat="Lavadoras" data-search="error de / de1 / de2 lg lavadoras ebf61315801 interruptor blocapuertas retardado original lavadora lg f4j6ty0w f2j5qn3w f4wv509s0e direct drive 8kg / 9kg"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Lavadoras</span><span class="item-meta">OEM #EBF61315801</span></div><h3>Error dE / dE1 / dE2 — LG</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">Al pulsar Inicio la lavadora no bloquea la escotilla (no se oye el &#x27;clac&#x27;) y tras unos segundos pita marcando dE, d...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 16€ - 25€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-4c-4e-lavadora-samsung-ecobubble-electrovalvula/" data-cat="Lavadoras" data-search="error 4c / 4e samsung lavadoras dc62-00233b electroválvula de entrada de agua 2/3 vías lavadora samsung ww90t534dtw ww80j5555fx wf80f5e5u4w addwash ecobubble"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Lavadoras</span><span class="item-meta">OEM #DC62-00233B</span></div><h3>Error 4C / 4E — Samsung</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">La lavadora arranca pero no entra agua al cajetín de detergente (o entra un hilo muy débil) y a los 3 minutos pita ...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 13€ - 21€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-e10-caldera-baxi-roca-neodens-victoria-sensor-presion/" data-cat="Calderas" data-search="error e10 baxi / baxiroca calderas jj0054179 presostato hidráulico de mínima baxi / roca original neodens plus eco victoria condens platinum compact novanox"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Calderas</span><span class="item-meta">OEM #JJ0054179</span></div><h3>Error E10 — Baxi / BaxiRoca</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">La pantalla parpadea con el código E10 y la caldera no arranca ni en agua caliente ni en calefacción....</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 22€ - 34€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-2-e02-luces-parpadeando-cafetera-philips-saeco-molinillo/" data-cat="Cafeteras" data-search="error 02 / e02 (3 luces alarma parpadeando) philips / saeco cafeteras 421944078611 molinillo completo con muelas cerámicas philips / saeco philips serie 2200 / 3200 / 5400 ep2220 saeco incanto picobaristo"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Cafeteras</span><span class="item-meta">OEM #421944078611</span></div><h3>Error 02 / E02 (3 luces alarma parpadeando) — Philips / Saeco</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">Al pulsar para hacer café, el molinillo no gira (o hace un clic seco) y se bloquea con error de sistema o las 3 luc...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 35€ - 52€</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+<a class="item-card" href="error/error-18-patinete-xiaomi-m365-pro-sensor-hall-motor/" data-cat="Movilidad Eléctrica" data-search="error 18 (1 pitido largo y 8 cortos) xiaomi movilidad eléctrica xm-mtr-hall-pcb18 placa pcb de sensores hall de motor delantero xiaomi m365 / pro xiaomi m365 pro pro 2 1s mi scooter 3"><div><div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;"><span class="badge cat">Movilidad Eléctrica</span><span class="item-meta">OEM #XM-MTR-HALL-PCB18</span></div><h3>Error 18 (1 pitido largo y 8 cortos) — Xiaomi</h3><p style="color:var(--muted);font-size:0.88rem;margin-bottom:0.75rem;">La rueda delantera da tirones bruscos al girar con la mano o no arranca y el patinete emite 1 pitido largo y 8 cort...</p></div><div style="border-top:1px solid var(--border);padding-top:0.65rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;"><span style="color:var(--green);font-weight:700;">Pieza: 10€ - 16€ (PCB) / 55€ (Motor completo)</span><span style="color:var(--accent);font-weight:700;">Ver solución →</span></div></a>
+    </div>
+  </main>
+
+  <footer class="container">
+    <p>AveríasOEM — Actualizado automáticamente cada madrugada.</p>
+    <p style="margin-top:0.35rem;">Participamos en programas de afiliación (Amazon EU / eBay Partner Network). Las referencias OEM se facilitan para identificación técnica de recambios.</p>
+  </footer>
+
+  <script>
+    let activeCat = '';
+    function filterCat(cat) {
+      activeCat = cat;
+      filterCards();
+    }
+    function filterCards() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('#cardsGrid .item-card');
+      cards.forEach(card => {
+        const matchCat = !activeCat || card.getAttribute('data-cat') === activeCat;
+        const matchQ = !q || card.getAttribute('data-search').includes(q);
+        card.style.display = (matchCat && matchQ) ? 'flex' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>

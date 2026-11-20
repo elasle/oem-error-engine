@@ -3,9 +3,20 @@
     "id": "bosch-lavavajillas-error-e15",
     "slug": "error-e15-lavavajillas-bosch-balay-siemens",
     "category": "Lavavajillas",
-    "brands": ["Bosch", "Siemens", "Balay", "Neff"],
+    "brands": [
+      "Bosch",
+      "Siemens",
+      "Balay",
+      "Neff"
+    ],
     "error_code": "Error E15",
-    "popular_models": ["SMS50E02EU", "SMS46KI01E", "3VS506BP", "SN25M287EU", "Serie 2 / 4 / 6"],
+    "popular_models": [
+      "SMS50E02EU",
+      "SMS46KI01E",
+      "3VS506BP",
+      "SN25M287EU",
+      "Serie 2 / 4 / 6"
+    ],
     "symptom": "El icono del grifo parpadea, la bomba de desagüe funciona sin parar aunque se apague el aparato y aparece E15 o E:15 en la pantalla.",
     "technical_cause": "El sistema antifugas AquaStop del suelo del lavavajillas se ha activado por acumulación de agua en la bandeja inferior. En el 90% de los casos se debe a que la junta de goma del sumidero/cuba se ha deformado por el calor y gotea lentamente hacia el sensor de poliestireno.",
     "oem_part_name": "Kit Junta de Reparación Sumidero / Cuba + Silicona Térmica",
@@ -38,9 +49,18 @@
     "id": "bosch-lavavajillas-error-e24",
     "slug": "error-e24-e25-lavavajillas-bosch-balay-siemens",
     "category": "Lavavajillas",
-    "brands": ["Bosch", "Siemens", "Balay"],
+    "brands": [
+      "Bosch",
+      "Siemens",
+      "Balay"
+    ],
     "error_code": "Error E24 / E25",
-    "popular_models": ["SMS40E32EU", "SMS25AI05E", "3VS570BP", "SN26M884FF"],
+    "popular_models": [
+      "SMS40E32EU",
+      "SMS25AI05E",
+      "3VS570BP",
+      "SN26M884FF"
+    ],
     "symptom": "El programa se detiene al inicio o al final con agua estancada en el fondo y muestra E24 o E25 junto al símbolo del grifo.",
     "technical_cause": "Fallo en el circuito de evacuación o bloqueo del impulsor de la bomba de desagüe magnética BLDC. Si tras limpiar el filtro y colocar la tapa blanca del impulsor sigue saliendo E24, el bobinado o el eje del rotor magnético de la bomba de drenaje tiene holgura y no alcanza las RPM que mide la placa electrónica.",
     "oem_part_name": "Bomba de Desagüe Magnética Copreci BLP3 00/004",
@@ -68,9 +88,18 @@
     "id": "bosch-lavavajillas-error-e09",
     "slug": "error-e09-lavavajillas-bosch-siemens-balay-no-calienta",
     "category": "Lavavajillas",
-    "brands": ["Bosch", "Siemens", "Balay"],
+    "brands": [
+      "Bosch",
+      "Siemens",
+      "Balay"
+    ],
     "error_code": "Error E09",
-    "popular_models": ["SMS58N62EU", "SMV46KX01E", "3VS503BA", "SN25M883EU"],
+    "popular_models": [
+      "SMS58N62EU",
+      "SMV46KX01E",
+      "3VS503BA",
+      "SN25M883EU"
+    ],
     "symptom": "El lavavajillas termina el ciclo con la vajilla fría y mojada, y al finalizar muestra el código E09 o E:09.",
     "technical_cause": "Interrupción abierta en la pista resistiva de la bomba de calor (motobomba de circulación con resistencia calefactora integrada).",
     "oem_part_name": "Bomba de Calor y Circulación Completa BSH",
@@ -98,9 +127,18 @@
     "id": "bosch-lavavajillas-error-e19",
     "slug": "error-e19-lavavajillas-bosch-balay-siemens",
     "category": "Lavavajillas",
-    "brands": ["Bosch", "Siemens", "Balay"],
+    "brands": [
+      "Bosch",
+      "Siemens",
+      "Balay"
+    ],
     "error_code": "Error E19",
-    "popular_models": ["SMS68TI02E", "SMV68MX04E", "3VS708BA", "SN236I01KE"],
+    "popular_models": [
+      "SMS68TI02E",
+      "SMV68MX04E",
+      "3VS708BA",
+      "SN236I01KE"
+    ],
     "symptom": "El lavavajillas se bloquea con E19 al inicio o mitad del ciclo y no vacía el intercambiador de calor del lateral izquierdo.",
     "technical_cause": "La electroválvula de vaciado del intercambiador térmico (situada abajo a la izquierda bajo el laberinto de agua) tiene la bobina quemada o corroída por condensación.",
     "oem_part_name": "Válvula de Drenaje del Intercambiador de Calor BSH",
@@ -128,9 +166,15 @@
     "id": "vaillant-caldera-error-f28",
     "slug": "error-f28-caldera-vaillant-ecotec-plus",
     "category": "Calderas",
-    "brands": ["Vaillant"],
+    "brands": [
+      "Vaillant"
+    ],
     "error_code": "Error F.28 / F28",
-    "popular_models": ["ecoTEC plus VMW 236/5-5", "ecoTEC pro VMW 246", "turboTEC pro VMW ES 242"],
+    "popular_models": [
+      "ecoTEC plus VMW 236/5-5",
+      "ecoTEC pro VMW 246",
+      "turboTEC pro VMW ES 242"
+    ],
     "symptom": "La caldera hace los 3 intentos de encendido con chispas, no detecta llama, se enciende el LED rojo fijo y muestra F.28 en pantalla.",
     "technical_cause": "Fallo de encendido y detección de ionización. Si hay suministro de gas en la vivienda (la cocina de gas u otros aparatos funcionan), la causa más frecuente tras 4-5 años de uso es el desgaste o carbonización del electrodo de encendido/ionización o el bloqueo del motor paso a paso de la válvula de gas.",
     "oem_part_name": "Electrodo de Encendido e Ionización con Junta Vaillant",
@@ -158,9 +202,15 @@
     "id": "vaillant-caldera-error-f75",
     "slug": "error-f75-caldera-vaillant-sensor-presion",
     "category": "Calderas",
-    "brands": ["Vaillant"],
+    "brands": [
+      "Vaillant"
+    ],
     "error_code": "Error F.75 / F75",
-    "popular_models": ["ecoTEC plus", "ecoTEC exclusiv", "turboTEC plus VMW"],
+    "popular_models": [
+      "ecoTEC plus",
+      "ecoTEC exclusiv",
+      "turboTEC plus VMW"
+    ],
     "symptom": "Al abrir el grifo de agua caliente o activar la calefacción, la bomba arranca 5 veces seguidas, se detiene y aparece F.75.",
     "technical_cause": "La placa electrónica no detecta el salto de presión de +50 mbar cuando arranca la bomba de circulación porque la membrana interna del sensor de presión de agua está obstruida por magnetita/cal o averiada.",
     "oem_part_name": "Sensor Transductor de Presión de Agua Vaillant",
@@ -188,9 +238,16 @@
     "id": "saunier-duval-caldera-error-f22",
     "slug": "error-f22-caldera-saunier-duval-themaclassic-themafast",
     "category": "Calderas",
-    "brands": ["Saunier Duval"],
+    "brands": [
+      "Saunier Duval"
+    ],
     "error_code": "Error F22 / F.22",
-    "popular_models": ["ThemaClassic F25", "ThemaFast F25 / F30", "IsoFast", "ThemaCondens"],
+    "popular_models": [
+      "ThemaClassic F25",
+      "ThemaFast F25 / F30",
+      "IsoFast",
+      "ThemaCondens"
+    ],
     "symptom": "Luz roja parpadeando, código F22 en el display y presión por debajo de 0.5 bar (o la llave de llenado azul gira loca o gotea sin subir la presión).",
     "technical_cause": "Falta de presión de agua en el circuito primario (<0.5 bar) o rotura del vástago plástico de la llave de llenado y desconector hidráulico.",
     "oem_part_name": "Llave de Llenado / Grifo de Carga Saunier Duval",
@@ -218,9 +275,17 @@
     "id": "junkers-caldera-error-ea",
     "slug": "error-ea-caldera-junkers-cerapur-euroline",
     "category": "Calderas",
-    "brands": ["Junkers", "Bosch Termotecnia"],
+    "brands": [
+      "Junkers",
+      "Bosch Termotecnia"
+    ],
     "error_code": "Error EA",
-    "popular_models": ["Cerapur ZWBC 22-24", "Cerastar", "Eurosmart ZWA 24", "Cerapur Comfort"],
+    "popular_models": [
+      "Cerapur ZWBC 22-24",
+      "Cerastar",
+      "Eurosmart ZWA 24",
+      "Cerapur Comfort"
+    ],
     "symptom": "La caldera intenta encender, salta la chispa, pero a los pocos segundos se bloquea mostrando las letras EA parpadeando.",
     "technical_cause": "No se detecta corriente de ionización en el quemador. En las calderas de condensación Junkers Cerapur, el bloque de electrodos se desgasta por la acidez de los condensados y deja de transmitir los microamperios de presencia de llama a la placa.",
     "oem_part_name": "Juego de Electrodos de Encendido e Ionización con Junta Junkers",
@@ -248,9 +313,19 @@
     "id": "delonghi-cafetera-bomba-sin-presion",
     "slug": "error-triangulo-rojo-cafetera-delonghi-magnifica-bomba-ulka",
     "category": "Cafeteras",
-    "brands": ["DeLonghi", "Philips", "Saeco", "Krups"],
+    "brands": [
+      "DeLonghi",
+      "Philips",
+      "Saeco",
+      "Krups"
+    ],
     "error_code": "Triángulo Rojo / Sin salida de café",
-    "popular_models": ["DeLonghi Magnifica S ECAM 22.110", "ESAM 3000 / 4000", "Dedica EC685", "Dinamica"],
+    "popular_models": [
+      "DeLonghi Magnifica S ECAM 22.110",
+      "ESAM 3000 / 4000",
+      "Dedica EC685",
+      "Dinamica"
+    ],
     "symptom": "La cafetera muele el café, luego la bomba suena muy floja o muy ronca, no sale agua ni café por las boquillas y se enciende el triángulo rojo de alarma o la luz de falta de agua.",
     "technical_cause": "Pérdida de presión en el pistón interno de la bomba vibratoria electromagnética (la bola de cierre interior se desgasta tras 2-3 años y no alcanza los 15 bares necesarios para atravesar la pastilla de café).",
     "oem_part_name": "Bomba de Agua Vibratoria Ulka EP5 48W 230V 15 Bar",
@@ -278,9 +353,16 @@
     "id": "delonghi-cafetera-grupo-infusor-bloqueado",
     "slug": "luces-parpadeando-triangulo-rojo-delonghi-magnifica-infusor",
     "category": "Cafeteras",
-    "brands": ["DeLonghi"],
+    "brands": [
+      "DeLonghi"
+    ],
     "error_code": "Triángulo Rojo Fijo + 1/2 Tazas Parpadeando",
-    "popular_models": ["Magnifica S ECAM 21.117 / 22.110", "Autentica", "Eletta", "Cappuccino"],
+    "popular_models": [
+      "Magnifica S ECAM 21.117 / 22.110",
+      "Autentica",
+      "Eletta",
+      "Cappuccino"
+    ],
     "symptom": "Al encender o apagar hace un ruido seco ('clac-clac'), el grupo infusor se queda atascado arriba o no encaja en su sitio y se bloquea con el triángulo rojo.",
     "technical_cause": "Las dos juntas tóricas de silicona del pistón del grupo infusor se han resecado y endurecido, frenando el recorrido del carro y disparando la protección por sobrecorriente del motor.",
     "oem_part_name": "Grupo Infusor / Difusor Completo DeLonghi ECAM Original",
@@ -308,9 +390,18 @@
     "id": "ender3-impresora-error-e1-thermal-runaway",
     "slug": "error-e1-thermal-runaway-heating-failed-ender-3-pro-v2",
     "category": "Impresoras 3D",
-    "brands": ["Creality", "Anycubic", "Artillery"],
+    "brands": [
+      "Creality",
+      "Anycubic",
+      "Artillery"
+    ],
     "error_code": "E1: Thermal Runaway / Heating Failed",
-    "popular_models": ["Ender 3", "Ender 3 Pro", "Ender 3 V2", "CR-10"],
+    "popular_models": [
+      "Ender 3",
+      "Ender 3 Pro",
+      "Ender 3 V2",
+      "CR-10"
+    ],
     "symptom": "La impresora pita de forma continua a mitad de impresión o al calentar el hotend y la pantalla se bloquea con 'Thermal Runaway E1: Printer Halted Please Reset'.",
     "technical_cause": "El cable de vidrio del termistor NTC 100K del bloque calefactor está pellizcado por el tornillo de sujeción o cortado por fatiga térmica, dando lecturas erráticas de temperatura a la placa Marlin.",
     "oem_part_name": "Termistor NTC 100K 3950 con Cable XH2.54 + Cartucho Calefactor 24V 40W",
@@ -338,9 +429,18 @@
     "id": "xiaomi-patinete-error-14",
     "slug": "error-14-patinete-xiaomi-m365-pro-2-acelerador",
     "category": "Movilidad Eléctrica",
-    "brands": ["Xiaomi", "Ninebot Segway"],
+    "brands": [
+      "Xiaomi",
+      "Ninebot Segway"
+    ],
     "error_code": "Error 14 (1 pitido largo y 4 cortos)",
-    "popular_models": ["Xiaomi M365", "Mi Electric Scooter Pro 2", "1S", "Essential", "Mi Scooter 3"],
+    "popular_models": [
+      "Xiaomi M365",
+      "Mi Electric Scooter Pro 2",
+      "1S",
+      "Essential",
+      "Mi Scooter 3"
+    ],
     "symptom": "El patinete pita (1 largo, 4 cortos), muestra el número 14 en rojo con la llave inglesa y no acelera al pulsar el gatillo.",
     "technical_cause": "El voltaje del sensor Hall magnético dentro del gatillo acelerador está fuera del rango de seguridad (0.8V - 4.2V) porque el imán interno se ha desplazado tras un golpe o ha entrado humedad.",
     "oem_part_name": "Acelerador Original con Sensor Hall para Xiaomi M365 / Pro 2 / 1S",
@@ -368,9 +468,17 @@
     "id": "xiaomi-patinete-error-15",
     "slug": "error-15-patinete-xiaomi-m365-pro-2-maneta-freno",
     "category": "Movilidad Eléctrica",
-    "brands": ["Xiaomi"],
+    "brands": [
+      "Xiaomi"
+    ],
     "error_code": "Error 15 (1 pitido largo y 5 cortos)",
-    "popular_models": ["Xiaomi M365", "Pro 2", "1S", "Essential", "Scooter 4"],
+    "popular_models": [
+      "Xiaomi M365",
+      "Pro 2",
+      "1S",
+      "Essential",
+      "Scooter 4"
+    ],
     "symptom": "Aparece el número 15 en rojo en la pantalla, emite 1 pitido largo + 5 cortos, la luz trasera parpadea y el motor no arranca.",
     "technical_cause": "Fallo de lectura en el sensor Hall magnético alojado en la maneta de freno izquierda (frecuente tras lluvia o caída lateral del manillar).",
     "oem_part_name": "Maneta de Freno Completa con Sensor Hall y Cable para Xiaomi Scooter",
@@ -398,9 +506,17 @@
     "id": "lg-lavadora-error-oe",
     "slug": "error-oe-lavadora-lg-direct-drive-bomba-desague",
     "category": "Lavadoras",
-    "brands": ["LG"],
+    "brands": [
+      "LG"
+    ],
     "error_code": "Error OE / 0E",
-    "popular_models": ["F4WV3008S6W", "FH4U2VCN2", "F12B8ND1", "F1496ADP3", "Inverter Direct Drive"],
+    "popular_models": [
+      "F4WV3008S6W",
+      "FH4U2VCN2",
+      "F12B8ND1",
+      "F1496ADP3",
+      "Inverter Direct Drive"
+    ],
     "symptom": "La lavadora se detiene antes del centrifugado con el tambor lleno de agua y muestra las letras OE en el display.",
     "technical_cause": "El nivel de agua no se ha vaciado tras 5 minutos de intento de drenaje. Si el filtro inferior está limpio, el motor de la bomba de desagüe síncrona Askoll ha perdido par en caliente y se bloquea bajo la presión de la columna de agua.",
     "oem_part_name": "Motor Bomba de Desagüe Lavadora LG Askoll M231 / M224 XP 40W",
@@ -428,9 +544,16 @@
     "id": "lg-lavadora-error-de",
     "slug": "error-de-de1-de2-lavadora-lg-blocapuertas",
     "category": "Lavadoras",
-    "brands": ["LG"],
+    "brands": [
+      "LG"
+    ],
     "error_code": "Error dE / dE1 / dE2",
-    "popular_models": ["F4J6TY0W", "F2J5QN3W", "F4WV509S0E", "Direct Drive 8kg / 9kg"],
+    "popular_models": [
+      "F4J6TY0W",
+      "F2J5QN3W",
+      "F4WV509S0E",
+      "Direct Drive 8kg / 9kg"
+    ],
     "symptom": "Al pulsar Inicio la lavadora no bloquea la escotilla (no se oye el 'clac') y tras unos segundos pita marcando dE, dE1 o dE2.",
     "technical_cause": "La pastilla bimetálica PTC interna del retardo blocapuertas eléctrico se ha quemado y no cierra el contacto de confirmación hacia la placa principal.",
     "oem_part_name": "Interruptor Blocapuertas Retardado Original Lavadora LG",
@@ -457,9 +580,16 @@
     "id": "samsung-lavadora-error-4c-4e",
     "slug": "error-4c-4e-lavadora-samsung-ecobubble-electrovalvula",
     "category": "Lavadoras",
-    "brands": ["Samsung"],
+    "brands": [
+      "Samsung"
+    ],
     "error_code": "Error 4C / 4E",
-    "popular_models": ["WW90T534DTW", "WW80J5555FX", "WF80F5E5U4W", "AddWash EcoBubble"],
+    "popular_models": [
+      "WW90T534DTW",
+      "WW80J5555FX",
+      "WF80F5E5U4W",
+      "AddWash EcoBubble"
+    ],
     "symptom": "La lavadora arranca pero no entra agua al cajetín de detergente (o entra un hilo muy débil) y a los 3 minutos pita mostrando 4C o 4E.",
     "technical_cause": "Obstrucción o bobina abierta en la electroválvula doble/triple de entrada de agua fría situada en la parte trasera superior.",
     "oem_part_name": "Electroválvula de Entrada de Agua 2/3 Vías Lavadora Samsung",
@@ -479,6 +609,118 @@
       {
         "q": "¿Por qué sale Error 4C a mitad del lavado si al principio sí cogió agua?",
         "a": "Porque la electroválvula tiene dos o tres bobinas independientes: la primera bobina (prelavado/lavado) funciona, pero cuando llega el momento del suavizante o aclarado activa la segunda bobina, que está quemada, y salta 4C."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "baxi-caldera-error-e10",
+    "slug": "error-e10-caldera-baxi-roca-neodens-victoria-sensor-presion",
+    "category": "Calderas",
+    "brands": [
+      "Baxi",
+      "BaxiRoca"
+    ],
+    "error_code": "Error E10",
+    "popular_models": [
+      "Neodens Plus Eco",
+      "Victoria Condens",
+      "Platinum Compact",
+      "Novanox"
+    ],
+    "symptom": "La pantalla parpadea con el código E10 y la caldera no arranca ni en agua caliente ni en calefacción.",
+    "technical_cause": "El presostato hidráulico de mínima presión no cierra contacto aunque el circuito tenga agua, debido a cal acumulada en el orificio del sensor o rotura de la llave de llenado.",
+    "oem_part_name": "Presostato Hidráulico de Mínima Baxi / Roca Original",
+    "oem_part_number": "JJ0054179",
+    "secondary_part_number": "721970700 (Llave de llenado Baxi Neodens)",
+    "affiliate_search_query": "JJ0054179 presostato hidraulico caldera Baxi Roca Error E10",
+    "part_price_range": "22€ - 34€",
+    "technician_cost_estimate": "130€ - 175€",
+    "repair_time_minutes": 15,
+    "difficulty": "Fácil",
+    "diagnostic_steps": [
+      "Abre la llave de llenado inferior hasta que el manómetro marque 1.3 bar.",
+      "Si el manómetro está en 1.3 bar pero sigue marcando Error E10 fijo, puentea un segundo los dos cables Faston del presostato hidráulico JJ0054179 (con precaución): si la caldera arranca al instante, el presostato está estropeado.",
+      "Vacía la presión de la caldera y enrosca el nuevo presostato JJ0054179."
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué sale Error E10 cada pocos días en mi caldera Baxi?",
+        "a": "Si tienes que rellenar agua cada semana, el vaso de expansión está sin aire o la válvula de seguridad de 3 bar gotea. Si la aguja sí marca presión pero sale E10, es el sensor JJ0054179."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "philips-cafetera-error-2-molinillo",
+    "slug": "error-2-e02-luces-parpadeando-cafetera-philips-saeco-molinillo",
+    "category": "Cafeteras",
+    "brands": [
+      "Philips",
+      "Saeco"
+    ],
+    "error_code": "Error 02 / E02 (3 luces alarma parpadeando)",
+    "popular_models": [
+      "Philips Serie 2200 / 3200 / 5400",
+      "EP2220",
+      "Saeco Incanto",
+      "PicoBaristo"
+    ],
+    "symptom": "Al pulsar para hacer café, el molinillo no gira (o hace un clic seco) y se bloquea con error de sistema o las 3 luces rojas parpadeando.",
+    "technical_cause": "Bloqueo del motor DC del molinillo cerámico o desgaste de las muelas cerámicas y portamuelas de seguridad.",
+    "oem_part_name": "Molinillo Completo con Muelas Cerámicas Philips / Saeco",
+    "oem_part_number": "421944078611",
+    "secondary_part_number": "421944093351 (Muela cerámica superior con fusible mecánico)",
+    "affiliate_search_query": "421944078611 molinillo ceramico cafetera Philips Saeco",
+    "part_price_range": "35€ - 52€",
+    "technician_cost_estimate": "120€ - 165€",
+    "repair_time_minutes": 30,
+    "difficulty": "Media",
+    "diagnostic_steps": [
+      "Vacía los granos de café de la tolva y aspira los restos por si una piedrecilla o grano verde ha bloqueado las muelas cerámicas.",
+      "Si el soporte plástico blanco de 3 patas de la muela cerámica se ha partido (actúa como fusible mecánico), sustituye el portamuelas 421944093351 o el molinillo completo 421944078611."
+    ],
+    "faq": [
+      {
+        "q": "¿Se puede lavar el molinillo cerámico con agua?",
+        "a": "Nunca: el agua apelmaza el polvo de café dentro del cono cerámico y quema el motor de 230V DC al instante."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "xiaomi-patinete-error-18",
+    "slug": "error-18-patinete-xiaomi-m365-pro-sensor-hall-motor",
+    "category": "Movilidad Eléctrica",
+    "brands": [
+      "Xiaomi"
+    ],
+    "error_code": "Error 18 (1 pitido largo y 8 cortos)",
+    "popular_models": [
+      "Xiaomi M365",
+      "Pro",
+      "Pro 2",
+      "1S",
+      "Mi Scooter 3"
+    ],
+    "symptom": "La rueda delantera da tirones bruscos al girar con la mano o no arranca y el patinete emite 1 pitido largo y 8 cortos (Error 18).",
+    "technical_cause": "Uno de los 3 sensores Hall soldados en la placa PCB interna del estator del motor delantero se ha quemado o el conector blanco de 5 pines hacia la controladora está suelto.",
+    "oem_part_name": "Placa PCB de Sensores Hall de Motor Delantero Xiaomi M365 / Pro",
+    "oem_part_number": "XM-MTR-HALL-PCB18",
+    "secondary_part_number": "M365-350W-MOTOR (Rueda Motor Completa 350W Plug&Play)",
+    "affiliate_search_query": "placa sensor hall motor patinete Xiaomi M365 Error 18",
+    "part_price_range": "10€ - 16€ (PCB) / 55€ (Motor completo)",
+    "technician_cost_estimate": "95€ - 140€",
+    "repair_time_minutes": 35,
+    "difficulty": "Media",
+    "diagnostic_steps": [
+      "Abre la tapa inferior de la batería y comprueba que el conector blanco de 5 cables finos que viene del motor no se haya desconectado de la controladora por las vibraciones.",
+      "Si el conector está bien sujeto y sigue marcando Error 18, cambia la plaquita PCB de sensores Hall del motor o instala la rueda motor completa lista para enchufar."
+    ],
+    "faq": [
+      {
+        "q": "¿Merece la pena cambiar la plaquita Hall o la rueda motor entera?",
+        "a": "Si tienes soldador de estaño, la placa PCB con los 3 sensores Hall cuesta unos 10€. Si no quieres soldar ni desmontar neumático, la rueda motor completa con neumático macizo o cámara se monta en 15 minutos con 2 tuercas."
       }
     ],
     "created_at": "2026-11-20"

@@ -1,96 +1,18 @@
 [
   {
-    "id": "baxi-caldera-error-e10",
-    "slug": "error-e10-caldera-baxi-roca-neodens-victoria-sensor-presion",
-    "category": "Calderas",
-    "brands": ["Baxi", "BaxiRoca"],
-    "error_code": "Error E10",
-    "popular_models": ["Neodens Plus Eco", "Victoria Condens", "Platinum Compact", "Novanox"],
-    "symptom": "La pantalla parpadea con el código E10 y la caldera no arranca ni en agua caliente ni en calefacción.",
-    "technical_cause": "El presostato hidráulico de mínima presión no cierra contacto aunque el circuito tenga agua, debido a cal acumulada en el orificio del sensor o rotura de la llave de llenado.",
-    "oem_part_name": "Presostato Hidráulico de Mínima Baxi / Roca Original",
-    "oem_part_number": "JJ0054179",
-    "secondary_part_number": "721970700 (Llave de llenado Baxi Neodens)",
-    "affiliate_search_query": "JJ0054179 presostato hidraulico caldera Baxi Roca Error E10",
-    "part_price_range": "22€ - 34€",
-    "technician_cost_estimate": "130€ - 175€",
-    "repair_time_minutes": 15,
-    "difficulty": "Fácil",
-    "diagnostic_steps": [
-      "Abre la llave de llenado inferior hasta que el manómetro marque 1.3 bar.",
-      "Si el manómetro está en 1.3 bar pero sigue marcando Error E10 fijo, puentea un segundo los dos cables Faston del presostato hidráulico JJ0054179 (con precaución): si la caldera arranca al instante, el presostato está estropeado.",
-      "Vacía la presión de la caldera y enrosca el nuevo presostato JJ0054179."
-    ],
-    "faq": [
-      {
-        "q": "¿Por qué sale Error E10 cada pocos días en mi caldera Baxi?",
-        "a": "Si tienes que rellenar agua cada semana, el vaso de expansión está sin aire o la válvula de seguridad de 3 bar gotea. Si la aguja sí marca presión pero sale E10, es el sensor JJ0054179."
-      }
-    ]
-  },
-  {
-    "id": "philips-cafetera-error-2-molinillo",
-    "slug": "error-2-e02-luces-parpadeando-cafetera-philips-saeco-molinillo",
-    "category": "Cafeteras",
-    "brands": ["Philips", "Saeco"],
-    "error_code": "Error 02 / E02 (3 luces alarma parpadeando)",
-    "popular_models": ["Philips Serie 2200 / 3200 / 5400", "EP2220", "Saeco Incanto", "PicoBaristo"],
-    "symptom": "Al pulsar para hacer café, el molinillo no gira (o hace un clic seco) y se bloquea con error de sistema o las 3 luces rojas parpadeando.",
-    "technical_cause": "Bloqueo del motor DC del molinillo cerámico o desgaste de las muelas cerámicas y portamuelas de seguridad.",
-    "oem_part_name": "Molinillo Completo con Muelas Cerámicas Philips / Saeco",
-    "oem_part_number": "421944078611",
-    "secondary_part_number": "421944093351 (Muela cerámica superior con fusible mecánico)",
-    "affiliate_search_query": "421944078611 molinillo ceramico cafetera Philips Saeco",
-    "part_price_range": "35€ - 52€",
-    "technician_cost_estimate": "120€ - 165€",
-    "repair_time_minutes": 30,
-    "difficulty": "Media",
-    "diagnostic_steps": [
-      "Vacía los granos de café de la tolva y aspira los restos por si una piedrecilla o grano verde ha bloqueado las muelas cerámicas.",
-      "Si el soporte plástico blanco de 3 patas de la muela cerámica se ha partido (actúa como fusible mecánico), sustituye el portamuelas 421944093351 o el molinillo completo 421944078611."
-    ],
-    "faq": [
-      {
-        "q": "¿Se puede lavar el molinillo cerámico con agua?",
-        "a": "Nunca: el agua apelmaza el polvo de café dentro del cono cerámico y quema el motor de 230V DC al instante."
-      }
-    ]
-  },
-  {
-    "id": "xiaomi-patinete-error-18",
-    "slug": "error-18-patinete-xiaomi-m365-pro-sensor-hall-motor",
-    "category": "Movilidad Eléctrica",
-    "brands": ["Xiaomi"],
-    "error_code": "Error 18 (1 pitido largo y 8 cortos)",
-    "popular_models": ["Xiaomi M365", "Pro", "Pro 2", "1S", "Mi Scooter 3"],
-    "symptom": "La rueda delantera da tirones bruscos al girar con la mano o no arranca y el patinete emite 1 pitido largo y 8 cortos (Error 18).",
-    "technical_cause": "Uno de los 3 sensores Hall soldados en la placa PCB interna del estator del motor delantero se ha quemado o el conector blanco de 5 pines hacia la controladora está suelto.",
-    "oem_part_name": "Placa PCB de Sensores Hall de Motor Delantero Xiaomi M365 / Pro",
-    "oem_part_number": "XM-MTR-HALL-PCB18",
-    "secondary_part_number": "M365-350W-MOTOR (Rueda Motor Completa 350W Plug&Play)",
-    "affiliate_search_query": "placa sensor hall motor patinete Xiaomi M365 Error 18",
-    "part_price_range": "10€ - 16€ (PCB) / 55€ (Motor completo)",
-    "technician_cost_estimate": "95€ - 140€",
-    "repair_time_minutes": 35,
-    "difficulty": "Media",
-    "diagnostic_steps": [
-      "Abre la tapa inferior de la batería y comprueba que el conector blanco de 5 cables finos que viene del motor no se haya desconectado de la controladora por las vibraciones.",
-      "Si el conector está bien sujeto y sigue marcando Error 18, cambia la plaquita PCB de sensores Hall del motor o instala la rueda motor completa lista para enchufar."
-    ],
-    "faq": [
-      {
-        "q": "¿Merece la pena cambiar la plaquita Hall o la rueda motor entera?",
-        "a": "Si tienes soldador de estaño, la placa PCB con los 3 sensores Hall cuesta unos 10€. Si no quieres soldar ni desmontar neumático, la rueda motor completa con neumático macizo o cámara se monta en 15 minutos con 2 tuercas."
-      }
-    ]
-  },
-  {
     "id": "samsung-lavadora-error-dc-dc1",
     "slug": "error-dc-dc1-ddc-lavadora-samsung-blocapuertas",
     "category": "Lavadoras",
-    "brands": ["Samsung"],
+    "brands": [
+      "Samsung"
+    ],
     "error_code": "Error dC / dC1 / EdC",
-    "popular_models": ["WW90J5455FW", "WW80T4540TE", "WF80F5E0W2W", "EcoBubble"],
+    "popular_models": [
+      "WW90J5455FW",
+      "WW80T4540TE",
+      "WF80F5E0W2W",
+      "EcoBubble"
+    ],
     "symptom": "La puerta está cerrada pero la lavadora pita a los pocos segundos de darle a Inicio mostrando el código dC o dC1.",
     "technical_cause": "Fallo del interruptor de bloqueo electrónico de puerta (blocapuertas) o de la bisagra de escotilla que no alinea el gancho en la cerradura.",
     "oem_part_name": "Blocapuertas Retardado Original Lavadora Samsung",
@@ -116,9 +38,19 @@
     "id": "bosch-lavadora-error-e18-f18",
     "slug": "error-e18-f18-lavadora-bosch-balay-siemens-bomba-desague",
     "category": "Lavadoras",
-    "brands": ["Bosch", "Balay", "Siemens"],
+    "brands": [
+      "Bosch",
+      "Balay",
+      "Siemens"
+    ],
     "error_code": "Error E18 / F18",
-    "popular_models": ["WAN28280ES", "WAQ24468ES", "3TS976BA", "WM14N280ES", "Serie 4 / Serie 6"],
+    "popular_models": [
+      "WAN28280ES",
+      "WAQ24468ES",
+      "3TS976BA",
+      "WM14N280ES",
+      "Serie 4 / Serie 6"
+    ],
     "symptom": "La lavadora no centrifuga, se queda llena de agua con la puerta bloqueada y muestra E18 o F18 en la pantalla LED.",
     "technical_cause": "Superado el tiempo máximo de vaciado (6 minutos). Cuando el filtro inferior está limpio y la manguera no está doblada, el rotor magnético de la bomba de desagüe Copreci/Hanning está desgastado y se clava al calentarse.",
     "oem_part_name": "Bomba de Desagüe Completa Lavadora Bosch / Balay / Siemens",
@@ -145,9 +77,18 @@
     "id": "bosch-lavadora-error-e23-f23",
     "slug": "error-e23-f23-lavadora-bosch-siemens-balay-aquastop",
     "category": "Lavadoras",
-    "brands": ["Bosch", "Siemens", "Balay"],
+    "brands": [
+      "Bosch",
+      "Siemens",
+      "Balay"
+    ],
     "error_code": "Error E23 / F23",
-    "popular_models": ["WAW28560EU", "WM14W560", "3TS999B", "HomeProfessional / Serie 8"],
+    "popular_models": [
+      "WAW28560EU",
+      "WM14W560",
+      "3TS999B",
+      "HomeProfessional / Serie 8"
+    ],
     "symptom": "La bomba funciona continuamente aunque apagues el selector y la pantalla muestra E23 o F23 sin dejar iniciar ningún programa.",
     "technical_cause": "El sensor flotador AquaStop de la bandeja inferior está activado por una pequeña fuga (habitualmente un poro en el fuelle goma de escotilla o el microinterruptor del flotador atascado).",
     "oem_part_name": "Goma de Escotilla / Junta de Puerta Lavadora Bosch Serie 6/8",
