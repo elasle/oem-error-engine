@@ -1612,6 +1612,123 @@
     "created_at": "2026-11-20"
   },
   {
+    "id": "whirlpool-maytag-dryer-wont-start-thermal-fuse-wp3392519",
+    "slug": "whirlpool-maytag-kenmore-dryer-wont-start-thermal-fuse-wp3392519",
+    "category": "Dryers",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "Maytag",
+      "Kenmore",
+      "Amana"
+    ],
+    "error_code": "Dryer Completely Dead / Won't Start When Pressing Start",
+    "popular_models": [
+      "WED4815EW",
+      "MEDC465HW",
+      "LER4634JQ",
+      "Kenmore 110 Series"
+    ],
+    "symptom": "The interior drum light turns on when you open the door, but pressing the Start button produces zero sound (or just a faint click in the timer) and the drum will not tumble.",
+    "technical_cause": "The white plastic single-use thermal fuse (WP3392519) mounted on the exhaust blower housing has blown open due to a clogged dryer vent, cutting power to the drive motor circuit.",
+    "oem_part_name": "Whirlpool OEM Dryer Thermal Fuse (2-Pack / OEM Spec)",
+    "oem_part_number": "WP3392519",
+    "secondary_part_number": "3392519 / AP6008325 / PS11741460",
+    "affiliate_search_query": "WP3392519 3392519 Whirlpool dryer thermal fuse",
+    "part_price_range": "$7 - $14",
+    "technician_cost_estimate": "$180 - $250",
+    "repair_time_minutes": 10,
+    "difficulty": "Very Easy (1 screw behind rear panel)",
+    "diagnostic_steps": [
+      "Unplug the dryer and remove the back metal access panel with a 1/4-inch nut driver.",
+      "Locate the 2-inch white plastic strip (WP3392519) with two blue wires attached to the blower housing on the left.",
+      "Unplug the two wires, replace the WP3392519 thermal fuse, and thoroughly clean out your wall dryer vent duct so the new fuse doesn't blow."
+    ],
+    "faq": [
+      {
+        "q": "Can I temporarily jump the two wires on WP3392519 to test if the dryer starts?",
+        "a": "You can test continuity with a multimeter (a good WP3392519 reads 0 Ohms), but never run a load with the thermal fuse bypassed as it is your primary fire prevention cutoff."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "samsung-refrigerator-water-leaking-under-crisper-da97-04049d",
+    "slug": "samsung-refrigerator-water-pooling-under-deli-crisper-drawers-drain-clip-da61-06796a",
+    "category": "Refrigerators",
+    "lang": "en",
+    "brands": [
+      "Samsung"
+    ],
+    "error_code": "Water Pooling Under Crisper Drawers / Sheet of Ice Under Deli Drawer",
+    "popular_models": [
+      "RF260BEAESR",
+      "RF28HMEDBSR",
+      "RF263TEAESG",
+      "RB195ACBP"
+    ],
+    "symptom": "Clear water pools under the bottom vegetable crisper drawers and freezes into a thick slab of ice under the full-width pantry deli drawer every week.",
+    "technical_cause": "The short stock aluminum defrost heat tab does not reach deep enough into the evaporator drain hole, allowing the drain tube to freeze solid so defrost water overflows into the bottom of the fridge.",
+    "oem_part_name": "Samsung Updated Evaporator Drain Clip Heat Probe + Duckbill Drain Tubes",
+    "oem_part_number": "DA61-06796A",
+    "secondary_part_number": "DA97-04049D (Duckbill Drain Cap Tubes)",
+    "affiliate_search_query": "DA61-06796A Samsung refrigerator drain clip defrost leakage repair kit",
+    "part_price_range": "$9 - $15",
+    "technician_cost_estimate": "$210 - $295",
+    "repair_time_minutes": 30,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Empty the fridge shelves, remove the interior back twin-cooling cover panel, and melt the ice block clogging the drain trough below the silver evaporator coil using hot water and a turkey baster.",
+      "Remove the tiny original metal clip from the defrost heater bar and hang the longer updated DA61-06796A aluminum heat conductor clip so its tail extends 1.5 inches down into the drain hole."
+    ],
+    "faq": [
+      {
+        "q": "Should I also clean the rubber duckbill valves on the back of the fridge?",
+        "a": "Yes! Pull the small lower rear metal cover behind the fridge and clear any gunk from the rubber DA97-04049D drain tubes so melted water flows freely into the evaporation pan."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "maytag-whirlpool-washer-f0-e5-off-balance-suspension-w11130362",
+    "slug": "whirlpool-maytag-bravos-cabrio-washer-ul-f0-e5-banging-suspension-rods-w11130362",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "Maytag",
+      "Kenmore"
+    ],
+    "error_code": "Error F0 E5 / uL / oL (Off-Balance Spin Banging)",
+    "popular_models": [
+      "WTW5000DW",
+      "MVWX655DW",
+      "MVWC565FW",
+      "Bravos & Cabrio Top-Load"
+    ],
+    "symptom": "The top-load washer shakes violently and slams against the cabinet as soon as it tries to spin, stopping the cycle with code F0 E5 or uL.",
+    "technical_cause": "Worn damper cups and weakened springs on the 4 corner tub suspension rods (W11130362).",
+    "oem_part_name": "Whirlpool / Maytag W11130362 Washer Suspension Rod Kit (4-Pack)",
+    "oem_part_number": "W11130362",
+    "secondary_part_number": "W10594080 / W10780040 / W10821956",
+    "affiliate_search_query": "W11130362 Whirlpool Maytag washer suspension rods kit",
+    "part_price_range": "$28 - $42",
+    "technician_cost_estimate": "$230 - $320",
+    "repair_time_minutes": 25,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Push down on the center of the empty tub and release: if it bounces more than once, the W11130362 damper rods have lost compression.",
+      "Unscrew the two rear hinge brackets, prop the top deck up, and swap out the four W11130362 suspension rods."
+    ],
+    "faq": [
+      {
+        "q": "Can I replace just one suspension rod instead of all four?",
+        "a": "Always replace all 4 rods as a matched set (W11130362 comes with all 4 rods and new pivot cups) so the tub hangs completely level."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
     "id": "bosch-lavavajillas-error-e15",
     "slug": "error-e15-lavavajillas-bosch-balay-siemens",
     "category": "Lavavajillas",
@@ -2589,6 +2706,119 @@
       {
         "q": "¿Es normal que suenen chispitas al estrenar las escobillas 481236248004?",
         "a": "Sí: durante los 2 primeros centrifugados el bisel de carbón nuevo se asienta a la curvatura del colector de cobre del motor."
+      }
+    ],
+    "created_at": "2026-11-20",
+    "lang": "es"
+  },
+  {
+    "id": "dyson-aspiradora-luz-roja-parpadea-bateria",
+    "slug": "luz-roja-parpadeando-aspiradora-dyson-v8-v10-v11-bateria-gatillo",
+    "category": "Pequeño Electrodoméstico",
+    "brands": [
+      "Dyson"
+    ],
+    "error_code": "LED Rojo Parpadeando / Gatillo sin contacto",
+    "popular_models": [
+      "Dyson V7",
+      "Dyson V8 Absolute",
+      "Dyson V10 Cyclone",
+      "Dyson V11"
+    ],
+    "symptom": "Al pulsar el gatillo la aspiradora no enciende y el LED inferior de la batería parpadea en rojo (entre 4 y 32 veces), o el gatillo rojo se siente suelto sin hacer clic.",
+    "technical_cause": "Fallo del BMS de la batería de litio por desbalance de celdas tras 2-3 años de ciclos, o rotura de la pestaña interna del gatillo interruptor rojo (muy común en V10 y V11).",
+    "oem_part_name": "Batería de Reemplazo 21.6V / 25.2V + Gatillo Reforzado Dyson V8 / V10 / V11",
+    "oem_part_number": "969352-02",
+    "secondary_part_number": "968670-02 (Batería Dyson V8 Tipo E/D) + Heavy Duty Trigger Switch V10/V11",
+    "affiliate_search_query": "969352-02 battery Dyson V10 V8 replacement trigger switch",
+    "part_price_range": "$12 (Gatillo) / $35 - $55 (Batería)",
+    "technician_cost_estimate": "$130 - $175",
+    "repair_time_minutes": 15,
+    "difficulty": "Fácil (3 tornillos Phillips)",
+    "diagnostic_steps": [
+      "Si el LED de la batería parpadea en rojo al pulsar el botón o al ponerla en el cargador de pared, el BMS de la batería ha bloqueado el pack y requiere sustituir la batería (3 tornillos en el mango y frontal).",
+      "Si al apretar el gatillo rojo no se enciende ninguna luz en la batería y el gatillo no ofrece resistencia elástica, el cuello plástico del gatillo V10/V11 se ha partido y se repara con el gatillo reforzado."
+    ],
+    "faq": [
+      {
+        "q": "¿Cuántos tornillos lleva cambiar la batería de una Dyson V8 o V10?",
+        "a": "Exactamente 3 tornillos Phillips pequeños: uno detrás del mango superior y dos en la base inferior delante del depósito transparente."
+      }
+    ],
+    "created_at": "2026-11-20",
+    "lang": "es"
+  },
+  {
+    "id": "roomba-error-2-error-26-turbina-cepillos",
+    "slug": "error-2-error-26-irobot-roomba-serie-600-800-900-i7-e5",
+    "category": "Pequeño Electrodoméstico",
+    "brands": [
+      "iRobot Roomba"
+    ],
+    "error_code": "Error 2 / Error 26",
+    "popular_models": [
+      "Roomba 960 / 980",
+      "Roomba i7 / i3 / e5",
+      "Serie 600 / 800",
+      "Roomba j7"
+    ],
+    "symptom": "El robot se detiene a los 2 minutos de empezar con el anillo rojo y dice 'Error 2: limpie los extractores' o 'Error 26: flujo de aire insuficiente'.",
+    "technical_cause": "En Error 26 el motor de la turbina de aspiración integrada en el depósito AeroForce (o módulo cabezal en i7/j7) se ha quemado por polvo fino tras el filtro HEPA; en Error 2 los rodamientos de los rodillos de goma están gripados.",
+    "oem_part_name": "Motor Turbina Impulsor de Aspiración + Kit Rodillos de Goma iRobot Roomba",
+    "oem_part_number": "20N636P010",
+    "secondary_part_number": "4624872 (Módulo Cabezal de Limpieza Completo Roomba e5 / i3 / i7 / j7)",
+    "affiliate_search_query": "20N636P010 vacuum fan motor Roomba Error 26 i7 960 980",
+    "part_price_range": "$15 - $26",
+    "technician_cost_estimate": "$110 - $160",
+    "repair_time_minutes": 20,
+    "difficulty": "Fácil",
+    "diagnostic_steps": [
+      "Para Error 26: saca el depósito, retira el filtro HEPA y sopla la rejilla de la turbina. Si la hélice no gira libremente o roza, cambia el motor turbina 20N636P010.",
+      "Para Error 2: extrae los dos rodillos verdes/grises, quita las tapitas amarillas o grises de las puntas y retira el pelo compactado alrededor del eje metálico."
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué se quema el motor 20N636P010 del Error 26 en Roomba?",
+        "a": "Ocurre sobre todo cuando se lava el depósito con agua sin desmontar la turbina o cuando se usa un filtro HEPA viejo que deja pasar polvo de yeso/ceniza al cojinete del motor."
+      }
+    ],
+    "created_at": "2026-11-20",
+    "lang": "es"
+  },
+  {
+    "id": "electrolux-aeg-lavavajillas-error-i20-i30",
+    "slug": "error-i20-i30-lavavajillas-aeg-electrolux-zanussi-presostato-bomba",
+    "category": "Lavavajillas",
+    "brands": [
+      "AEG",
+      "Electrolux",
+      "Zanussi"
+    ],
+    "error_code": "Error i20 / i30",
+    "popular_models": [
+      "AEG Favorit",
+      "Electrolux ComfortLift",
+      "Zanussi ZDF / ZDT"
+    ],
+    "symptom": "El lavavajillas pita de forma intermitente, no inicia el lavado y muestra i20 (fallo de vaciado/lectura de nivel) o i30 (sistema antifugas activado).",
+    "technical_cause": "En el 85% de los errores i20 en AEG/Electrolux la bomba de desagüe funciona bien, pero el presostato electrónico analógico situado en la boca inferior del sumidero está taponado de grasa o tiene la membrana perforada y sigue marcando 'cuba llena'.",
+    "oem_part_name": "Sensor Presostato Analógico de Nivel de Agua AEG / Electrolux / Zanussi",
+    "oem_part_number": "140000554083",
+    "secondary_part_number": "1113170003 (Kit presostato + manguito cámara de presión)",
+    "affiliate_search_query": "140000554083 pressure switch sensor AEG Electrolux dishwasher i20",
+    "part_price_range": "$21 - $33",
+    "technician_cost_estimate": "$135 - $185",
+    "repair_time_minutes": 20,
+    "difficulty": "Fácil",
+    "diagnostic_steps": [
+      "Extrae el filtro inferior del lavavajillas y limpia con un cepillo y agua muy caliente el conducto lateral derecho del fondo del pozo (cámara de aire del presostato).",
+      "Si el lavavajillas está totalmente seco por dentro pero sigue dando Error i20 tras 60 segundos intentando desaguar en vacío, el sensor de presión 140000554083 se ha quedado bloqueado.",
+      "Retira el zócalo frontal inferior, desengancha el sensor 140000554083 con un giro y conecta el nuevo."
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué sigue sonando la bomba con la puerta abierta cuando sale i30?",
+        "a": "i30 indica agua en la bandeja inferior anti-desbordamiento. Por seguridad, la placa mantiene la bomba de vaciado encendida hasta que se seque el flotador de la base."
       }
     ],
     "created_at": "2026-11-20",

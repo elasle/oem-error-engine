@@ -1,108 +1,112 @@
 [
   {
-    "id": "dyson-aspiradora-luz-roja-parpadea-bateria",
-    "slug": "luz-roja-parpadeando-aspiradora-dyson-v8-v10-v11-bateria-gatillo",
+    "id": "cecotec-conga-error-cepillo-turbina",
+    "slug": "error-cepillo-central-aspiracion-robot-cecotec-conga-motor-turbina",
     "category": "Pequeño Electrodoméstico",
+    "lang": "es",
     "brands": [
-      "Dyson"
+      "Cecotec Conga",
+      "Xiaomi Mi Robot Vacuum",
+      "Roborock"
     ],
-    "error_code": "LED Rojo Parpadeando / Gatillo sin contacto",
+    "error_code": "Error Cepillo Principal / Fallo Ventilador de Succión",
     "popular_models": [
-      "Dyson V7",
-      "Dyson V8 Absolute",
-      "Dyson V10 Cyclone",
-      "Dyson V11"
+      "Xiaomi Mi Robot Vacuum Mop 2 / S10",
+      "Roborock S5 / S7",
+      "Conga Serie 3090 / 4090 / 5090"
     ],
-    "symptom": "Al pulsar el gatillo la aspiradora no enciende y el LED inferior de la batería parpadea en rojo (entre 4 y 32 veces), o el gatillo rojo se siente suelto sin hacer clic.",
-    "technical_cause": "Fallo del BMS de la batería de litio por desbalance de celdas tras 2-3 años de ciclos, o rotura de la pestaña interna del gatillo interruptor rojo (muy común en V10 y V11).",
-    "oem_part_name": "Batería de Reemplazo 21.6V / 25.2V + Gatillo Reforzado Dyson V8 / V10 / V11",
-    "oem_part_number": "969352-02",
-    "secondary_part_number": "968670-02 (Batería Dyson V8 Tipo E/D) + Heavy Duty Trigger Switch V10/V11",
-    "affiliate_search_query": "969352-02 battery Dyson V10 V8 replacement trigger switch",
-    "part_price_range": "$12 (Gatillo) / $35 - $55 (Batería)",
-    "technician_cost_estimate": "$130 - $175",
-    "repair_time_minutes": 15,
-    "difficulty": "Fácil (3 tornillos Phillips)",
+    "symptom": "El robot aspirador se detiene a los pocos segundos indicando por voz 'Error en el ventilador de succión' o 'Limpie el cepillo principal' aunque el rodillo esté limpio.",
+    "technical_cause": "Desgaste del motor de turbina centrífuga Nidec 20N704R / 15V DC por entrada de polvo fino o bloqueo del motor reductor del cepillo central.",
+    "oem_part_name": "Motor Ventilador de Succión Turbina Nidec 20N704R para Xiaomi / Roborock / Conga",
+    "oem_part_number": "20N704R500",
+    "secondary_part_number": "Nidec 20N704R / G400151900 (Turbina de aspiración 4-5 pines)",
+    "affiliate_search_query": "20N704R Nidec fan motor Xiaomi Roborock vacuum",
+    "part_price_range": "$16 - $26",
+    "technician_cost_estimate": "$95 - $140",
+    "repair_time_minutes": 25,
+    "difficulty": "Media",
     "diagnostic_steps": [
-      "Si el LED de la batería parpadea en rojo al pulsar el botón o al ponerla en el cargador de pared, el BMS de la batería ha bloqueado el pack y requiere sustituir la batería (3 tornillos en el mango y frontal).",
-      "Si al apretar el gatillo rojo no se enciende ninguna luz en la batería y el gatillo no ofrece resistencia elástica, el cuello plástico del gatillo V10/V11 se ha partido y se repara con el gatillo reforzado."
+      "Intenta girar las aspas de la turbina trasera con un bastoncillo: si va dura o raspa, el rodamiento del motor Nidec 20N704R está agarrotado.",
+      "Retira la carcasa inferior, desconecta el conector de 4/5 pines del módulo ventilador 20N704R500 e instala la turbina nueva."
     ],
     "faq": [
       {
-        "q": "¿Cuántos tornillos lleva cambiar la batería de una Dyson V8 o V10?",
-        "a": "Exactamente 3 tornillos Phillips pequeños: uno detrás del mango superior y dos en la base inferior delante del depósito transparente."
+        "q": "¿Cómo saber si mi robot lleva la turbina Nidec de 4 pines o de 5 pines?",
+        "a": "Solo tienes que mirar el conector blanco de la turbina vieja: los modelos Xiaomi/Roborock S5/S6 llevan el conector de 4 o 5 pines plug-and-play serigrafiado como 20N704R."
       }
     ]
   },
   {
-    "id": "roomba-error-2-error-26-turbina-cepillos",
-    "slug": "error-2-error-26-irobot-roomba-serie-600-800-900-i7-e5",
-    "category": "Pequeño Electrodoméstico",
+    "id": "balay-bosch-vitroceramica-induccion-error-e-parpadeando",
+    "slug": "error-e0513-e-parpadeando-placa-induccion-bosch-balay-siemens",
+    "category": "Cocina y Hornos",
+    "lang": "es",
     "brands": [
-      "iRobot Roomba"
+      "Bosch",
+      "Balay",
+      "Siemens"
     ],
-    "error_code": "Error 2 / Error 26",
+    "error_code": "Letra E Parpadeando / Error E0513 / F0 / F4",
     "popular_models": [
-      "Roomba 960 / 980",
-      "Roomba i7 / i3 / e5",
-      "Serie 600 / 800",
-      "Roomba j7"
+      "3EB865FR",
+      "PIE631FB1E",
+      "PID675DC1E",
+      "Serie 6 Inducción"
     ],
-    "symptom": "El robot se detiene a los 2 minutos de empezar con el anillo rojo y dice 'Error 2: limpie los extractores' o 'Error 26: flujo de aire insuficiente'.",
-    "technical_cause": "En Error 26 el motor de la turbina de aspiración integrada en el depósito AeroForce (o módulo cabezal en i7/j7) se ha quemado por polvo fino tras el filtro HEPA; en Error 2 los rodamientos de los rodillos de goma están gripados.",
-    "oem_part_name": "Motor Turbina Impulsor de Aspiración + Kit Rodillos de Goma iRobot Roomba",
-    "oem_part_number": "20N636P010",
-    "secondary_part_number": "4624872 (Módulo Cabezal de Limpieza Completo Roomba e5 / i3 / i7 / j7)",
-    "affiliate_search_query": "20N636P010 vacuum fan motor Roomba Error 26 i7 960 980",
-    "part_price_range": "$15 - $26",
-    "technician_cost_estimate": "$110 - $160",
-    "repair_time_minutes": 20,
-    "difficulty": "Fácil",
+    "symptom": "Un lado de la placa de inducción no detecta las sartenes o muestra una letra 'E' parpadeando (al mantener pulsado el fuego aparece el subcódigo 0513 o F4) o salta el diferencial al encenderla.",
+    "technical_cause": "Cortocircuito en la pareja de transistores de potencia IGBT (RJH60F7 / IHW30N120R3) y puente rectificador del módulo inversor de ese lado, o sonda NTC central despegada del cristal.",
+    "oem_part_name": "Kit Transistores IGBT IHW30N120R3 / RJH60F7 + Sensor NTC Placa Inducción BSH",
+    "oem_part_number": "00614489",
+    "secondary_part_number": "IHW30N120R3 / RJH60F7DPQ (Kit IGBT + Puente Rectificador GBJ2510)",
+    "affiliate_search_query": "RJH60F7 IHW30N120R3 IGBT kit induction Bosch Balay 00614489",
+    "part_price_range": "$14 - $25",
+    "technician_cost_estimate": "$190 - $280",
+    "repair_time_minutes": 35,
+    "difficulty": "Media",
     "diagnostic_steps": [
-      "Para Error 26: saca el depósito, retira el filtro HEPA y sopla la rejilla de la turbina. Si la hélice no gira libremente o roza, cambia el motor turbina 20N636P010.",
-      "Para Error 2: extrae los dos rodillos verdes/grises, quita las tapitas amarillas o grises de las puntas y retira el pelo compactado alrededor del eje metálico."
+      "Mantén el dedo pulsado encima del número del fuego que parpadea con 'E' para leer el código exacto de 4 cifras.",
+      "Si marca F4, es el sensor de temperatura NTC central (00614489) del foco inductor.",
+      "Si saltó el magnetotérmico de la cocina y un lado quedó muerto o en E0513, comprueba continuidad entre las 3 patas de los transistores IGBT sobre el disipador de aluminio."
     ],
     "faq": [
       {
-        "q": "¿Por qué se quema el motor 20N636P010 del Error 26 en Roomba?",
-        "a": "Ocurre sobre todo cuando se lava el depósito con agua sin desmontar la turbina o cuando se usa un filtro HEPA viejo que deja pasar polvo de yeso/ceniza al cojinete del motor."
+        "q": "¿Se puede seguir usando el otro lado de la placa de inducción mientras un lado da Error E0513?",
+        "a": "En las placas Bosch/Balay de 3 zonas, la zona grande derecha lleva una placa electrónica independiente de las dos zonas izquierdas."
       }
     ]
   },
   {
-    "id": "electrolux-aeg-lavavajillas-error-i20-i30",
-    "slug": "error-i20-i30-lavavajillas-aeg-electrolux-zanussi-presostato-bomba",
-    "category": "Lavavajillas",
+    "id": "thermomix-tm5-tm6-error-c144-c153-cierre-brazos",
+    "slug": "error-c144-c153-c34-thermomix-tm5-tm6-engranaje-brazos-bascula",
+    "category": "Pequeño Electrodoméstico",
+    "lang": "es",
     "brands": [
-      "AEG",
-      "Electrolux",
-      "Zanussi"
+      "Vorwerk Thermomix"
     ],
-    "error_code": "Error i20 / i30",
+    "error_code": "Error C144 / C153 / C34",
     "popular_models": [
-      "AEG Favorit",
-      "Electrolux ComfortLift",
-      "Zanussi ZDF / ZDT"
+      "Thermomix TM5",
+      "Thermomix TM6",
+      "TM31"
     ],
-    "symptom": "El lavavajillas pita de forma intermitente, no inicia el lavado y muestra i20 (fallo de vaciado/lectura de nivel) o i30 (sistema antifugas activado).",
-    "technical_cause": "En el 85% de los errores i20 en AEG/Electrolux la bomba de desagüe funciona bien, pero el presostato electrónico analógico situado en la boca inferior del sumidero está taponado de grasa o tiene la membrana perforada y sigue marcando 'cuba llena'.",
-    "oem_part_name": "Sensor Presostato Analógico de Nivel de Agua AEG / Electrolux / Zanussi",
-    "oem_part_number": "140000554083",
-    "secondary_part_number": "1113170003 (Kit presostato + manguito cámara de presión)",
-    "affiliate_search_query": "140000554083 pressure switch sensor AEG Electrolux dishwasher i20",
-    "part_price_range": "$21 - $33",
-    "technician_cost_estimate": "$135 - $185",
-    "repair_time_minutes": 20,
-    "difficulty": "Fácil",
+    "symptom": "Los brazos automáticos de bloqueo de la tapa no cierran o se quedan a mitad de recorrido pitando con Error C144 / C153, o la báscula no pesa bien (C34).",
+    "technical_cause": "Rotura del piñón engranaje helicoidal blanco del motor de cierre de los brazos (C144/C153) o suciedad/desgaste en los 3 pies sensores piezoeléctricos de la báscula inferior (C34).",
+    "oem_part_name": "Engranaje Motor de Brazos de Cierre + Juego Cuchillas Thermomix TM5 / TM6",
+    "oem_part_number": "TM5-GEAR-C153",
+    "secondary_part_number": "TM5-BLADE-SEAL (Conjunto cuchillas y junta verde TM5/TM6)",
+    "affiliate_search_query": "Thermomix TM5 TM6 replacement gear locking arm blade",
+    "part_price_range": "$12 - $28",
+    "technician_cost_estimate": "$140 - $210",
+    "repair_time_minutes": 25,
+    "difficulty": "Media",
     "diagnostic_steps": [
-      "Extrae el filtro inferior del lavavajillas y limpia con un cepillo y agua muy caliente el conducto lateral derecho del fondo del pozo (cámara de aire del presostato).",
-      "Si el lavavajillas está totalmente seco por dentro pero sigue dando Error i20 tras 60 segundos intentando desaguar en vacío, el sensor de presión 140000554083 se ha quedado bloqueado.",
-      "Retira el zócalo frontal inferior, desengancha el sensor 140000554083 con un giro y conecta el nuevo."
+      "Para Error C144/C153: comprueba que la tapa del vaso esté bien asentada. Si el motor suena al girar pero los rodillos superiores no giran con fuerza, el piñón dentado del motor de brazos está fisurado.",
+      "Para Error C34 (báscula): limpia los 3 tacos de goma de la base de la máquina y asegúrate de que el cable de corriente trasero salga suelto sin tirar del chasis."
     ],
     "faq": [
       {
-        "q": "¿Por qué sigue sonando la bomba con la puerta abierta cuando sale i30?",
-        "a": "i30 indica agua en la bandeja inferior anti-desbordamiento. Por seguridad, la placa mantiene la bomba de vaciado encendida hasta que se seque el flotador de la base."
+        "q": "¿Por qué falla la báscula de la Thermomix TM5/TM6 si el cable de enchufe está tirante?",
+        "a": "Los sensores de peso están en las 3 patas inferiores de goma; si el cable rojo trasero está tenso o la máquina pisa una miga de pan, falsea la lectura de gramos."
       }
     ]
   }
