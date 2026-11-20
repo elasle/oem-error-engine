@@ -839,5 +839,122 @@
       }
     ],
     "created_at": "2026-11-20"
+  },
+  {
+    "id": "midea-aire-acondicionado-error-e1-e3",
+    "slug": "error-e1-e3-aire-acondicionado-midea-carrier-kaisai-sonda-ntc",
+    "category": "Aire Acondicionado",
+    "brands": [
+      "Midea",
+      "Carrier",
+      "Kaisai",
+      "MDV",
+      "Kaysun"
+    ],
+    "error_code": "Error E1 / E3 / EC",
+    "popular_models": [
+      "Midea Blanc",
+      "Mission II",
+      "Xtreme Save",
+      "All Easy Pro"
+    ],
+    "symptom": "El split interior parpadea mostrando E1 o E3 en el display LED, las lamas se cierran y el compresor exterior no arranca.",
+    "technical_cause": "En equipos Midea y marcas derivadas, E3 indica fallo del sensor tacométrico Hall del motor ventilador interior o sonda NTC de batería evaporadora fuera de rango (10 kOhm a 25°C).",
+    "oem_part_name": "Kit Doble Sonda NTC Ambiente + Tubería Evaporador Midea Original (10K)",
+    "oem_part_number": "11201007000039",
+    "secondary_part_number": "17400511000011 (Conector doble sonda temperatura)",
+    "affiliate_search_query": "11201007000039 temperature sensor Midea air conditioner",
+    "part_price_range": "$9 - $16",
+    "technician_cost_estimate": "$120 - $180",
+    "repair_time_minutes": 15,
+    "difficulty": "Fácil",
+    "diagnostic_steps": [
+      "Corta el magnetotérmico del aire acondicionado durante 5 minutos para resetear la placa inversora.",
+      "Levanta el frontal del split interior, retira el filtro derecho y localiza el conector doble de la sonda de ambiente y la sonda metálica insertada en el tubo de cobre.",
+      "Mide con multímetro en escala de 20k Ohm: a 25°C debe marcar ~10 kOhm. Si da 0 o infinito, enchufa la sonda OEM 11201007000039."
+    ],
+    "faq": [
+      {
+        "q": "¿Vale la misma sonda 11201007000039 para Carrier y Kaisai?",
+        "a": "Sí: Carrier, Kaisai, Kaysun y MDV comparten el chasis y placa electrónica fabricados por Midea y utilizan exactamente la misma sonda NTC de 10 kOhm."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "bambu-lab-error-hms-0700-2000-ams",
+    "slug": "error-hms-0700-2000-0002-0001-bambu-lab-x1c-p1s-filament-buffer",
+    "category": "Impresoras 3D",
+    "brands": [
+      "Bambu Lab"
+    ],
+    "error_code": "HMS_0700_2000_0002_0001 / AMS Failed to Feed",
+    "popular_models": [
+      "Bambu Lab X1 Carbon",
+      "P1S",
+      "P1P",
+      "X1E con AMS"
+    ],
+    "symptom": "El AMS empuja el filamento hasta el cabezal pero rebota 3 veces seguidas y salta la alerta 'Failed to feed filament into the toolhead / Filament jammed in buffer'.",
+    "technical_cause": "Desgaste abrasivo en los tubos PTFE internos del AMS o pérdida de lectura del sensor Hall en el Filament Buffer / Hub trasero.",
+    "oem_part_name": "Bambu Lab AMS Internal PTFE Tube Kit + Filament Buffer",
+    "oem_part_number": "BBL-PTFE-AMS-KIT",
+    "secondary_part_number": "FAZ007 (Bambu Lab Filament Buffer Original)",
+    "affiliate_search_query": "Bambu Lab PTFE tube connector AMS filament buffer",
+    "part_price_range": "$12 - $28",
+    "technician_cost_estimate": "$85 - $130",
+    "repair_time_minutes": 15,
+    "difficulty": "Fácil",
+    "diagnostic_steps": [
+      "Desconecta el tubo PTFE de la entrada superior del extrusor y comprueba si el borde interior del teflón está desgastado por filamentos con fibra de carbono o glow.",
+      "Verifica que el muelle del Filament Buffer trasero se desplace suavemente sin engancharse en el sensor magnético.",
+      "Sustituye el tramo de tubo PTFE (ID 2.5mm / OD 4.0mm) para eliminar la fricción en la curva de entrada al cabezal."
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué no sirve cualquier tubo PTFE de 2.0mm interior para el AMS de Bambu Lab?",
+        "a": "El AMS de Bambu Lab requiere tubo PTFE con diámetro interior de 2.5mm (en vez del 2.0mm clásico de Ender 3) para reducir la fricción durante los cambios rápidos de color."
+      }
+    ],
+    "created_at": "2026-11-20"
+  },
+  {
+    "id": "whirlpool-lavadora-error-f06-f08",
+    "slug": "error-f06-f08-f09-lavadora-whirlpool-indesit-resistencia-escobillas",
+    "category": "Lavadoras",
+    "brands": [
+      "Whirlpool",
+      "Indesit",
+      "Hotpoint Ariston",
+      "Ignis"
+    ],
+    "error_code": "Error F06 / F08",
+    "popular_models": [
+      "Whirlpool 6th Sense",
+      "AWE / AWOD",
+      "Indesit IWC / BWA"
+    ],
+    "symptom": "El tambor no gira al llegar al lavado o centrifugado (F06) o salta el error F08 al intentar calentar el agua.",
+    "technical_cause": "En F06 las escobillas de carbón del motor universal C.E.SET están gastadas (<5 mm); en F08 la resistencia calefactora inferior con sonda NTC está derivada a tierra o abierta.",
+    "oem_part_name": "Juego de 2 Escobillas de Carbón Motor Lavadora Whirlpool / Indesit C.E.SET",
+    "oem_part_number": "481236248004",
+    "secondary_part_number": "481010645279 (Resistencia Lavadora Whirlpool 2050W con NTC)",
+    "affiliate_search_query": "481236248004 carbon brushes Whirlpool Indesit washing machine",
+    "part_price_range": "$11 - $18",
+    "technician_cost_estimate": "$115 - $160",
+    "repair_time_minutes": 25,
+    "difficulty": "Fácil",
+    "diagnostic_steps": [
+      "Para F06: desenchufa la lavadora, retira la tapa trasera y desatornilla los dos portaescobillas negros o burdeos del motor inferior.",
+      "Si el grafito que asoma mide menos de 1 centímetro y está brillante o quemado en la punta, instala la pareja nueva OEM 481236248004 respetando la orientación del bisel.",
+      "Para F08: mide continuidad entre los dos bornes de la resistencia inferior 481010645279 (~25 Ohmios)."
+    ],
+    "faq": [
+      {
+        "q": "¿Es normal que suenen chispitas al estrenar las escobillas 481236248004?",
+        "a": "Sí: durante los 2 primeros centrifugados el bisel de carbón nuevo se asienta a la curvatura del colector de cobre del motor."
+      }
+    ],
+    "created_at": "2026-11-20"
   }
 ]

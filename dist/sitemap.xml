@@ -138,4 +138,22 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://elasle.github.io/oem-error-engine/error/error-e1-e3-aire-acondicionado-midea-carrier-kaisai-sonda-ntc/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://elasle.github.io/oem-error-engine/error/error-hms-0700-2000-0002-0001-bambu-lab-x1c-p1s-filament-buffer/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://elasle.github.io/oem-error-engine/error/error-f06-f08-f09-lavadora-whirlpool-indesit-resistencia-escobillas/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
