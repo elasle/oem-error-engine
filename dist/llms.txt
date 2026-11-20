@@ -4,7 +4,7 @@
 
 ## Primary Portals
 - [US English Portal](https://elasle.github.io/oem-error-engine/): 41 verified US appliance & hardware OEM error guides
-- [Spanish Portal](https://elasle.github.io/oem-error-engine/es/): 22 verified Spanish OEM error guides
+- [Spanish Portal](https://elasle.github.io/oem-error-engine/es/): 25 verified Spanish OEM error guides
 - [Full JSON API Feed](https://elasle.github.io/oem-error-engine/api/errors.json)
 
 ## US English Error Code -> OEM Part Directory
@@ -73,3 +73,6 @@
 - [Samsung Error dC / dC1 / EdC -> OEM #DC64-01538A (Blocapuertas Retardado Original Lavadora Samsung)](https://elasle.github.io/oem-error-engine/error/error-dc-dc1-ddc-lavadora-samsung-blocapuertas/): La puerta está cerrada pero la lavadora pita a los pocos segundos de darle a Inicio mostrando el código dC o dC1.
 - [Bosch/Balay/Siemens Error E18 / F18 -> OEM #00145777 (Bomba de Desagüe Completa Lavadora Bosch / Balay / Siemens)](https://elasle.github.io/oem-error-engine/error/error-e18-f18-lavadora-bosch-balay-siemens-bomba-desague/): La lavadora no centrifuga, se queda llena de agua con la puerta bloqueada y muestra E18 o F18 en la pantalla LED.
 - [Bosch/Siemens/Balay Error E23 / F23 -> OEM #00686004 (Goma de Escotilla / Junta de Puerta Lavadora Bosch Serie 6/8)](https://elasle.github.io/oem-error-engine/error/error-e23-f23-lavadora-bosch-siemens-balay-aquastop/): La bomba funciona continuamente aunque apagues el selector y la pantalla muestra E23 o F23 sin dejar iniciar ningún programa.
+- [Midea/Carrier/Kaisai/MDV/Kaysun Error E1 / E3 / EC -> OEM #11201007000039 (Kit Doble Sonda NTC Ambiente + Tubería Evaporador Midea Original (10K))](https://elasle.github.io/oem-error-engine/error/error-e1-e3-aire-acondicionado-midea-carrier-kaisai-sonda-ntc/): El split interior parpadea mostrando E1 o E3 en el display LED, las lamas se cierran y el compresor exterior no arranca.
+- [Bambu Lab HMS_0700_2000_0002_0001 / AMS Failed to Feed -> OEM #BBL-PTFE-AMS-KIT (Bambu Lab AMS Internal PTFE Tube Kit + Filament Buffer)](https://elasle.github.io/oem-error-engine/error/error-hms-0700-2000-0002-0001-bambu-lab-x1c-p1s-filament-buffer/): El AMS empuja el filamento hasta el cabezal pero rebota 3 veces seguidas y salta la alerta 'Failed to feed filament into the toolhead / Filament jammed in buffer'.
+- [Whirlpool/Indesit/Hotpoint Ariston/Ignis Error F06 / F08 -> OEM #481236248004 (Juego de 2 Escobillas de Carbón Motor Lavadora Whirlpool / Indesit C.E.SET)](https://elasle.github.io/oem-error-engine/error/error-f06-f08-f09-lavadora-whirlpool-indesit-resistencia-escobillas/): El tambor no gira al llegar al lavado o centrifugado (F06) o salta el error F08 al intentar calentar el agua.

@@ -2,7 +2,7 @@ name: Nightly OEM Generator & GitHub Pages Deploy
 
 on:
   schedule:
-    # Se ejecuta automáticamente todas las noches a las 03:00 UTC mientras duermes
+    # Runs automatically every night at 03:00 UTC while you sleep
     - cron: '0 3 * * *'
   push:
     branches: [ main ]
@@ -25,13 +25,19 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Run Nightly OEM Generator
+      - name: Run Nightly OEM Expansion (on schedule or manual dispatch)
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          git config user.name "AveriasOEM Nightly Bot"
-          git config user.email "bot@averiasoem.local"
+          git config user.name "OEMPartDecoder Nightly Bot"
+          git config user.email "bot@oempartdecoder.local"
           python3 nightly_generator.py
+
+      - name: Build Static Site (on push)
+        if: github.event_name == 'push'
+        run: |
+          python3 build_site.py
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
