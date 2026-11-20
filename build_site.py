@@ -314,6 +314,8 @@ def render_error_page(item, same_lang_items, config):
         for f in item.get("faq", [])
     )
 
+    has_ebay = bool(config.get("monetization", {}).get("ebay_campid", "").strip())
+
     if lang == "en":
         title = f"{brands_str} {item['error_code']} Fix: Exact Cause & OEM Part #{item['oem_part_number']}"
         meta_desc = (
@@ -330,8 +332,11 @@ def render_error_page(item, same_lang_items, config):
         cta_eyebrow = "Verified OEM Replacement Part That Fixes This Code"
         cta_sub = f"Primary OEM Ref: <strong>{html.escape(item['oem_part_number'])}</strong> · Cross-Ref / Alternate: {html.escape(item.get('secondary_part_number', 'N/A'))}"
         btn_amz_text = f"🛒 Check OEM Part #{html.escape(item['oem_part_number'])} on Amazon.com →"
-        btn_sec_href = links["ebay"]
-        btn_sec_text = "🔎 Find OEM Part on eBay"
+        sec_btn_html = (
+            f'<a class="btn btn-ebay" href="{html.escape(links["ebay"])}" target="_blank" rel="sponsored nofollow noopener">🔎 Find OEM Part on eBay</a>'
+            if has_ebay
+            else ""
+        )
         cta_note = f"* Always match OEM Part <strong>{html.escape(item['oem_part_number'])}</strong> with your appliance model sticker before ordering."
         sec1_title = "⚠️ Failure Symptom & Factory Service Manual Root Cause"
         sec1_sym = "Symptom on machine:"
@@ -358,8 +363,11 @@ def render_error_page(item, same_lang_items, config):
         cta_eyebrow = "Pieza Exacta que Resuelve el Fallo"
         cta_sub = f"Ref. Principal: <strong>{html.escape(item['oem_part_number'])}</strong> · Equivalente: {html.escape(item.get('secondary_part_number', 'N/A'))}"
         btn_amz_text = f"🛒 Ver Repuesto {html.escape(item['oem_part_number'])} en Amazon.com →"
-        btn_sec_href = links["amazon_es"]
-        btn_sec_text = "🇪🇸 Ver en Amazon.es"
+        sec_btn_html = (
+            f'<a class="btn btn-ebay" href="{html.escape(links["ebay"])}" target="_blank" rel="sponsored nofollow noopener">🔎 Buscar OEM en eBay</a>'
+            if has_ebay
+            else ""
+        )
         cta_note = f"* Comprueba siempre que el código OEM <strong>{html.escape(item['oem_part_number'])}</strong> coincida con tu modelo antes de pedir."
         sec1_title = "⚠️ Síntoma y Causa Técnica Según Manual de Servicio"
         sec1_sym = "Síntoma en la máquina:"
@@ -453,9 +461,7 @@ def render_error_page(item, same_lang_items, config):
         <a class="btn btn-amz" href="{html.escape(links['amazon_main'])}" target="_blank" rel="sponsored nofollow noopener">
           {btn_amz_text}
         </a>
-        <a class="btn btn-ebay" href="{html.escape(btn_sec_href)}" target="_blank" rel="sponsored nofollow noopener">
-          {btn_sec_text}
-        </a>
+        {sec_btn_html}
       </div>
       <p style="font-size:0.75rem;color:var(--muted);margin-top:0.75rem;">
         {cta_note}
