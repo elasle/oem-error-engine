@@ -522,6 +522,7 @@ def render_error_page(item, same_lang_items, config):
   <footer class="container">
     <p>{footer_p1}</p>
     <p style="margin-top:0.35rem;">{footer_p2}</p>
+    <p style="margin-top:0.5rem;"><a href="https://elasle.github.io/amazon-deal-hunter/">🎯 DealRadarUS — Filter Live Amazon Deals by % Off, Price & Total $ Savings →</a></p>
   </footer>
 </body>
 </html>
@@ -627,6 +628,7 @@ def render_index_page(items, config, lang="en", prefix=""):
   <footer class="container">
     <p>OEMPartDecoder / AveríasOEM — Updated automatically every night at 03:00 AM UTC.</p>
     <p style="margin-top:0.35rem;">As an Amazon Associate we earn from qualifying purchases (Tag: onamzasleyarb-20). OEM numbers are listed for technical identification.</p>
+    <p style="margin-top:0.5rem;"><a href="https://elasle.github.io/amazon-deal-hunter/">🎯 DealRadarUS — Filter Live Amazon Deals by % Off, Price & Total $ Savings →</a></p>
   </footer>
 
   <script>
