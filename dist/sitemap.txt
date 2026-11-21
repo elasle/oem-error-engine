@@ -44,6 +44,9 @@ https://elasle.github.io/oem-error-engine/error/liftmaster-chamberlain-craftsman
 https://elasle.github.io/oem-error-engine/error/whirlpool-maytag-kenmore-dryer-wont-start-thermal-fuse-wp3392519/
 https://elasle.github.io/oem-error-engine/error/samsung-refrigerator-water-pooling-under-deli-crisper-drawers-drain-clip-da61-06796a/
 https://elasle.github.io/oem-error-engine/error/whirlpool-maytag-bravos-cabrio-washer-ul-f0-e5-banging-suspension-rods-w11130362/
+https://elasle.github.io/oem-error-engine/error/shark-ion-iq-ai-robot-vacuum-error-2-error-7-brushroll-motor/
+https://elasle.github.io/oem-error-engine/error/whirlpool-maytag-kitchenaid-replace-water-filter-light-edr1rxd1/
+https://elasle.github.io/oem-error-engine/error/ge-profile-refrigerator-err-replace-water-filter-mwf-xwfe/
 https://elasle.github.io/oem-error-engine/error/error-e15-lavavajillas-bosch-balay-siemens/
 https://elasle.github.io/oem-error-engine/error/error-e24-e25-lavavajillas-bosch-balay-siemens/
 https://elasle.github.io/oem-error-engine/error/error-e09-lavavajillas-bosch-siemens-balay-no-calienta/
@@ -72,3 +75,6 @@ https://elasle.github.io/oem-error-engine/error/error-f06-f08-f09-lavadora-whirl
 https://elasle.github.io/oem-error-engine/error/luz-roja-parpadeando-aspiradora-dyson-v8-v10-v11-bateria-gatillo/
 https://elasle.github.io/oem-error-engine/error/error-2-error-26-irobot-roomba-serie-600-800-900-i7-e5/
 https://elasle.github.io/oem-error-engine/error/error-i20-i30-lavavajillas-aeg-electrolux-zanussi-presostato-bomba/
+https://elasle.github.io/oem-error-engine/error/error-cepillo-central-aspiracion-robot-cecotec-conga-motor-turbina/
+https://elasle.github.io/oem-error-engine/error/error-e0513-e-parpadeando-placa-induccion-bosch-balay-siemens/
+https://elasle.github.io/oem-error-engine/error/error-c144-c153-c34-thermomix-tm5-tm6-engranaje-brazos-bascula/

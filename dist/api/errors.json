@@ -1729,6 +1729,123 @@
     "created_at": "2026-11-20"
   },
   {
+    "id": "shark-robot-vacuum-error-2-side-brush-wheel-motor",
+    "slug": "shark-ion-iq-ai-robot-vacuum-error-2-error-7-brushroll-motor",
+    "category": "Small Appliances",
+    "lang": "en",
+    "brands": [
+      "Shark"
+    ],
+    "error_code": "Error 2 (Blockage in Brushroll) / Error 7 (Cliff Sensor / Wheel)",
+    "popular_models": [
+      "Shark IQ RV1001AE",
+      "Shark AI AV2501AE",
+      "Shark ION RV750 / R85"
+    ],
+    "symptom": "The Shark robot vacuum runs for 10 seconds, stops with a flashing red exclamation light, and announces 'Error number 2: A blockage is preventing the brushroll from spinning' even when the brush is clean.",
+    "technical_cause": "Stripped plastic gears inside the main brushroll gearbox motor assembly or burned-out DC brush motor from hair wrap resistance.",
+    "oem_part_name": "Shark IQ / ION Main Brushroll Gearbox Motor + Replacement Roller Brush",
+    "oem_part_number": "SHK-RV1001-BRM",
+    "secondary_part_number": "107KY1000 (Shark Self-Cleaning Brushroll)",
+    "affiliate_search_query": "Shark IQ RV1001AE RV750 main brush motor replacement",
+    "part_price_range": "$18 - $29",
+    "technician_cost_estimate": "$125 - $175",
+    "repair_time_minutes": 20,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Remove the main brushroll and spin the square drive socket inside the vacuum cavity with your finger: if it clicks roughly or locks up, the internal nylon gear inside the brush motor gearbox has stripped.",
+      "Replace the drop-in main brushroll motor module or worn end-cap bearing."
+    ],
+    "faq": [
+      {
+        "q": "Does a worn square end cap on the roller brush also cause Shark Error 2?",
+        "a": "Yes! Before replacing the motor, check the removable square plastic cap on the end of the brushroll—if hair melted the bearing inside that cap, a $12 replacement brushroll fixes Error 2 immediately."
+      }
+    ],
+    "created_at": "2026-11-21"
+  },
+  {
+    "id": "whirlpool-refrigerator-every-drop-filter-edr1rxd1",
+    "slug": "whirlpool-maytag-kitchenaid-replace-water-filter-light-edr1rxd1",
+    "category": "Refrigerators",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "Maytag",
+      "KitchenAid",
+      "Amana",
+      "JennAir"
+    ],
+    "error_code": "Replace Filter Red Light / Slow Water Dispenser Flow",
+    "popular_models": [
+      "WRS325SDHZ",
+      "WRF535SWHZ",
+      "WRX735SDHZ",
+      "KRFC300ESS"
+    ],
+    "symptom": "The red or orange 'Replace Filter' / 'Order Filter' status light stays on, water dispenser flow drops to a slow stream, or ice cubes come out hollow and small.",
+    "technical_cause": "The activated carbon block inside the EveryDrop Filter 1 cartridge has reached its 200-gallon / 6-month pressure drop threshold, restricting water pressure to both the dispenser and ice maker fill valve.",
+    "oem_part_name": "EveryDrop by Whirlpool OEM Refrigerator Water Filter 1 (EDR1RXD1)",
+    "oem_part_number": "EDR1RXD1",
+    "secondary_part_number": "W10295370A (Whirlpool Filter 1 Single-Pack)",
+    "affiliate_search_query": "EDR1RXD1 W10295370A Whirlpool EveryDrop refrigerator water filter 1",
+    "part_price_range": "$19 - $49",
+    "technician_cost_estimate": "$120 - $165",
+    "repair_time_minutes": 3,
+    "difficulty": "Very Easy (Push-and-flip cartridge, no tools)",
+    "diagnostic_steps": [
+      "Open the filter door in the upper-right ceiling or bottom base grille of the refrigerator and push the old cartridge inward to pop it loose.",
+      "Remove the protective cap from the new EDR1RXD1 filter, align the arrow, and push firmly until the door clicks shut.",
+      "Hold the 'Filter Reset' or 'Light' button on the dispenser panel for 3 seconds until it beeps and flush 2 gallons of water to clear trapped air."
+    ],
+    "faq": [
+      {
+        "q": "Why is my Whirlpool ice maker making tiny cubes even when water still comes out of the door?",
+        "a": "The ice maker inlet solenoid only opens for a fixed 7.5-second timer—if a clogged EDR1RXD1 filter reduces water pressure by 50%, the ice mold only fills halfway during those 7.5 seconds."
+      }
+    ],
+    "created_at": "2026-11-21"
+  },
+  {
+    "id": "ge-refrigerator-mwf-xwfe-water-filter-err",
+    "slug": "ge-profile-refrigerator-err-replace-water-filter-mwf-xwfe",
+    "category": "Refrigerators",
+    "lang": "en",
+    "brands": [
+      "GE",
+      "GE Profile",
+      "Café"
+    ],
+    "error_code": "Dispenser Displays 'Err' or Red Filter Status Light",
+    "popular_models": [
+      "GFE28GYNFS",
+      "GNE27JYMFS",
+      "GSS25GSHSS",
+      "PFE28KYNFS"
+    ],
+    "symptom": "Water dispenser shuts off and displays 'Err' or 'Filter Expired' on the LCD panel, or water output drops sharply.",
+    "technical_cause": "Clogged cartridge or missing RFID verification chip on GE French-Door models requiring an XWFE (or twist-lock MWF) cartridge.",
+    "oem_part_name": "GE OEM MWF / XWFE Refrigerator Water Filter Cartridge",
+    "oem_part_number": "MWF",
+    "secondary_part_number": "XWFE (RFID-chipped version for 2020+ GE French Door fridges)",
+    "affiliate_search_query": "GE MWF XWFE refrigerator water filter replacement",
+    "part_price_range": "$18 - $44",
+    "technician_cost_estimate": "$125 - $175",
+    "repair_time_minutes": 3,
+    "difficulty": "Very Easy (Twist-in cartridge)",
+    "diagnostic_steps": [
+      "Check the label on your current filter inside the upper right or left fridge wall: note whether it says 'MWF' (twist-lock) or 'XWFE' (RFID chip).",
+      "Twist the old cartridge counter-clockwise to remove, insert the new MWF or XWFE cartridge, and turn clockwise a half turn until it stops."
+    ],
+    "faq": [
+      {
+        "q": "Why does my GE refrigerator flash 'Err' after installing an XWFE filter?",
+        "a": "2020+ GE refrigerators have an RFID reader behind the filter bracket that checks for the XWFE tag before allowing the water valve to open."
+      }
+    ],
+    "created_at": "2026-11-21"
+  },
+  {
     "id": "bosch-lavavajillas-error-e15",
     "slug": "error-e15-lavavajillas-bosch-balay-siemens",
     "category": "Lavavajillas",
@@ -2823,5 +2940,119 @@
     ],
     "created_at": "2026-11-20",
     "lang": "es"
+  },
+  {
+    "id": "cecotec-conga-error-cepillo-turbina",
+    "slug": "error-cepillo-central-aspiracion-robot-cecotec-conga-motor-turbina",
+    "category": "Pequeño Electrodoméstico",
+    "lang": "es",
+    "brands": [
+      "Cecotec Conga",
+      "Xiaomi Mi Robot Vacuum",
+      "Roborock"
+    ],
+    "error_code": "Error Cepillo Principal / Fallo Ventilador de Succión",
+    "popular_models": [
+      "Xiaomi Mi Robot Vacuum Mop 2 / S10",
+      "Roborock S5 / S7",
+      "Conga Serie 3090 / 4090 / 5090"
+    ],
+    "symptom": "El robot aspirador se detiene a los pocos segundos indicando por voz 'Error en el ventilador de succión' o 'Limpie el cepillo principal' aunque el rodillo esté limpio.",
+    "technical_cause": "Desgaste del motor de turbina centrífuga Nidec 20N704R / 15V DC por entrada de polvo fino o bloqueo del motor reductor del cepillo central.",
+    "oem_part_name": "Motor Ventilador de Succión Turbina Nidec 20N704R para Xiaomi / Roborock / Conga",
+    "oem_part_number": "20N704R500",
+    "secondary_part_number": "Nidec 20N704R / G400151900 (Turbina de aspiración 4-5 pines)",
+    "affiliate_search_query": "20N704R Nidec fan motor Xiaomi Roborock vacuum",
+    "part_price_range": "$16 - $26",
+    "technician_cost_estimate": "$95 - $140",
+    "repair_time_minutes": 25,
+    "difficulty": "Media",
+    "diagnostic_steps": [
+      "Intenta girar las aspas de la turbina trasera con un bastoncillo: si va dura o raspa, el rodamiento del motor Nidec 20N704R está agarrotado.",
+      "Retira la carcasa inferior, desconecta el conector de 4/5 pines del módulo ventilador 20N704R500 e instala la turbina nueva."
+    ],
+    "faq": [
+      {
+        "q": "¿Cómo saber si mi robot lleva la turbina Nidec de 4 pines o de 5 pines?",
+        "a": "Solo tienes que mirar el conector blanco de la turbina vieja: los modelos Xiaomi/Roborock S5/S6 llevan el conector de 4 o 5 pines plug-and-play serigrafiado como 20N704R."
+      }
+    ],
+    "created_at": "2026-11-21"
+  },
+  {
+    "id": "balay-bosch-vitroceramica-induccion-error-e-parpadeando",
+    "slug": "error-e0513-e-parpadeando-placa-induccion-bosch-balay-siemens",
+    "category": "Cocina y Hornos",
+    "lang": "es",
+    "brands": [
+      "Bosch",
+      "Balay",
+      "Siemens"
+    ],
+    "error_code": "Letra E Parpadeando / Error E0513 / F0 / F4",
+    "popular_models": [
+      "3EB865FR",
+      "PIE631FB1E",
+      "PID675DC1E",
+      "Serie 6 Inducción"
+    ],
+    "symptom": "Un lado de la placa de inducción no detecta las sartenes o muestra una letra 'E' parpadeando (al mantener pulsado el fuego aparece el subcódigo 0513 o F4) o salta el diferencial al encenderla.",
+    "technical_cause": "Cortocircuito en la pareja de transistores de potencia IGBT (RJH60F7 / IHW30N120R3) y puente rectificador del módulo inversor de ese lado, o sonda NTC central despegada del cristal.",
+    "oem_part_name": "Kit Transistores IGBT IHW30N120R3 / RJH60F7 + Sensor NTC Placa Inducción BSH",
+    "oem_part_number": "00614489",
+    "secondary_part_number": "IHW30N120R3 / RJH60F7DPQ (Kit IGBT + Puente Rectificador GBJ2510)",
+    "affiliate_search_query": "RJH60F7 IHW30N120R3 IGBT kit induction Bosch Balay 00614489",
+    "part_price_range": "$14 - $25",
+    "technician_cost_estimate": "$190 - $280",
+    "repair_time_minutes": 35,
+    "difficulty": "Media",
+    "diagnostic_steps": [
+      "Mantén el dedo pulsado encima del número del fuego que parpadea con 'E' para leer el código exacto de 4 cifras.",
+      "Si marca F4, es el sensor de temperatura NTC central (00614489) del foco inductor.",
+      "Si saltó el magnetotérmico de la cocina y un lado quedó muerto o en E0513, comprueba continuidad entre las 3 patas de los transistores IGBT sobre el disipador de aluminio."
+    ],
+    "faq": [
+      {
+        "q": "¿Se puede seguir usando el otro lado de la placa de inducción mientras un lado da Error E0513?",
+        "a": "En las placas Bosch/Balay de 3 zonas, la zona grande derecha lleva una placa electrónica independiente de las dos zonas izquierdas."
+      }
+    ],
+    "created_at": "2026-11-21"
+  },
+  {
+    "id": "thermomix-tm5-tm6-error-c144-c153-cierre-brazos",
+    "slug": "error-c144-c153-c34-thermomix-tm5-tm6-engranaje-brazos-bascula",
+    "category": "Pequeño Electrodoméstico",
+    "lang": "es",
+    "brands": [
+      "Vorwerk Thermomix"
+    ],
+    "error_code": "Error C144 / C153 / C34",
+    "popular_models": [
+      "Thermomix TM5",
+      "Thermomix TM6",
+      "TM31"
+    ],
+    "symptom": "Los brazos automáticos de bloqueo de la tapa no cierran o se quedan a mitad de recorrido pitando con Error C144 / C153, o la báscula no pesa bien (C34).",
+    "technical_cause": "Rotura del piñón engranaje helicoidal blanco del motor de cierre de los brazos (C144/C153) o suciedad/desgaste en los 3 pies sensores piezoeléctricos de la báscula inferior (C34).",
+    "oem_part_name": "Engranaje Motor de Brazos de Cierre + Juego Cuchillas Thermomix TM5 / TM6",
+    "oem_part_number": "TM5-GEAR-C153",
+    "secondary_part_number": "TM5-BLADE-SEAL (Conjunto cuchillas y junta verde TM5/TM6)",
+    "affiliate_search_query": "Thermomix TM5 TM6 replacement gear locking arm blade",
+    "part_price_range": "$12 - $28",
+    "technician_cost_estimate": "$140 - $210",
+    "repair_time_minutes": 25,
+    "difficulty": "Media",
+    "diagnostic_steps": [
+      "Para Error C144/C153: comprueba que la tapa del vaso esté bien asentada. Si el motor suena al girar pero los rodillos superiores no giran con fuerza, el piñón dentado del motor de brazos está fisurado.",
+      "Para Error C34 (báscula): limpia los 3 tacos de goma de la base de la máquina y asegúrate de que el cable de corriente trasero salga suelto sin tirar del chasis."
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué falla la báscula de la Thermomix TM5/TM6 si el cable de enchufe está tirante?",
+        "a": "Los sensores de peso están en las 3 patas inferiores de goma; si el cable rojo trasero está tenso o la máquina pisa una miga de pan, falsea la lectura de gramos."
+      }
+    ],
+    "created_at": "2026-11-21"
   }
 ]

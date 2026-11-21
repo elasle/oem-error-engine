@@ -1727,5 +1727,122 @@
       }
     ],
     "created_at": "2026-11-20"
+  },
+  {
+    "id": "shark-robot-vacuum-error-2-side-brush-wheel-motor",
+    "slug": "shark-ion-iq-ai-robot-vacuum-error-2-error-7-brushroll-motor",
+    "category": "Small Appliances",
+    "lang": "en",
+    "brands": [
+      "Shark"
+    ],
+    "error_code": "Error 2 (Blockage in Brushroll) / Error 7 (Cliff Sensor / Wheel)",
+    "popular_models": [
+      "Shark IQ RV1001AE",
+      "Shark AI AV2501AE",
+      "Shark ION RV750 / R85"
+    ],
+    "symptom": "The Shark robot vacuum runs for 10 seconds, stops with a flashing red exclamation light, and announces 'Error number 2: A blockage is preventing the brushroll from spinning' even when the brush is clean.",
+    "technical_cause": "Stripped plastic gears inside the main brushroll gearbox motor assembly or burned-out DC brush motor from hair wrap resistance.",
+    "oem_part_name": "Shark IQ / ION Main Brushroll Gearbox Motor + Replacement Roller Brush",
+    "oem_part_number": "SHK-RV1001-BRM",
+    "secondary_part_number": "107KY1000 (Shark Self-Cleaning Brushroll)",
+    "affiliate_search_query": "Shark IQ RV1001AE RV750 main brush motor replacement",
+    "part_price_range": "$18 - $29",
+    "technician_cost_estimate": "$125 - $175",
+    "repair_time_minutes": 20,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Remove the main brushroll and spin the square drive socket inside the vacuum cavity with your finger: if it clicks roughly or locks up, the internal nylon gear inside the brush motor gearbox has stripped.",
+      "Replace the drop-in main brushroll motor module or worn end-cap bearing."
+    ],
+    "faq": [
+      {
+        "q": "Does a worn square end cap on the roller brush also cause Shark Error 2?",
+        "a": "Yes! Before replacing the motor, check the removable square plastic cap on the end of the brushroll—if hair melted the bearing inside that cap, a $12 replacement brushroll fixes Error 2 immediately."
+      }
+    ],
+    "created_at": "2026-11-21"
+  },
+  {
+    "id": "whirlpool-refrigerator-every-drop-filter-edr1rxd1",
+    "slug": "whirlpool-maytag-kitchenaid-replace-water-filter-light-edr1rxd1",
+    "category": "Refrigerators",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "Maytag",
+      "KitchenAid",
+      "Amana",
+      "JennAir"
+    ],
+    "error_code": "Replace Filter Red Light / Slow Water Dispenser Flow",
+    "popular_models": [
+      "WRS325SDHZ",
+      "WRF535SWHZ",
+      "WRX735SDHZ",
+      "KRFC300ESS"
+    ],
+    "symptom": "The red or orange 'Replace Filter' / 'Order Filter' status light stays on, water dispenser flow drops to a slow stream, or ice cubes come out hollow and small.",
+    "technical_cause": "The activated carbon block inside the EveryDrop Filter 1 cartridge has reached its 200-gallon / 6-month pressure drop threshold, restricting water pressure to both the dispenser and ice maker fill valve.",
+    "oem_part_name": "EveryDrop by Whirlpool OEM Refrigerator Water Filter 1 (EDR1RXD1)",
+    "oem_part_number": "EDR1RXD1",
+    "secondary_part_number": "W10295370A (Whirlpool Filter 1 Single-Pack)",
+    "affiliate_search_query": "EDR1RXD1 W10295370A Whirlpool EveryDrop refrigerator water filter 1",
+    "part_price_range": "$19 - $49",
+    "technician_cost_estimate": "$120 - $165",
+    "repair_time_minutes": 3,
+    "difficulty": "Very Easy (Push-and-flip cartridge, no tools)",
+    "diagnostic_steps": [
+      "Open the filter door in the upper-right ceiling or bottom base grille of the refrigerator and push the old cartridge inward to pop it loose.",
+      "Remove the protective cap from the new EDR1RXD1 filter, align the arrow, and push firmly until the door clicks shut.",
+      "Hold the 'Filter Reset' or 'Light' button on the dispenser panel for 3 seconds until it beeps and flush 2 gallons of water to clear trapped air."
+    ],
+    "faq": [
+      {
+        "q": "Why is my Whirlpool ice maker making tiny cubes even when water still comes out of the door?",
+        "a": "The ice maker inlet solenoid only opens for a fixed 7.5-second timer—if a clogged EDR1RXD1 filter reduces water pressure by 50%, the ice mold only fills halfway during those 7.5 seconds."
+      }
+    ],
+    "created_at": "2026-11-21"
+  },
+  {
+    "id": "ge-refrigerator-mwf-xwfe-water-filter-err",
+    "slug": "ge-profile-refrigerator-err-replace-water-filter-mwf-xwfe",
+    "category": "Refrigerators",
+    "lang": "en",
+    "brands": [
+      "GE",
+      "GE Profile",
+      "Café"
+    ],
+    "error_code": "Dispenser Displays 'Err' or Red Filter Status Light",
+    "popular_models": [
+      "GFE28GYNFS",
+      "GNE27JYMFS",
+      "GSS25GSHSS",
+      "PFE28KYNFS"
+    ],
+    "symptom": "Water dispenser shuts off and displays 'Err' or 'Filter Expired' on the LCD panel, or water output drops sharply.",
+    "technical_cause": "Clogged cartridge or missing RFID verification chip on GE French-Door models requiring an XWFE (or twist-lock MWF) cartridge.",
+    "oem_part_name": "GE OEM MWF / XWFE Refrigerator Water Filter Cartridge",
+    "oem_part_number": "MWF",
+    "secondary_part_number": "XWFE (RFID-chipped version for 2020+ GE French Door fridges)",
+    "affiliate_search_query": "GE MWF XWFE refrigerator water filter replacement",
+    "part_price_range": "$18 - $44",
+    "technician_cost_estimate": "$125 - $175",
+    "repair_time_minutes": 3,
+    "difficulty": "Very Easy (Twist-in cartridge)",
+    "diagnostic_steps": [
+      "Check the label on your current filter inside the upper right or left fridge wall: note whether it says 'MWF' (twist-lock) or 'XWFE' (RFID chip).",
+      "Twist the old cartridge counter-clockwise to remove, insert the new MWF or XWFE cartridge, and turn clockwise a half turn until it stops."
+    ],
+    "faq": [
+      {
+        "q": "Why does my GE refrigerator flash 'Err' after installing an XWFE filter?",
+        "a": "2020+ GE refrigerators have an RFID reader behind the filter bracket that checks for the XWFE tag before allowing the water valve to open."
+      }
+    ],
+    "created_at": "2026-11-21"
   }
 ]
