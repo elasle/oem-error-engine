@@ -1844,5 +1844,124 @@
       }
     ],
     "created_at": "2026-11-21"
+  },
+  {
+    "id": "whirlpool-maytag-washer-lid-lock-w11307244",
+    "slug": "whirlpool-maytag-top-load-washer-f5-e3-lid-lock-latch-w11307244",
+    "category": "Washing Machines",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "Maytag",
+      "Amana",
+      "Roper",
+      "Kenmore"
+    ],
+    "error_code": "Red Lid Locked Light Flashing / Error F5 E1 / F5 E3",
+    "popular_models": [
+      "WTW5000DW",
+      "WTW4816FW",
+      "MVWC465HW",
+      "NTW4516FW"
+    ],
+    "symptom": "When you press Start on your top-load washer, the lid lock clicks twice, the red Lid Locked light flashes continuously, and the washer will not fill or spin.",
+    "technical_cause": "Internal solenoid failure or broken reed switch inside the 3-wire top-deck lid lock assembly (W11307244 / W10838613).",
+    "oem_part_name": "Whirlpool / Maytag OEM Top-Load Washer 3-Wire Lid Lock Assembly",
+    "oem_part_number": "W11307244",
+    "secondary_part_number": "W10838613 / W10682535 / W11253733",
+    "affiliate_search_query": "W11307244 W10838613 Whirlpool Maytag washer lid lock assembly",
+    "part_price_range": "$18 - $29",
+    "technician_cost_estimate": "$190 - $265",
+    "repair_time_minutes": 15,
+    "difficulty": "Easy (2 screws under front lip)",
+    "diagnostic_steps": [
+      "Inspect the plastic strike mounted on the glass or metal lid to ensure the magnet inside the strike tip hasn't fallen out.",
+      "Unplug the washer, remove the rear console screws to hinge the top deck open, unbolt the two screws holding the W11307244 lid lock under the front lip, and route the 3-pin wire harness back to the control board."
+    ],
+    "faq": [
+      {
+        "q": "Does W11307244 replace the older W10838613 lid lock?",
+        "a": "Yes! W11307244 is Whirlpool's updated OEM replacement for W10838613, W10682535, and W11253733 with a sealed ribbed wire loom."
+      }
+    ],
+    "created_at": "2026-11-21"
+  },
+  {
+    "id": "samsung-refrigerator-error-22e-22c-evaporator-fan-da31-00287b",
+    "slug": "samsung-refrigerator-error-22e-22c-fresh-food-fan-motor-da31-00287b",
+    "category": "Refrigerators",
+    "lang": "en",
+    "brands": [
+      "Samsung"
+    ],
+    "error_code": "Error 22E / 22C (Fresh Food Evaporator Fan Lock)",
+    "popular_models": [
+      "RF28HMEDBSR",
+      "RF263BEAESR",
+      "RF28R7351SR",
+      "RF23J9011SR"
+    ],
+    "symptom": "The refrigerator compartment warms up above 50°F, makes a loud buzzing or helicopter-like clicking sound that stops when you open the fridge door, and flashes 22E or 22C on diagnostics.",
+    "technical_cause": "Ice buildup around the twin-cooling evaporator cover has stalled and burned out the 12V DC fresh food evaporator fan motor (DA31-00287B).",
+    "oem_part_name": "Samsung OEM Fresh Food Evaporator Fan Motor (12V DC)",
+    "oem_part_number": "DA31-00287B",
+    "secondary_part_number": "DA31-00334A / DA97-12609C (Complete Evaporator Cover & Fan Assembly)",
+    "affiliate_search_query": "DA31-00287B Samsung refrigerator evaporator fan motor 22E 22C",
+    "part_price_range": "$18 - $29",
+    "technician_cost_estimate": "$230 - $320",
+    "repair_time_minutes": 30,
+    "difficulty": "Easy",
+    "diagnostic_steps": [
+      "Listen for a buzzing or rubbing noise from the interior back wall of the fridge that stops the instant you open the door—that is the fan blade hitting frost.",
+      "Unplug the refrigerator, remove the shelves and rear Twin Cooling plastic panel, thaw all ice off the coil, and swap in the new DA31-00287B fan motor."
+    ],
+    "faq": [
+      {
+        "q": "How do I clear the blinking 22E / 22C code on my Samsung fridge display after replacing the DA31-00287B fan?",
+        "a": "Press and hold the top two buttons on the dispenser panel (Energy Saver + Lighting, or Freezer + Fridge) simultaneously for 8 seconds until the display chimes and resets."
+      }
+    ],
+    "created_at": "2026-11-21"
+  },
+  {
+    "id": "whirlpool-maytag-dryer-f1-e1-timer-w10857612",
+    "slug": "whirlpool-maytag-amana-dryer-timer-not-advancing-no-heat-w10185982",
+    "category": "Dryers",
+    "lang": "en",
+    "brands": [
+      "Whirlpool",
+      "Maytag",
+      "Amana",
+      "Roper",
+      "Crosley"
+    ],
+    "error_code": "Timer Dial Won't Advance / No Heat on Timed Dry",
+    "popular_models": [
+      "WED4815EW",
+      "NED4655EW",
+      "MEDC465HW",
+      "RED4516FW"
+    ],
+    "symptom": "The dryer runs endlessly without the timer knob advancing to Off, OR the dryer only heats when you push and hold the timer dial at a certain angle.",
+    "technical_cause": "Pitted and burned high-current copper contacts inside the mechanical timer cam switch assembly (WPW10185982).",
+    "oem_part_name": "Whirlpool / Amana OEM Dryer Mechanical Timer Control",
+    "oem_part_number": "WPW10185982",
+    "secondary_part_number": "W10185982 / AP6016541 / PS11749831",
+    "affiliate_search_query": "WPW10185982 W10185982 Whirlpool Amana dryer timer",
+    "part_price_range": "$32 - $54",
+    "technician_cost_estimate": "$210 - $285",
+    "repair_time_minutes": 10,
+    "difficulty": "Very Easy (Behind upper console panel)",
+    "diagnostic_steps": [
+      "Unplug the dryer, pull the timer plastic knob straight off the front shaft, and remove the 5 screws on the back cover of the top console.",
+      "Inspect the black plastic timer housing (WPW10185982) for a burnt terminal mark and plug the wire harness onto the new timer."
+    ],
+    "faq": [
+      {
+        "q": "Why does the WPW10185982 timer stop heating while the drum still tumbles?",
+        "a": "Inside the WPW10185982 timer are two separate cam switches: one 120V switch powers the drive motor, while a heavy 240V contact feeds the heating element. When the 240V contact pits, the drum spins cold."
+      }
+    ],
+    "created_at": "2026-11-21"
   }
 ]
